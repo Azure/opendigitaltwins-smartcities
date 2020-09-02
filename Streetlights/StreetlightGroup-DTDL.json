@@ -1,0 +1,178 @@
+{
+  "@id": "dtmi::ngsild:city:StreetlightGroup;1",
+  "@type": "Interface",
+  "displayName": "StreetlightGroup",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Type",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "StreetlightGroup",
+            "displayName": "StreetlightGroup",
+            "enumValue": 1
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "areaServed",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "powerState",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "on",
+            "displayName": "ON",
+            "enumValue": 1
+          },
+          {
+            "name": "off",
+            "displayName": "OFF",
+            "enumValue": 2
+          },
+          {
+            "name": "low",
+            "displayName": "LOW",
+            "enumValue": 3
+          },
+          {
+            "name": "bootingUp",
+            "displayName": "BootingUp",
+            "enumValue": 4
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "refStreetlightControlCabinet",
+      "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
+    },
+    {
+      "@type": "Property",
+      "name": "dateLastSwitchingOn",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "dateLastSwitchingOff",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "switchingOnHours",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "from",
+            "schema": "string"
+          },
+          {
+            "name": "to",
+            "schema": "string"
+          },
+          {
+            "name": "hours",
+            "schema": "string"
+          }
+        ]
+
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "switchingMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "night-ON",
+            "displayName": "night-ON",
+            "enumValue": 1
+          },
+          {
+            "name": "night-OFF",
+            "displayName": "night-OFF",
+            "enumValue": 2
+          },
+          {
+            "name": "night-LOW",
+            "displayName": "night-LOW",
+            "enumValue": 3
+          },
+          {
+            "name": "always-ON",
+            "displayName": "always-ON",
+            "enumValue": 4
+          },
+          {
+            "name": "day-ON",
+            "displayName": "day-ON",
+            "enumValue": 5
+          },
+          {
+            "name": "day-OFF",
+            "displayName": "day-OFF",
+            "enumValue": 6
+          },
+          {
+            "name": "day-LOW",
+            "displayName": "day-LOW",
+            "enumValue": 7
+          }
+        ]
+      },
+      "writable": true
+
+    },
+    {
+      "@type": "Property",
+      "name": "illuminanceLevel",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "activeProgramId",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "annotations",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "string"
+      }
+    },
+    {
+      "@type": "Relationship",
+      "name": "refStreetLight",
+      "target": "dtmi:ngsild:city:Streetlight;1"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
