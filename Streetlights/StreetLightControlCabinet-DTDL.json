@@ -1,0 +1,421 @@
+{
+  "@id": "dtmi:ngsild:city:StreetlightControlCabinet;1",
+  "@type": "Interface",
+  "DisplayName": "StreetlightControlCabinet",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Type",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
+          {
+            "name": "StreetlightControlCabinet",
+            "displayName": "StreetlightControlCabinet",
+            "enumValue": 1
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "areaServed",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "serialNumber",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Relationship",
+      "name": "refStreetlightGroup",
+      "schema": "dtmi:ngsild:city:StreetlightGroup:1"
+    },
+    {
+      "@type": "Property",
+      "name": "brandName",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "modelName",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "manufacturerName",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "cupboardMadeOf",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "plastic",
+            "displayName": "Plastic",
+            "enumValue": 1
+          },
+          {
+            "name": "metal",
+            "displayName": "Metal",
+            "enumValue": 2
+          },
+          {
+            "name": "concrete",
+            "displayName": "Concrete",
+            "enumValue": 3
+          },
+          {
+            "name": "other",
+            "displayName": "Other",
+            "enumValue": 4
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "features",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "astronomicalClock",
+            "displayName": "astronomicalClock",
+            "enumValue": 1
+          },
+          {
+            "name": "individualControl",
+            "displayName": "individualControl",
+            "enumValue": 2
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "compliantWith",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "string"
+      }
+    },
+    {
+      "@type": "Property",
+      "name": "annotations",
+      "schema": {
+        "@type": "Array",
+        "elementSchema": "string"
+      }
+    },
+    {
+      "@type": "Component",
+      "name": "refDevice",
+      "schema": "dtmi:ngsild:city:device;1"
+    },
+    {
+      "@type": "Property",
+      "name": "dateServiceStarted",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "dateLastProgramming",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "nextActuationDeadline",
+      "writable": true,
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "responsible",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "workingMode",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "automatic",
+            "displayName": "automatic",
+            "enumValue": 1
+          },
+          {
+            "name": "manual",
+            "displayName": "manual",
+            "enumValue": 2
+          },
+          {
+            "name": "semiautomatic",
+            "displayName": "semiautomatic",
+            "enumValue": 3
+          }
+        ]
+      },
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "description",
+      "writable": true,
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "maximumPowerAvailable",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "energyConsumed",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "energyCost",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "reactiveEnergyConsumed",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "dateMeteringStarted",
+      "writable": true,
+      "schema": "date-time"
+    },
+    {
+      "@type": "Property",
+      "name": "lastMeterReading",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "meterReadingPeriod",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "frequency",
+      "writable": true,
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "totalActivePower",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "totalReactivePower",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "activePowerR",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "activePowerS",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "activePowerT",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "reactivePowerR",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "reactivePowerS",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "reactivePowerT",
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "powerFactorR",
+      "writable": true,
+      "schema": "double",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "powerFactorS",
+      "writable": true,
+      "schema": "double",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "powerFactorT",
+      "writable": true,
+      "schema": "double",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "cosPhi",
+      "writable": true,
+      "schema": "double",
+      "minimum": -1,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "intensityR",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0
+    },
+    {
+      "@type": "Property",
+      "name": "intensityS",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0
+    },
+    {
+      "@type": "Property",
+      "name": "voltageR",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0
+    },
+    {
+      "@type": "Property",
+      "name": "voltageS",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0
+    },
+    {
+      "@type": "Property",
+      "name": "voltageT",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0
+    },
+    {
+      "@type": "Property",
+      "name": "thdrVoltageR",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "thdrVoltageS",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "thdrVoltageT",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "thdrIntensityR",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "thdrIntensityS",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "thdrIntensityT",
+      "writable": true,
+      "schema": "double",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "@type": "Property",
+      "name": "location",
+      "schema": {
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "geoProperty",
+            "schema": "string"
+          },
+          {
+            "name": "coordinates",
+            "schema": "string"
+          }
+        ]
+
+      },
+      "writable": true
+    }
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+
+
+}
