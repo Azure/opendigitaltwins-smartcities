@@ -1,0 +1,17 @@
+{
+    "@id": "dtmi:GeoSPARQL:Feature;1",
+    "@type": "Interface",
+    "displayName": "Feature",
+    "extends": “dtmi:GeoSPARQL:SpatialObjecct;1",
+    "contents": [
+    
+        {
+            "@type": "Relationship",
+            "name": "hasGeometry",
+            "target": "dtmi:GeoSPARQL:Geometry;1"
+        }
+
+    ],
+    "@context" : "dtmi:dtdl:context;2"
+    
+}

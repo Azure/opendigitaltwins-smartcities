@@ -1,0 +1,25 @@
+
+{
+    "@id": "dtmi:GeoSPARQL:SpatialObject;1",
+    "@type": "Interface",
+    "displayName": "Spatial Object",
+    "contents": [
+    
+        {
+            "@type": "Relationship",
+            "name": "sfContains",
+            "target": "dtmi:GeoSPARQL:SpatialObject;1"
+        },
+
+        {
+            "@type": "Relationship",
+            "name": "sfWithin",
+            "target": "dtmi:GeoSPARQL:SpatialObject;1"
+        }
+
+
+    ],
+    "@context" :  "dtmi:dtdl:context;2"
+
+    
+}
