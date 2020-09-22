@@ -1,0 +1,15 @@
+{
+    "@id": "dtmi:s4city:City;1",
+    "@type": "Interface",
+    "displayName": "City",
+    "extends": "dtmi:s4city:AdministrativeArea;1",
+    "description": "",
+    "contents": [
+    
+
+
+    ],
+    "@context" :  "dtmi:dtdl:context;2"
+
+    
+}
