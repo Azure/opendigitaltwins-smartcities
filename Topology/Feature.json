@@ -2,7 +2,8 @@
     "@id": "dtmi:GeoSPARQL:Feature;1",
     "@type": "Interface",
     "displayName": "Feature",
-    "extends": “dtmi:GeoSPARQL:SpatialObjecct;1",
+    "description": "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types. GeoSPARQL 1.0 is an OGC Standard.Copyright (c) 2012 Open Geospatial Consortium.",
+    "extends": "dtmi:GeoSPARQL:SpatialObject;1",
     "contents": [
     
         {
@@ -11,6 +12,7 @@
             "target": "dtmi:GeoSPARQL:Geometry;1"
         }
 
+        
     ],
     "@context" : "dtmi:dtdl:context;2"
     
