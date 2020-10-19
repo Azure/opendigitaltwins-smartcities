@@ -3,7 +3,6 @@
     "@type": "Interface",
     "displayName": "District",
     "extends": "dtmi:s4city:AdministrativeArea;1",
-    "description": "",
     "contents": [
     
 
