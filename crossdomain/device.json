@@ -33,12 +33,11 @@
             "schema": "string",
             "writable": true	
         },
-        { 
-            "@type": "Property",
+        {
+            "@type": "Component",
             "name": "category",
-            "schema": "string",
-            "description": "sensor",
-            "writable": true	
+            "schema": "dtmi:ngsild:city:deviceCategopry;1",
+            "displayName": "Category"
         },
         { 
             "@type": "Property",
