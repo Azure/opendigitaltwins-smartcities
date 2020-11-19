@@ -1,0 +1,47 @@
+{
+    "@id": "dtmi:ngsild:city:Address;1",
+    "@type": "Interface",
+    "displayName": "Address",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "addressCountry",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "addressLocality",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "addressRegion",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "postOfficeBoxNumber",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "postalCode",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "streetAddress",
+            "schema": "string",
+            "writable": true	
+        }
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+        
