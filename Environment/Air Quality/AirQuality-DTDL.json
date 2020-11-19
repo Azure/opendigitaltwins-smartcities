@@ -27,112 +27,29 @@
 
         { 
             "@type": "Property",
-            "name": "location",
-            "schema":{
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "geoProperty",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "coordinates",
-                        "schema": "string" 
-                    }
-                ]
-
-            },
-            "writable": true	 
-        },
-        {
-            "@type": "Property",
-            "name": "address",
-            "schema": {
-                "@type" : "Object",
-                "fields" : [
-                    {
-                        "name" : "addressCountry",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "addressLocality",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "addressRegion",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postOfficeBoxNumber",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postalCode",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "streetAddress",
-                        "schema": "string"
-                    }
-                ]
-            }
-                
-        },
-
-        { 
-            "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
             "writable": true	
         },
+
         { 
             "@type": "Property",
             "name": "source",
             "schema": "string",
             "writable": true	
         },
-        { 
-            "@type": "Property",
-            "name": "airQualityLevel",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            },
-            "writable": true	
+
+        {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:ngsild:city:geoLocation;1"
         },
+        
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },     
         { 
             "@type": "Property",
             "name": "airQualityIndex",
@@ -146,287 +63,76 @@
             "writable": true	
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "CO2",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "CO",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "PM10",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "PM25",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "NO",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","densityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "SOx",
             "schema": "double",
-            "unit": "microgramPerCubicMetre"
+            "unit": "gramPerCubicMetre"
         },
-        {
-            "@type" : "Property",
+        { 
+            "@type": "Component",
+            "name": "airQualityLevel",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
             "name": "CO2_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
-        },
-        {
-            "@type" : "Property",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
             "name": "CO_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
-        },
-        {
-            "@type" : "Property",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
             "name": "PM10_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
-        },
-        {
-            "@type" : "Property",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
             "name": "PM25_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
         },
-        {
-            "@type" : "Property",
+        { 
+            "@type": "Component",
             "name": "NO_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
-        },
-        {
-            "@type" : "Property",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
             "name": "SOx_level",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "good",
-                        "displayName": "Good",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "moderate",
-                        "displayName": "Moderate",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "unhealthyForSensitiveGroups",
-                        "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unhealthy",
-                        "displayName": "Unhealthy",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "veryUnhealthy",
-                        "displayName": "VeryUnhealthy",
-                        "enumValue": 5
-                    },
-                    {
-                        "name": "hazardous",
-                        "displayName": "Hazardous",
-                        "enumValue": 6
-                    }
-                ]
-            }
-        },
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
         { 
             "@type": "Component",
             "name": "refDevice",
@@ -447,8 +153,6 @@
             "target": "dtmi:ngsild:city:weatherObserved;1"	
         }
         
-
-
     ],
     "@context" : [
         "dtmi:dtdl:context;2"
