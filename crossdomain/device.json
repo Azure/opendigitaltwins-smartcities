@@ -1,0 +1,59 @@
+{
+    "@id": "dtmi:ngsild:city:device;1",
+    "@type": "Interface",
+    "displayName": "Device",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "dateProvider",
+            "schema": "string",
+            "writable": true	
+        },    
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateCreated",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "source",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "category",
+            "schema": "string",
+            "description": "sensor",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "batteryLevel",
+            "schema": "string",
+            "description": "level of the battery",
+            "writable": true	
+        }
+
+
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+
+
