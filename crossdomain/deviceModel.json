@@ -17,6 +17,12 @@
             "schema": "string",
             "writable": true	
         },
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
         {
             "@type": "Component",
             "name": "category",
