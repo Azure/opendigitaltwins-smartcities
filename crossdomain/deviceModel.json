@@ -21,6 +21,7 @@
             "@type": "Property",
             "name": "dateModified",
             "schema": "dateTime",
+            "description": "The timestamp when the data was updated",
             "writable": true	
         },
         {
