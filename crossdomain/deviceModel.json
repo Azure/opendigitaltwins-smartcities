@@ -17,16 +17,19 @@
             "schema": "string",
             "writable": true	
         },
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "description": "The timestamp when the data was updated",
+            "writable": true	
+        },
         {
             "@type": "Component",
             "name": "category",
             "schema": "dtmi:ngsild:city:deviceCategopry;1",
             "displayName": "Category"
         }
-
-
-        
-
     ],
     "@context" : [
         "dtmi:dtdl:context;2"
