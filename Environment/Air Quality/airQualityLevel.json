@@ -1,0 +1,57 @@
+{
+    "@id": "dtmi:ngsild:city:airQualityLevel;1",
+    "@type": "Interface",
+    "displayName": "AirQualityLevel",
+    "contents":[
+        {
+
+            "@type": "Property",
+            "name": "level",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "good",
+                        "displayName": "Good",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "moderate",
+                        "displayName": "Moderate",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "unhealthyForSensitiveGroups",
+                        "displayName": "UnhealthyForSensitiveGroups",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "unhealthy",
+                        "displayName": "Unhealthy",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "veryUnhealthy",
+                        "displayName": "VeryUnhealthy",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "hazardous",
+                        "displayName": "Hazardous",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        }
+            
+       
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+
+

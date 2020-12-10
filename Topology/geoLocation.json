@@ -1,0 +1,24 @@
+{
+    "@id": "dtmi:ngsild:city:geoLocation;1",
+    "@type": "Interface",
+    "displayName": "GeoLocation",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "geoProperty",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "Coordinates",
+            "schema": "string",
+            "writable": true	
+        }
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+
