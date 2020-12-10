@@ -1,0 +1,83 @@
+{
+    "@id": "dtmi:ngsild:city:deviceCategory;1",
+    "@type": "Interface",
+    "displayName": "DeviceCategory",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "category",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "sensor",
+                        "displayName": "Sensor",
+                        "description": "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. https://w3id.org/saref#Sensor",
+                        "enumValue": "sensor"
+                    },
+                    {
+                        "name": "actuator",
+                        "displayName": "Actuator",
+                        "description": "A device responsible for moving or controlling a mechanism or system. https://w3id.org/saref#Actuator",
+                        "enumValue": "actuator"
+                    },
+                    {
+                        "name": "meter",
+                        "displayName": "Meter",
+                        "description": " A device built to accurately detect and display a quantity in a form readable by a human being. Partially defined by SAREF",
+                        "enumValue": "meter"
+                    },
+                    {
+                        "name": "hvac",
+                        "displayName": "HVAC",
+                        "description": "Heating, Ventilation and Air Conditioning (HVAC) device that provides indoor environmental comfort. https://w3id.org/saref#HVAC",
+                        "enumValue": "hvac"
+                    },
+                    {
+                        "name": "network",
+                        "displayName": "Network",
+                        "description": "A device used to connect other devices in a network, such as hub, switch or router in a LAN or Sensor network. (https://w3id.org/saref#Network",
+                        "enumValue": "network"
+                    },
+                    {
+                        "name": "multimedia",
+                        "displayName": "Multimedia",
+                        "description": "A device designed to display, store, record or play multimedia content such as audio, images, animation, video. https://w3id.org/saref#Multimedia",
+                        "enumValue": "multimedia"
+                    },
+                    {
+                        "name": "implement",
+                        "displayName": "Implement",
+                        "description": "implement: A device used or needed in a given activity; tool, instrument, utensil, etc. https://github.com/ADAPT/ADAPT/blob/develop/source/ADAPT/Equipment/ImplementConfiguration.cs",
+                        "enumValue": "implement"
+                    },
+                    {
+                        "name": "irrSystem",
+                        "displayName": "IrrSystem",
+                        "description": "A mobile or fixed irrigation system such as a center pivot, linear, traveling gun, solid set, etc. https://github.com/ADAPT/ADAPT/blob/develop/source/ADAPT/Equipment/IrrSystemConfiguration.cs",
+                        "enumValue": "irrSystem"
+                    },
+                    {
+                        "name": "irrSectiopn",
+                        "displayName": "IrrSection",
+                        "description": "A section of an IrrSystem. Different enough from a regular section. https://github.com/ADAPT/ADAPT/blob/develop/source/ADAPT/Equipment/IrrSectionConfiguration.cs",
+                        "enumValue": "irrSection"
+                    },
+                    {
+                        "name": "endgun",
+                        "displayName": "Endgun",
+                        "description": " A device attached to an irrigation system that projects water beyond it https://github.com/ADAPT/ADAPT/blob/develop/source/ADAPT/Equipment/EndgunConfiguration.cs",
+                        "enumValue": "endgun"
+                    }
+                ]
+            }
+        }
+
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+

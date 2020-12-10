@@ -1,0 +1,40 @@
+{
+    "@id": "dtmi:ngsild:city:deviceModel;1",
+    "@type": "Interface",
+    "displayName": "DeviceModel",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "source",
+            "schema": "string",
+            "description": "A sequence of characters giving the source of the entity data",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateProvider",
+            "description": "Specifies the URL to information about the provider of this information",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "description": "The timestamp when the data was updated",
+            "writable": true	
+        },
+        {
+            "@type": "Component",
+            "name": "category",
+            "schema": "dtmi:ngsild:city:deviceCategopry;1",
+            "displayName": "Category"
+        }
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+
+

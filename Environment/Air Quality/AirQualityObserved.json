@@ -1,0 +1,157 @@
+{
+    
+    "@id": "dtmi:ngsild:city:AirQualityObserved;1",
+    "@type": "Interface",
+    "displayName": "AirQualityObserved",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "dateProvider",
+            "schema": "string",
+            "writable": true	
+        },    
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateCreated",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "source",
+            "schema": "string",
+            "writable": true	
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:ngsild:city:geoLocation;1"
+        },
+        
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },     
+        { 
+            "@type": "Property",
+            "name": "airQualityIndex",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "reliability",
+            "schema": "double",
+            "writable": true	
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "CO2",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "CO",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "PM10",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "PM25",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "NO",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "SOx",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        { 
+            "@type": "Component",
+            "name": "airQualityLevel",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "CO2_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "CO_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "PM10_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "PM25_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "NO_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "SOx_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },  
+        { 
+            "@type": "Component",
+            "name": "refDevice",
+            "schema" : "dtmi:ngsild:city:device;1"	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:pointOfInterest;1"	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refWeatherObserverd",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:weatherObserved;1"	
+        }
+        
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+
+    
+}
