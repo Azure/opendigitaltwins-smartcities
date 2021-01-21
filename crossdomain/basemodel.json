@@ -5,7 +5,7 @@
     "contents":[
         { 
             "@type": "Property",
-            "name": "dateProvider",
+            "name": "dataProvider",
             "schema": "string",
             "writable": true	
         },    

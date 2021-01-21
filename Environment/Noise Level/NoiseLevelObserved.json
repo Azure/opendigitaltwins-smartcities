@@ -1,10 +1,10 @@
 {
     
     "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
-    "@type": "Interface",
-    "@context" : "dtmi:dtdl:context;2",
+    "@type": "Interface",   
     "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
     "displayName": "NoiseLevelObserved",
+    "description":"The Noise level observed at a certain spot",
     "contents":[
         {
             "@type" : ["Telemetry","SoundPressureUnit"],
@@ -51,5 +51,6 @@
         }
 
 
-    ]
+    ],
+    "@context" : "dtmi:dtdl:context;2"
 }
