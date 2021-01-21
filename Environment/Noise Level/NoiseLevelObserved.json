@@ -47,7 +47,7 @@
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:weatherObserved;1"	
+            "target": "dtmi:ngsild:city:WeatherObserved;1"	
         }
 
 
