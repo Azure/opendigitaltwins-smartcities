@@ -84,31 +84,6 @@
         },
         { 
             "@type": "Component",
-            "name": "precipitation_level",
-            "schema": "dtmi:ngsild:city:WeatherObserved;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "relativeHumidity_level",
-            "schema": "dtmi:ngsild:city:WeatherObserved;1"
-        }, 
-        { 
-            "@type": "Component",
-            "name": "temperature_level",
-            "schema": "dtmi:ngsild:city:WeatherObserved;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "WindDirection_level",
-            "schema": "dtmi:ngsild:city:WeatherObserved;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "WindSpeed_level",
-            "schema": "dtmi:ngsild:city:WeatherObserved;1"
-        },
-        { 
-            "@type": "Component",
             "name": "airQualityLevel",
             "schema": "dtmi:ngsild:city:airQualityLevel;1"
         },  

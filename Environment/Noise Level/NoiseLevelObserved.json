@@ -32,26 +32,6 @@
         },
         { 
             "@type": "Component",
-            "name": "LAS_level",
-            "schema": "dtmi:ngsild:city:NoiseLevel;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "LAeq_level",
-            "schema": "dtmi:ngsild:city:NoiseLevel;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "LAeq_d_level",
-            "schema": "dtmi:ngsild:city:NoiseLevel;1"
-        },
-        { 
-            "@type": "Component",
-            "name": "LAmax_level",
-            "schema": "dtmi:ngsild:city:NoiseLevel;1"
-        },
-        { 
-            "@type": "Component",
             "name": "refDevice",
             "schema" : "dtmi:ngsild:city:device;1"	
         },
