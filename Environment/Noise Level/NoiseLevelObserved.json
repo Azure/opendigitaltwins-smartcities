@@ -6,6 +6,50 @@
     "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
     "displayName": "NoiseLevelObserved",
     "contents":[
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAS",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAeq",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAeq_d",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAmax",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        { 
+            "@type": "Component",
+            "name": "LAS_level",
+            "schema": "dtmi:ngsild:city:NoiseLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "LAeq_level",
+            "schema": "dtmi:ngsild:city:NoiseLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "LAeq_d_level",
+            "schema": "dtmi:ngsild:city:NoiseLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "LAmax_level",
+            "schema": "dtmi:ngsild:city:NoiseLevel;1"
+        },
         { 
             "@type": "Component",
             "name": "refDevice",

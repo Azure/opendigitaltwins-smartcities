@@ -53,6 +53,60 @@
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
+        {
+            "@type" : ["Telemetry","LengthUnit"],
+            "name": "precipitation",
+            "schema": "integer",
+            "unit": "millimetre"
+        },
+        {
+            "@type" : ["Telemetry"],
+            "name": "relativeHumidity",
+            "schema": "double"
+        },
+        {
+            "@type" : ["Telemetry","TemperatureUnit"],
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius" 
+        },
+        {
+            "@type" : ["Telemetry","AngleUnit"],
+            "name": "WindDirection",
+            "schema": "double",
+            "unit": "degreeOfArc" 
+        },
+        {
+            "@type" : ["Telemetry","VelocityUnit"],
+            "name": "WindSpeed",
+            "schema": "integer",
+            "unit": "knot" 
+        },
+        { 
+            "@type": "Component",
+            "name": "precipitation_level",
+            "schema": "dtmi:ngsild:city:WeatherObserved;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "relativeHumidity_level",
+            "schema": "dtmi:ngsild:city:WeatherObserved;1"
+        }, 
+        { 
+            "@type": "Component",
+            "name": "temperature_level",
+            "schema": "dtmi:ngsild:city:WeatherObserved;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "WindDirection_level",
+            "schema": "dtmi:ngsild:city:WeatherObserved;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "WindSpeed_level",
+            "schema": "dtmi:ngsild:city:WeatherObserved;1"
+        },
         { 
             "@type": "Component",
             "name": "airQualityLevel",
