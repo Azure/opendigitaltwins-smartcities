@@ -1,0 +1,56 @@
+{
+    
+    "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
+    "@type": "Interface",   
+    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "displayName": "NoiseLevelObserved",
+    "description":"The Noise level observed at a certain spot",
+    "contents":[
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAS",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAeq",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAeq_d",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        {
+            "@type" : ["Telemetry","SoundPressureUnit"],
+            "name": "LAmax",
+            "schema": "double",
+            "unit": "decibel"
+        },
+        { 
+            "@type": "Component",
+            "name": "refDevice",
+            "schema" : "dtmi:ngsild:city:device;1"	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:pointOfInterest;1"	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refWeatherObserverd",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:WeatherObserved;1"	
+        }
+
+
+    ],
+    "@context" : "dtmi:dtdl:context;2"
+}

@@ -1,0 +1,53 @@
+{
+    "@id": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "@type": "Interface",
+    "displayName": "NGSILDBaseModel",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "dataProvider",
+            "schema": "string",
+            "writable": true	
+        },    
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateCreated",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "source",
+            "schema": "string",
+            "writable": true	
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:ngsild:city:geoLocation;1"
+        },
+        
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        }],
+        
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+             
