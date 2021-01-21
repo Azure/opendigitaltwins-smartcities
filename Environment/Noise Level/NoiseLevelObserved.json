@@ -1,8 +1,7 @@
 {
     
     "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
-    "@type": "Interface",
-    "@context" : "dtmi:dtdl:context;2",
+    "@type": "Interface",   
     "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
     "displayName": "NoiseLevelObserved",
     "contents":[
@@ -51,5 +50,6 @@
         }
 
 
-    ]
+    ],
+    "@context" : "dtmi:dtdl:context;2"
 }
