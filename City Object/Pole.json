@@ -1,0 +1,15 @@
+{
+    "@id": "dtmi:s4city:city:Pole;1",
+    "@type": "Interface",
+    "displayName": "Pole",
+    "extends": "dtmi:s4city:city:CityObject;1",
+    "description": "",
+    "contents": [
+    
+
+
+    ],
+    "@context" :  "dtmi:dtdl:context;2"
+
+    
+}
