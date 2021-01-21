@@ -3,48 +3,8 @@
     "@id": "dtmi:ngsild:city:AirQualityObserved;1",
     "@type": "Interface",
     "displayName": "AirQualityObserved",
+    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents":[
-        { 
-            "@type": "Property",
-            "name": "dateProvider",
-            "schema": "string",
-            "writable": true	
-        },    
-        { 
-            "@type": "Property",
-            "name": "dateModified",
-            "schema": "dateTime",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "dateCreated",
-            "schema": "dateTime",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "dateObserved",
-            "schema": "double",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "source",
-            "schema": "string",
-            "writable": true	
-        },
-        {
-            "@type": "Component",
-            "name": "location",
-            "schema": "dtmi:ngsild:city:geoLocation;1"
-        },
-        
-        {
-            "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        },     
         { 
             "@type": "Property",
             "name": "airQualityIndex",
@@ -92,6 +52,35 @@
             "name": "SOx",
             "schema": "double",
             "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","LengthUnit"],
+            "name": "precipitation",
+            "schema": "integer",
+            "unit": "millimetre"
+        },
+        {
+            "@type" : ["Telemetry"],
+            "name": "relativeHumidity",
+            "schema": "double"
+        },
+        {
+            "@type" : ["Telemetry","TemperatureUnit"],
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius" 
+        },
+        {
+            "@type" : ["Telemetry","AngleUnit"],
+            "name": "WindDirection",
+            "schema": "double",
+            "unit": "degreeOfArc" 
+        },
+        {
+            "@type" : ["Telemetry","VelocityUnit"],
+            "name": "WindSpeed",
+            "schema": "integer",
+            "unit": "knot" 
         },
         { 
             "@type": "Component",
@@ -145,7 +134,7 @@
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:weatherObserved;1"	
+            "target": "dtmi:ngsild:city:WeatherObserved;1"	
         }
         
     ],

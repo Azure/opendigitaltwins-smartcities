@@ -1,0 +1,114 @@
+{
+    
+    "@id": "dtmi:ngsild:city:WaterQualityObserved;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "displayName": "WaterQualityObserved",
+    "contents":[
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "Chla",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "Cl-",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "NH3",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "NH4",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "NO3",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "O2",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "PC",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "PE",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "conductivity",
+            "schema": "double",
+            "unit": "SiemensPerMetre"
+        },
+        {
+            "@type" : ["Telemetry"],
+            "name": "pH",
+            "schema": "double"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "salinity",
+            "schema": "double",
+            "unit": "gramPerKilogram"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "tds",
+            "schema": "double",
+            "unit": "milligramPerLitre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
+            "name": "tss",
+            "schema": "double",
+            "unit": "milligramPerLitre"
+        },
+        {
+            "@type" : ["Telemetry","TemperatureUnit"],
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type" : ["Telemetry","distanceUnit"],
+            "name": "turbidity",
+            "schema": "double",
+            "unit": "nanometre"
+        },
+        { 
+            "@type": "Telemetry",
+            "name": "measurand",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            }	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:pointOfInterest;1"	
+        }
+    ]
+}

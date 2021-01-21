@@ -1,0 +1,19 @@
+{
+    "@id": "dtmi:ngsild:city:RoadSegment;1",
+    "@type": "Interface",
+    "displayName": "RoadSegment",
+    "contents":[
+       
+        { 
+            "@type": "Relationship",
+            "name": "refRoad",
+            "target": "dtmi:ngsild:city:Road;1"	
+        }
+
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+
+    
+}
