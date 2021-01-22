@@ -9,11 +9,20 @@
         {
             "@type" : "property",
             "name": "dateObservedFrom",
-            "schema": "dateTime"
-        },{
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
             "@type" : "property",
             "name": "dateObservedTo",
-            "schema": "dateTim"
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type" : "property",
+            "name": "sonometerClass",
+            "schema": "integer",
+            "writable": true
         },
         {
             "@type" : ["Telemetry","SoundPressureUnit"],
