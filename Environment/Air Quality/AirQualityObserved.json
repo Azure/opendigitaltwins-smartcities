@@ -17,6 +17,33 @@
             "schema": "double",
             "writable": true	
         },
+        { 
+            "@type": "Property",
+            "name": "volatileOrganicCompoundsTotal",
+            "schema": "integer",
+            "writable": true	
+        },
+        {
+            "@type": "Property",
+            "name": "typeOfLocation",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "inside",
+                        "displayName": "Inside",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "outside",
+                        "displayName": "Outside",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        },
         {
             "@type" : ["Telemetry","Density"],
             "name": "CO2",
@@ -49,7 +76,55 @@
         },
         {
             "@type" : ["Telemetry","Density"],
-            "name": "SOx",
+            "name": "SO2",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "C6H6",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "NI",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "AS",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "CD",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "NO2",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "O3",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "PB",
+            "schema": "double",
+            "unit": "gramPerCubicMetre"
+        },
+        {
+            "@type" : ["Telemetry","Density"],
+            "name": "SH2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
@@ -114,7 +189,47 @@
         },  
         { 
             "@type": "Component",
-            "name": "SOx_level",
+            "name": "SO2_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "C6H6level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "NI_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "AS_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "CD_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "NO2_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "O3_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "PB_level",
+            "schema": "dtmi:ngsild:city:airQualityLevel;1"
+        },
+        { 
+            "@type": "Component",
+            "name": "SH2_level",
             "schema": "dtmi:ngsild:city:airQualityLevel;1"
         },
         { 
