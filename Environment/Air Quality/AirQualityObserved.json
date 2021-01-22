@@ -54,10 +54,10 @@
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","LengthUnit"],
+            "@type" : ["Telemetry","VolumeFlowRateUnit"],
             "name": "precipitation",
-            "schema": "integer",
-            "unit": "millimetre"
+            "schema": "double",
+            "unit": "litrePerSquareMetre"
         },
         {
             "@type" : ["Telemetry"],
@@ -79,7 +79,7 @@
         {
             "@type" : ["Telemetry","VelocityUnit"],
             "name": "WindSpeed",
-            "schema": "integer",
+            "schema": "double",
             "unit": "knot" 
         },
         { 
@@ -116,11 +116,13 @@
             "@type": "Component",
             "name": "SOx_level",
             "schema": "dtmi:ngsild:city:airQualityLevel;1"
-        },  
+        },
         { 
-            "@type": "Component",
+            "@type": "Relationship",
             "name": "refDevice",
-            "schema" : "dtmi:ngsild:city:device;1"	
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:device;1"	
         },
         { 
             "@type": "Relationship",
