@@ -56,9 +56,21 @@
         },
         {
             "@type" : ["Telemetry","DensityUnit"],
+            "name": "conductance",
+            "schema": "double",
+            "unit": "SiemensPerMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
             "name": "conductivity",
             "schema": "double",
             "unit": "SiemensPerMetre"
+        },
+        {
+            "@type" : ["Telemetry","VoltageUnit"],
+            "name": "orp",
+            "schema": "double",
+            "unit": "millivolt"
         },
         {
             "@type" : ["Telemetry"],
