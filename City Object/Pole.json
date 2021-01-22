@@ -1,8 +1,8 @@
 {
-    "@id": "dtmi:s4city:city:CityObject;1",
+    "@id": "dtmi:city:Pole;1",
     "@type": "Interface",
-    "displayName": "City Object",
-    "extends": "dtmi:GeoSPARQL:Feature;1",
+    "displayName": "Pole",
+    "extends": "dtmi:s4city:city:CityObject;1",
     "description": "",
     "contents": [
     

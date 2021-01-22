@@ -1,0 +1,13 @@
+{
+    "@id": "dtmi:ngsild:city:EVChargingStation;1",
+    "@type": "Interface",   
+    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "displayName": "EV Charging Station",
+    "description":"EV Charging Station",
+    "contents":[
+    
+
+
+    ],
+    "@context" : "dtmi:dtdl:context;2"
+}
