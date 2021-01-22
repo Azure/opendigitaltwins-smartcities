@@ -33,6 +33,46 @@
             "schema": "string",
             "writable": true	
         },
+        { 
+            "@type": "Property",
+            "name": "alternedName",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "name",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "description",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "owner",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            }	
+        },
+        { 
+            "@type": "Property",
+            "name": "seeAlso",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            }	
+        },
         {
             "@type": "Component",
             "name": "location",
