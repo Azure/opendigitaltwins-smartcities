@@ -63,7 +63,8 @@
             "schema" : {
                 "@type": "Array",
                 "elementSchema": "string"
-            }	
+            },
+            "writable": true
         },
         { 
             "@type": "Property",
@@ -71,7 +72,8 @@
             "schema" : {
                 "@type": "Array",
                 "elementSchema": "string"
-            }	
+            },
+            "writable": true
         },
         {
             "@type": "Component",
