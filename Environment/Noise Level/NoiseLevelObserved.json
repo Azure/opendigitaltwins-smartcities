@@ -7,6 +7,15 @@
     "description":"The Noise level observed at a certain spot",
     "contents":[
         {
+            "@type" : "property",
+            "name": "dateObservedFrom",
+            "schema": "dateTime"
+        },{
+            "@type" : "property",
+            "name": "dateObservedTo",
+            "schema": "dateTim"
+        },
+        {
             "@type" : ["Telemetry","SoundPressureUnit"],
             "name": "LAS",
             "schema": "double",
