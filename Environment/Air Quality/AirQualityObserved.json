@@ -23,6 +23,12 @@
             "schema": "integer",
             "writable": true	
         },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
         {
             "@type": "Property",
             "name": "typeOfLocation",

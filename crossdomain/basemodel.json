@@ -41,12 +41,6 @@
         },
         { 
             "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
             "name": "name",
             "schema": "string",
             "writable": true	
