@@ -65,13 +65,13 @@
         { 
             "@type": "Property",
             "name": "width",
-            "schema": "integer",
+            "schema": "double",
             "writable": true	
         },
         { 
             "@type": "Property",
             "name": "length",
-            "schema": "integer",
+            "schema": "double",
             "writable": true	
         },
         { 
@@ -79,6 +79,33 @@
             "name": "timeInstant",
             "schema": "dateTime",
             "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "image",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "color",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "seeAlso",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "writable": true
         },
         { 
             "@type": "Property",
@@ -90,12 +117,12 @@
                 "enumValues": [
                     {
                         "name": "offStreet",
-                        "displayName": "Occupied",
+                        "displayName": "Offstreet",
                         "enumValue": 1
                     },
                     {
                         "name": "onStreet",
-                        "displayName": "Free",
+                        "displayName": "OnStreet",
                         "enumValue": 2
                     }
                     
