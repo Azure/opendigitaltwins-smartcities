@@ -7,12 +7,6 @@
     "contents":[
         { 
             "@type": "Property",
-            "name": "dataProvider",
-            "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
             "writable": true	
