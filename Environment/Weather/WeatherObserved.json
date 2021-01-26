@@ -3,7 +3,7 @@
     "@id": "dtmi:ngsild:city:WeatherObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "displayName": "WeatherObserved",
     "contents":[
         {
@@ -23,12 +23,6 @@
             "name": "stationName",
             "schema": "string",
             "writable": true
-        },
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
         },
         {
             "@type": "Property",

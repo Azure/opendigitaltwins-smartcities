@@ -3,15 +3,9 @@
     "@id": "dtmi:ngsild:city:WaterQualityObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "displayName": "WaterQualityObserved",
     "contents":[
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
-        },
         {
             "@type" : ["Telemetry","DensityUnit"],
             "name": "Chla",

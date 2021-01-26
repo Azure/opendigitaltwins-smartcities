@@ -74,7 +74,6 @@
             "name": "location",
             "schema": "dtmi:ngsild:city:geoLocation;1"
         },
-        
         {
             "@type": "Component",
             "name": "address",

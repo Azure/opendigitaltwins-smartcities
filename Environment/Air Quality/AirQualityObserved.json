@@ -3,7 +3,7 @@
     "@id": "dtmi:ngsild:city:AirQualityObserved;1",
     "@type": "Interface",
     "displayName": "AirQualityObserved",
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "contents":[
         { 
             "@type": "Property",
@@ -21,12 +21,6 @@
             "@type": "Property",
             "name": "volatileOrganicCompoundsTotal",
             "schema": "integer",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
             "writable": true	
         },
         {

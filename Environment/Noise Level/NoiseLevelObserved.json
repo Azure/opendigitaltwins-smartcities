@@ -2,7 +2,7 @@
     
     "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
     "@type": "Interface",   
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "displayName": "NoiseLevelObserved",
     "description":"The Noise level observed at a certain spot",
     "contents":[
@@ -11,12 +11,6 @@
             "name": "dateObservedFrom",
             "schema": "dateTime",
             "writable": true
-        },
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
         },
         {
             "@type" : "property",

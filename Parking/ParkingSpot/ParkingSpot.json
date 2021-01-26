@@ -9,7 +9,6 @@
             "schema": "string",
             "writable": true	
         },
-        
         { 
             "@type": "Property",
             "name": "dateModified",
