@@ -100,15 +100,6 @@
         },
         { 
             "@type": "Property",
-            "name": "seeAlso",
-            "schema" : {
-                "@type": "Array",
-                "elementSchema": "string"
-            },
-            "writable": true
-        },
-        { 
-            "@type": "Property",
             "name": "category",
             "schema": 
             {
@@ -135,22 +126,22 @@
             "name": "refParkingGroup",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:parkingGroup;1"	
+            "target": "dtmi:ngsild:city:ParkingGroup;1"	
         },
         {
             "@type": "Relationship",
             "name": "refParkingSite",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:parkingSite;1"	
+            "target": "dtmi:ngsild:city:ParkingSite;1"	
             
         },
         {
             "@type": "Relationship",
             "name": "refdevice",
             "minMultiplicity": 0,
-            "maxMultiplicity": 10,
-            "target": "dtmi:ngsild:city:parkingDevice;1"	
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:Device;1"	
             
         }
     ]

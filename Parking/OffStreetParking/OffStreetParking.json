@@ -1,0 +1,1155 @@
+{
+    "@id": "dtmi:ngsild:city:OffStreetParking;1",
+    "@type": "Interface",
+    "displayName": "OffStreetParking",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "contents": [
+        { 
+            "@type": "Property",
+            "name": "accessModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "aggregateRating",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "averageSpotLength",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "averageSpotWidth",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "contactPoint",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "highestFloor",
+            "schema": "integer",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "images",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "lowestFloor",
+            "schema": "integer",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "maximumAllowedHeight",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "maximumAllowedWidth",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "maximumParkingDuration",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "openingHours",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "priceCurrency",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "priceRatePerMinute",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "provider",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "totalSpotNumber",
+            "schema": "integer",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "location",
+            "schema":{
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "geoProperty",
+                        "schema": "string"
+                    },
+                    {
+                        "name" : "coordinates",
+                        "schema": "string" 
+                    }
+                ]
+
+            },
+            "writable": true	 
+        },
+        { 
+            "@type": "Property",
+            "name": "acceptedPaymentMethod",
+            "schema": 
+            {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "byBankTransferInAdvance",
+                            "displayName": "ByBankTransferInAdvance",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "byInvoice",
+                            "displayName": "ByInvoice",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "cash",
+                            "displayName": "Cash",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "checkInAdvance",
+                            "displayName": "CheckInAdvance",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "COD",
+                            "displayName": "COD",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "directDebit",
+                            "displayName": "DirectDebit",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "GoogleCheckout",
+                            "displayName": "GoogleCheckout",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "PayPal",
+                            "displayName": "PayPal",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "PaySwarm",
+                            "displayName": "PaySwarm",
+                            "enumValue": 9
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "allowedVehicleType",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "agriculturalVehicle",
+                            "displayName": "AgriculturalVehicle",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "anyVehicle",
+                            "displayName": "AnyVehicle",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "bicycle",
+                            "displayName": "Bicycle",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "bus",
+                            "displayName": "Bus",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "car",
+                            "displayName": "Car",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "caravan",
+                            "displayName": "Caravan",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "carWithCaravan",
+                            "displayName": "CarWithCaravan",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "carWithTrailer",
+                            "displayName": "CarWithTrailer",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "constructionOrMaintenanceVehicle",
+                            "displayName": "ConstructionOrMaintenanceVehicle",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "lorry",
+                            "displayName": "Lorry",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "moped",
+                            "displayName": "Moped",
+                            "enumValue": 11
+                        },
+                        {
+                            "name": "motorcycle",
+                            "displayName": "Motorcycle",
+                            "enumValue": 12
+                        },
+                        {
+                            "name": "motorcycleWithSideCar",
+                            "displayName": "MotorcycleWithSideCar",
+                            "enumValue": 13
+                        },
+                        {
+                            "name": "motorscooter",
+                            "displayName": "Motorscooter",
+                            "enumValue": 14
+                        },
+                        {
+                            "name": "tanker",
+                            "displayName": "Tanker",
+                            "enumValue": 15
+                        },
+                        {
+                            "name": "trailer",
+                            "displayName": "Trailer",
+                            "enumValue": 16
+                        },
+                        {
+                            "name": "van",
+                            "displayName": "Van",
+                            "enumValue": 17
+                        }
+                    ]
+                }
+            }
+        },
+        { 
+            "@type": "Property",
+            "name": "chargeType",
+            "schema": 
+            {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "additionalIntervalPrice",
+                            "displayName": "AdditionalIntervalPrice",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "annualPayment",
+                            "displayName": "AnnualPayment",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "firstIntervalPrice",
+                            "displayName": "FirstIntervalPrice",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "flat",
+                            "displayName": "Flat",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "free",
+                            "displayName": "Free",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "minimum",
+                            "displayName": "Minimum",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "maximum",
+                            "displayName": "Maximum",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "monthlyPayment",
+                            "displayName": "MonthlyPayment",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "seasonTicket",
+                            "displayName": "SeasonTicket",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "temporaryPrice",
+                            "displayName": "TemporaryPrice",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "other",
+                            "displayName": "Other",
+                            "enumValue": 11
+                        }
+                    ]
+                }
+            }
+        },
+        { 
+            "@type": "Property",
+            "name": "facilities",
+            "schema": 
+            {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "bikeParking",
+                            "displayName": "BikeParking",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "cashMachine",
+                            "displayName": "CashMachine",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "copyMachineOrService",
+                            "displayName": "CopyMachineOrService",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "defibrillator",
+                            "displayName": "Defibrillator",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "dumpingStation",
+                            "displayName": "DumpingStation",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "electricChargingStation",
+                            "displayName": "ElectricChargingStation",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "elevator",
+                            "displayName": "Elevator",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "faxMachineOrService",
+                            "displayName": "FaxMachineOrService",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "fireHose",
+                            "displayName": "FireHose",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "fireExtinguisher",
+                            "displayName": "FireExtinguisher",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "fireHydrant",
+                            "displayName": "FireHydrant",
+                            "enumValue": 11
+                        },
+                        {
+                            "name": "firstAidEquipment",
+                            "displayName": "FirstAidEquipment",
+                            "enumValue": 12
+                        },
+                        {
+                            "name": "freshWater",
+                            "displayName": "FreshWater",
+                            "enumValue": 13
+                        },
+                        {
+                            "name": "iceFreeScaffold",
+                            "displayName": "IceFreeScaffold",
+                            "enumValue": 14
+                        },
+                        {
+                            "name": "informationPoint",
+                            "displayName": "InformationPoint",
+                            "enumValue": 15
+                        },
+                        {
+                            "name": "internetWireless",
+                            "displayName": "InternetWireless",
+                            "enumValue": 16
+                        },
+                        {
+                            "name": "luggageLocker",
+                            "displayName": "LuggageLocker",
+                            "enumValue": 17
+                        },
+                        {
+                            "name": "payDesk",
+                            "displayName": "PayDesk",
+                            "enumValue": 18
+                        },
+                        {
+                            "name": "paymentMachine",
+                            "displayName": "PaymentMachine",
+                            "enumValue": 19
+                        },
+                        {
+                            "name": "playground",
+                            "displayName": "Playground",
+                            "enumValue": 20
+                        },
+                        {
+                            "name": "publicPhone",
+                            "displayName": "PublicPhone",
+                            "enumValue": 21
+                        },
+                        {
+                            "name": "refuseBin",
+                            "displayName": "RefuseBin",
+                            "enumValue": 22
+                        },
+                        {
+                            "name": "safeDeposit",
+                            "displayName": "SafeDeposit",
+                            "enumValue": 23
+                        },
+                        {
+                            "name": "shower",
+                            "displayName": "Shower",
+                            "enumValue": 24
+                        },
+                        {
+                            "name": "toilet",
+                            "displayName": "Toilet",
+                            "enumValue": 25
+                        },
+                        {
+                            "name": "tollTerminal",
+                            "displayName": "TollTerminal",
+                            "enumValue": 26
+                        },
+                        {
+                            "name": "vendingMachine",
+                            "displayName": "VendingMachine",
+                            "enumValue": 27
+                        },
+                        {
+                            "name": "wasteDisposal",
+                            "displayName": "WasteDisposal",
+                            "enumValue": 28
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "requiredPermit",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "employeePermit",
+                            "displayName": "EmployeePermit",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "fairPermit",
+                            "displayName": "FairPermit",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "governmentPermit",
+                            "displayName": "GovernmentPermit",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "noPermitNeeded",
+                            "displayName": "NoPermitNeeded",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "residentPermit",
+                            "displayName": "ResidentPermit",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "specificIdentifiedVehiclePermit",
+                            "displayName": "SpecificIdentifiedVehiclePermit",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "studentPermit",
+                            "displayName": "StudentPermit",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "visitorPermit",
+                            "displayName": "VisitorPermit",
+                            "enumValue": 8
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "layout",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "automatedParkingGarage",
+                            "displayName": "AutomatedParkingGarage",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "carports",
+                            "displayName": "Carports",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "covered",
+                            "displayName": "Covered",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "field",
+                            "displayName": "Field",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "garageBoxes",
+                            "displayName": "GarageBoxes",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "multiLevel",
+                            "displayName": "MultiLevel",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "multiStorey",
+                            "displayName": "MultiStorey",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "nested",
+                            "displayName": "Nested",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "openSpace",
+                            "displayName": "OpenSpace",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "rooftop",
+                            "displayName": "Rooftop",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "sheds",
+                            "displayName": "Sheds",
+                            "enumValue": 11
+                        },
+                        {
+                            "name": "singleLevel",
+                            "displayName": "SingleLevel",
+                            "enumValue": 12
+                        },
+                        {
+                            "name": "surface",
+                            "displayName": "Surface",
+                            "enumValue": 13
+                        },
+                        {
+                            "name": "other",
+                            "displayName": "Other",
+                            "enumValue": 14
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "usageScenario",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "automaticParkingGuidance",
+                            "displayName": "AutomaticParkingGuidance",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "carSharing",
+                            "displayName": "CarSharing",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "dropOffWithValet",
+                            "displayName": "DropOffWithValet",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "dropOffMechanical",
+                            "displayName": "DropOffMechanical",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "dropOff",
+                            "displayName": "DropOff",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "eventParking",
+                            "displayName": "EventParking",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "kissAndRide",
+                            "displayName": "KissAndRide",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "liftShare",
+                            "displayName": "LiftShare",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "loadingBay",
+                            "displayName": "LoadingBay",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "overnightParking",
+                            "displayName": "OvernightParking",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "parkAndCycle",
+                            "displayName": "ParkAndCycle",
+                            "enumValue": 11
+                        },
+                        {
+                            "name": "parkAndRide",
+                            "displayName": "ParkAndRide",
+                            "enumValue": 12
+                        },
+                        {
+                            "name": "parkAndWalk",
+                            "displayName": "ParkAndWalk",
+                            "enumValue": 13
+                        },
+                        {
+                            "name": "restArea",
+                            "displayName": "RestArea",
+                            "enumValue": 14
+                        },
+                        {
+                            "name": "serviceArea",
+                            "displayName": "ServiceArea",
+                            "enumValue": 15
+                        },
+                        {
+                            "name": "staffGuidesToSpace",
+                            "displayName": "StaffGuidesToSpace",
+                            "enumValue": 16
+                        },
+                        {
+                            "name": "truckParking",
+                            "displayName": "TruckParking",
+                            "enumValue": 17
+                        },
+                        {
+                            "name": "vehicleLift",
+                            "displayName": "VehicleLift",
+                            "enumValue": 18
+                        },
+                        {
+                            "name": "other",
+                            "displayName": "Other",
+                            "enumValue": 19
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "security",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "areaSeparatedFromSurroundings",
+                            "displayName": "AreaSeparatedFromSurroundings",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "cctv",
+                            "displayName": "Cctv",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "dog",
+                            "displayName": "Dog",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "externalSecurity",
+                            "displayName": "ExternalSecurity",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "fences",
+                            "displayName": "Fences",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "floodLight",
+                            "displayName": "FloodLight",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "guard24hours",
+                            "displayName": "Guard24hours",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "lighting",
+                            "displayName": "Lighting",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "patrolled",
+                            "displayName": "Patrolled",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "securityStaff",
+                            "displayName": "SecurityStaff",
+                            "enumValue": 10
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "occupancyDetectionType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "balancing",
+                        "displayName": "Balancing",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "manual",
+                        "displayName": "Manual",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "modelBased",
+                        "displayName": "ModelBased",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "none",
+                        "displayName": "None",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "singleSpaceDetection",
+                        "displayName": "SingleSpaceDetection",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "specialLocation",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "airportTerminal",
+                        "displayName": "AirportTerminal",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "cableCarStation",
+                        "displayName": "CableCarStation",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "campground",
+                        "displayName": "Campground",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "cinema",
+                        "displayName": "Cinema",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "coachStation",
+                        "displayName": "CoachStation",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "conventionCentre",
+                        "displayName": "ConventionCentre",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "exhibitionCentre",
+                        "displayName": "ExhibitionCentre",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "ferryTerminal",
+                        "displayName": "FerryTerminal",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "hotel",
+                        "displayName": "Hotel",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "market",
+                        "displayName": "Market",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "publicTransportStation",
+                        "displayName": "PublicTransportStation",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "religiousCentre",
+                        "displayName": "ReligiousCentre",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "shoppingCentre",
+                        "displayName": "ShoppingCentre",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "skilift",
+                        "displayName": "Skilift",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "specificFacility",
+                        "displayName": "SpecificFacility",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "themePark",
+                        "displayName": "ThemePark",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "trainStation",
+                        "displayName": "TrainStation",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "vehicleOnRailTerminal",
+                        "displayName": "VehicleOnRailTerminal",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "Other",
+                        "enumValue": 19
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "parkingMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "echelonParking",
+                        "displayName": "EchelonParking",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "parallelParking",
+                        "displayName": "ParallelParking",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "perpendicularParking",
+                        "displayName": "perpendicularParking",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "reservationType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "mandatory",
+                        "displayName": "Mandatory",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "notAvailable",
+                        "displayName": "NotAvailable",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "optional",
+                        "displayName": "Optional",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "partly",
+                        "displayName": "Partly",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        { 
+            "@type": "Property",
+            "name": "category",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            }	
+        },
+        { 
+            "@type": "Property",
+            "name": "extCategory",
+            "schema" : {
+                "@type": "Array",
+                "elementSchema": "string"
+            }	
+        },
+        {
+            "@type": "Telemetry",
+            "name": "availableSpotNumber",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "extraSpotNumber",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "firstAvailableFloor",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "measuresPeriod",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "measuresPeriodUnit",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "occupancy",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "occupancyModified",
+            "schema": "double"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "occupiedSpotNumber",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vehicleEntranceCount",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vehicleExitCount",
+            "schema": "integer"
+        },
+        { 
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "full",
+                        "displayName": "Full",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "almostFull",
+                        "displayName": "AlmostFull",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "fullAtEntrance",
+                        "displayName": "FullAtEntrance",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "spacesAvailable",
+                        "displayName": "SpacesAvailable",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "open",
+                        "displayName": "Open",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "openingTimesInForce",
+                        "displayName": "OpeningTimesInForce",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "closed",
+                        "displayName": "Closed",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "closedAbnormal",
+                        "displayName": "ClosedAbnormal",
+                        "enumValue": 8
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "@type": "Relationship",
+            "name": "refParkingAccess",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:ParkingAccess;1"	
+        },
+        {
+            "@type": "Relationship",
+            "name": "refParkingGroup",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:ParkingGroup;1"	
+        },
+        {
+            "@type": "Relationship",
+            "name": "refParkingSpot",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:ParkingSpot;1"	
+        }
+    ]
+}

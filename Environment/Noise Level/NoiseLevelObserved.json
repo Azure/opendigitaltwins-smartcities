@@ -49,9 +49,11 @@
             "unit": "decibel"
         },
         { 
-            "@type": "Component",
+            "@type": "Relationship",
             "name": "refDevice",
-            "schema" : "dtmi:ngsild:city:device;1"	
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:device;1"	
         },
         { 
             "@type": "Relationship",
