@@ -1,28 +1,10 @@
 {
     "@id": "dtmi:ngsild:city:ParkingSpot;1",
     "@type": "Interface",
-    "displayName": "ParkingSpot",
+    "displayName": "ParkingSpot",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents": [
-        { 
-            "@type": "Property",
-            "name": "dateProvider",
-            "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "dateModified",
-            "schema": "dateTime",
-            "writable": true	
-        },
-        
-        { 
-            "@type": "Property",
-            "name": "dateCreated",
-            "schema": "dateTime",
-            "writable": true	
-        },
-
         { 
             "@type": "Property",
             "name": "location",
@@ -42,51 +24,10 @@
             },
             "writable": true	 
         },
-        {
-            "@type": "Property",
-            "name": "address",
-            "schema": {
-                "@type" : "Object",
-                "fields" : [
-                    {
-                        "name" : "addressCountry",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "addressLocality",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "addressRegion",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postOfficeBoxNumber",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postalCode",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "streetAddress",
-                        "schema": "string"
-                    }
-                ]
-            }
-                
-        },
-
         { 
             "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "source",
-            "schema": "string",
             "writable": true	
         },
         { 
@@ -185,15 +126,5 @@
             "target": "dtmi:ngsild:city:parkingDevice;1"	
             
         }
-           
-
-
-
-
-    ],
-    "@context" : [
-        "dtmi:dtdl:context;2"
     ]
-
-    
 }

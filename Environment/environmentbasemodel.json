@@ -21,6 +21,13 @@
             "@type": "Component",
             "name": "location",
             "schema": "dtmi:ngsild:city:geoLocation;1"
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:pointOfInterest;1"	
         }
     ]
 }

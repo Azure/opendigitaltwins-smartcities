@@ -241,13 +241,6 @@
         },
         { 
             "@type": "Relationship",
-            "name": "refPointOfInterest",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:pointOfInterest;1"	
-        },
-        { 
-            "@type": "Relationship",
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,

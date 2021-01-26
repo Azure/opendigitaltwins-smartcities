@@ -114,13 +114,6 @@
                 "@type": "Array",
                 "elementSchema": "string"
             }	
-        },
-        { 
-            "@type": "Relationship",
-            "name": "refPointOfInterest",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:pointOfInterest;1"	
         }
     ]
 }
