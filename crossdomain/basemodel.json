@@ -23,12 +23,6 @@
         },
         { 
             "@type": "Property",
-            "name": "dateObserved",
-            "schema": "double",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
             "name": "source",
             "schema": "string",
             "writable": true	
@@ -68,11 +62,6 @@
                 "elementSchema": "string"
             },
             "writable": true
-        },
-        {
-            "@type": "Component",
-            "name": "location",
-            "schema": "dtmi:ngsild:city:geoLocation;1"
         },
         {
             "@type": "Component",
