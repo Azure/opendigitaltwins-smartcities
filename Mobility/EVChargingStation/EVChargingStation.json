@@ -5,8 +5,346 @@
     "displayName": "EV Charging Station",
     "description":"EV Charging Station",
     "contents":[
-    
+        { 
+            "@type": "Property",
+            "name": "capacity",
+            "schema": "integer",
+            "writable": true,	
+            "description": "The total number of vehicles which can be charged at the same time. The total number of sockets can be higher."
+        },
+        { 
+            "@type": "Property",
+            "name": "socketNumber",
+            "schema": "integer",
+            "writable": true,	
+            "description": "The total number of sockets offered by this charging station."
+        },
+        { 
+            "@type": "Property",
+            "name": "availableCapacity",
+            "schema": "integer",
+            "writable": true,	
+            "description": "The number of vehicles which currently can be charged."
+        },
+        {
+            "@type": "Property",
+                "name": "allowedVehicleType",
+                "description": "Vehicle type(s) which can be charged. Model:'http://schema.org/Text'. Enum:'bicycle, bus, car, caravan, motorcycle, motorscooter, truck' ",
+                "schema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                        {
+                            "name": "bicycle",
+                            "displayName": "bicycle",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "bus",
+                            "displayName": "bus",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "car",
+                            "displayName": "car",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "caravan",
+                            "displayName": "caravan",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "motorcycle",
+                            "displayName": "motorcycle",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "motorscooter",
+                            "displayName": "motorscooter",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "truck",
+                            "displayName": "truck",
+                            "enumValue": 7
+                        }
+                    ]
+                }
+        },
+        
+        {
+            "@type": "Property",
+                "name": "socketType",
+                "description": "The type of sockets offered by this station. Model:'http://schema.org/Text'. Enum:'Caravan_Mains_Socket, CHAdeMO, CCS/SAE, Dual_CHAdeMO, Dual_J-1772, Dual_Mennekes, J-1772, Mennekes, Other, Tesla, Type2, Type3, Wall_Euro'",
+                "schema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                        {
+                            "name": "Caravan_Mains_Socket",
+                            "displayName": "Caravan_Mains_Socket",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "CHAdeMO",
+                            "displayName": "CHAdeMO",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "CCS/SAE",
+                            "displayName": "CCS/SAE",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "Dual_CHAdeMO",
+                            "displayName": "Dual_CHAdeMO",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "Dual_J-1772",
+                            "displayName": "Dual_J-1772",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "Dual_Mennekes",
+                            "displayName": "Dual_Mennekes",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "J-1772",
+                            "displayName": "J-1772",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Mennekes",
+                            "displayName": "Mennekes",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Other",
+                            "displayName": "Other",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Tesla",
+                            "displayName": "Tesla",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Type2",
+                            "displayName": "Type2",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Type3",
+                            "displayName": "Type3",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "Wall_Euro",
+                            "displayName": "Wall_Euro",
+                            "enumValue": 7
+                        }
+                    ]
 
+                }
+        },
+
+        { 
+            "@type": "Property",
+            "name": "openingHours",
+            "schema": "string",
+            "writable": true,	
+            "description": "The opening hours of the charging station."
+        }, 
+
+        {
+            "@type": "Property",
+            "name": "status",
+            "description": "Model:'http://schema.org/Text'. Status of the charging station. Enum:'almostEmpty, almostFull, empty, full, outOfService, withIncidence, working'. Or any other application-specific.",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "string",
+              "enumValues": [
+                {
+                  "name": "almostEmpty",
+                  "displayName": "almostEmpty",
+                  "enumValue": 1
+                },
+                {
+                  "name": "almostFull",
+                  "displayName": "almostFull",
+                  "enumValue": 2
+                },
+                {
+                  "name": "empty",
+                  "displayName": "empty",
+                  "enumValue": 3
+                },
+                {
+                  "name": "full",
+                  "displayName": "full",
+                  "enumValue": 4
+                },
+                {
+                  "name": "outOfService",
+                  "displayName": "outOfService",
+                  "enumValue": 5
+                },
+                {
+                  "name": "withIncidence",
+                  "displayName": "withIncidence",
+                  "enumValue": 6
+                },
+                {
+                  "name": "working",
+                  "displayName": "working",
+                  "enumValue": 7
+                }
+              ]
+            },
+            "writable": true
+          }, 
+
+        { 
+            "@type": "Property",
+            "name": "network",
+            "description": "The name of the Network, with that the operator cooperates. Model:'https://schema.org/Text'.",
+            "schema": "string",
+            "writable": true	
+        },
+
+        { 
+            "@type": "Property",
+            "name": "operator",
+            "description": "Charging station's operator. Model:'https://schema.org/Text'.",
+            "schema": "string",
+            "writable": true	
+        },
+
+        { 
+            "@type": "Property",
+            "name": "contactPoint",
+            "description": "Charging station contact point. Model:'https://schema.org/contactPoint'.",
+            "schema": "object",
+            "writable": true	
+        },
+        {
+            "@type" : ["Property","Amperage"],
+            "name": "amperage",
+            "description": "The total amperage offered by the charging station.. Model:'http://schema.org/Number'. Units:'Ampers (A)'",
+            "schema": "double",
+            "unit": "ampers",
+            "writable": true	
+        },
+        
+        {
+            "@type" : ["Property","Voltage"],
+            "name": "voltage",
+            "description": "The total voltage offered by the charging station. Model:'http://schema.org/Number'. Units:'Volts (V)'",
+            "schema": "double",
+            "VoltageUnit": "volt",
+            "writable": true	
+        },
+
+        {
+            "@type": "Property",
+                "name": "chargeType",
+                "description": "Vehicle type(s) which can be charged. Model:'http://schema.org/Text'. Enum:'bicycle, bus, car, caravan, motorcycle, motorscooter, truck' ",
+                "schema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                        {
+                            "name": "annualPayment",
+                            "displayName": "annualPayment",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "flat",
+                            "displayName": "flat",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "free",
+                            "displayName": "free",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "monthlyPayment",
+                            "displayName": "monthlyPayment",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "other",
+                            "displayName": "other",
+                            "enumValue": 5
+                        }
+                    ]
+                }
+        },
+
+        {
+            "@type": "Property",
+                "name": "acceptedPaymentMethod",
+                "description": "Type(s) of charge when using this station. Model:'https://schema.org/Text'. Enum:'ByBankTransferInAdvance, ByInvoice, Cash, CheckInAdvance, COD, DirectDebit, GoogleCheckout, PayPal, PaySwarm'",
+                "schema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                        {
+                            "name": "ByBankTransferInAdvance",
+                            "displayName": "ByBankTransferInAdvance",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "ByInvoice",
+                            "displayName": "ByInvoice",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "Cash",
+                            "displayName": "Cash",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "CheckInAdvance",
+                            "displayName": "CheckInAdvance",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "COD",
+                            "displayName": "COD",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "DirectDebit",
+                            "displayName": "DirectDebit",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "GoogleCheckout",
+                            "displayName": "GoogleCheckout",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "PayPal",
+                            "displayName": "PayPal",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "PaySwarm",
+                            "displayName": "PaySwarm",
+                            "enumValue": 9
+                        }
+                    ]
+                }
+        }
 
     ],
     "@context" : "dtmi:dtdl:context;2"
