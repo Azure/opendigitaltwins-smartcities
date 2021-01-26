@@ -1,0 +1,35 @@
+{
+    "@id": "dtmi:ngsild:city:EnvironmentBaseModel;1",
+    "@type": "Interface",
+    "displayName": "EnvironmentBaseModel",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "schema": "dtmi:ngsild:city:geoLocation;1"
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:pointOfInterest;1"	
+        }
+    ]
+}
+
+             

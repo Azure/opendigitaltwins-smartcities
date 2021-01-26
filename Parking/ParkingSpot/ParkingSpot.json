@@ -1,29 +1,10 @@
 {
     "@id": "dtmi:ngsild:city:ParkingSpot;1",
     "@type": "Interface",
-    "displayName": "ParkingSpot",
+    "displayName": "ParkingSpot",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents": [
-        { 
-            "@type": "Property",
-            "name": "dateProvider",
-            "schema": "string",
-            "writable": true	
-        },
-        
-        { 
-            "@type": "Property",
-            "name": "dateModified",
-            "schema": "dateTime",
-            "writable": true	
-        },
-        
-        { 
-            "@type": "Property",
-            "name": "dateCreated",
-            "schema": "dateTime",
-            "writable": true	
-        },
-
         { 
             "@type": "Property",
             "name": "location",
@@ -43,51 +24,10 @@
             },
             "writable": true	 
         },
-        {
-            "@type": "Property",
-            "name": "address",
-            "schema": {
-                "@type" : "Object",
-                "fields" : [
-                    {
-                        "name" : "addressCountry",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "addressLocality",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "addressRegion",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postOfficeBoxNumber",
-                        "schema": "string"                     
-                    },
-                    {
-                        "name": "postalCode",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "streetAddress",
-                        "schema": "string"
-                    }
-                ]
-            }
-                
-        },
-
         { 
             "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "source",
-            "schema": "string",
             "writable": true	
         },
         { 
@@ -125,19 +65,37 @@
         { 
             "@type": "Property",
             "name": "width",
-            "schema": "integer",
+            "schema": "double",
             "writable": true	
         },
         { 
             "@type": "Property",
             "name": "length",
-            "schema": "integer",
+            "schema": "double",
             "writable": true	
         },
         { 
             "@type": "Property",
             "name": "timeInstant",
             "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "areaServed",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "image",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "color",
+            "schema": "string",
             "writable": true	
         },
         { 
@@ -150,12 +108,12 @@
                 "enumValues": [
                     {
                         "name": "offStreet",
-                        "displayName": "Occupied",
+                        "displayName": "Offstreet",
                         "enumValue": 1
                     },
                     {
                         "name": "onStreet",
-                        "displayName": "Free",
+                        "displayName": "OnStreet",
                         "enumValue": 2
                     }
                     
@@ -168,33 +126,23 @@
             "name": "refParkingGroup",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:parkingGroup;1"	
+            "target": "dtmi:ngsild:city:ParkingGroup;1"	
         },
         {
             "@type": "Relationship",
             "name": "refParkingSite",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:parkingSite;1"	
+            "target": "dtmi:ngsild:city:ParkingSite;1"	
             
         },
         {
             "@type": "Relationship",
             "name": "refdevice",
             "minMultiplicity": 0,
-            "maxMultiplicity": 10,
-            "target": "dtmi:ngsild:city:parkingDevice;1"	
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:Device;1"	
             
         }
-           
-
-
-
-
-    ],
-    "@context" : [
-        "dtmi:dtdl:context;2"
     ]
-
-    
 }

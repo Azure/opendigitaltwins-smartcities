@@ -3,7 +3,7 @@
     "@id": "dtmi:ngsild:city:WaterQualityObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "displayName": "WaterQualityObserved",
     "contents":[
         {
@@ -56,9 +56,21 @@
         },
         {
             "@type" : ["Telemetry","DensityUnit"],
+            "name": "conductance",
+            "schema": "double",
+            "unit": "SiemensPerMetre"
+        },
+        {
+            "@type" : ["Telemetry","DensityUnit"],
             "name": "conductivity",
             "schema": "double",
             "unit": "SiemensPerMetre"
+        },
+        {
+            "@type" : ["Telemetry","VoltageUnit"],
+            "name": "orp",
+            "schema": "double",
+            "unit": "millivolt"
         },
         {
             "@type" : ["Telemetry"],
@@ -102,13 +114,6 @@
                 "@type": "Array",
                 "elementSchema": "string"
             }	
-        },
-        { 
-            "@type": "Relationship",
-            "name": "refPointOfInterest",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:pointOfInterest;1"	
         }
     ]
 }
