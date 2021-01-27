@@ -1,0 +1,68 @@
+{
+    "@id": "dtmi:ngsild:city:acceptedPaymentMethod;1",
+    "@type": "Interface",
+    "displayName": "AcceptedPaymentMethod",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "acceptedPaymentMethod",
+            "schema": 
+            {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "byBankTransferInAdvance",
+                            "displayName": "ByBankTransferInAdvance",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "byInvoice",
+                            "displayName": "ByInvoice",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "cash",
+                            "displayName": "Cash",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "checkInAdvance",
+                            "displayName": "CheckInAdvance",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "COD",
+                            "displayName": "COD",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "directDebit",
+                            "displayName": "DirectDebit",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "GoogleCheckout",
+                            "displayName": "GoogleCheckout",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "PayPal",
+                            "displayName": "PayPal",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "PaySwarm",
+                            "displayName": "PaySwarm",
+                            "enumValue": 9
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

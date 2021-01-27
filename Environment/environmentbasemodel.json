@@ -19,8 +19,8 @@
         },
         {
             "@type": "Component",
-            "name": "location",
-            "schema": "dtmi:ngsild:city:geoLocation;1"
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
         },
         { 
             "@type": "Relationship",

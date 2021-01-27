@@ -1,0 +1,43 @@
+{
+    "@id": "dtmi:ngsild:city:occupancyDetectionType;1",
+    "@type": "Interface",
+    "displayName": "OccupancyDetectionType",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "occupancyDetectionType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "balancing",
+                        "displayName": "Balancing",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "manual",
+                        "displayName": "Manual",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "modelBased",
+                        "displayName": "ModelBased",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "none",
+                        "displayName": "None",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "singleSpaceDetection",
+                        "displayName": "SingleSpaceDetection",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        }
+    ]
+}

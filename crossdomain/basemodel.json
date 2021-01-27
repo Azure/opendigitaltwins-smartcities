@@ -65,9 +65,10 @@
         },
         {
             "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        }],
+            "name": "location",
+            "schema": "dtmi:ngsild:city:geoLocation;1"
+        }
+    ],
         
     "@context" : [
         "dtmi:dtdl:context;2"

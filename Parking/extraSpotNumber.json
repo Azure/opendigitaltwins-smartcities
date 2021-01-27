@@ -1,0 +1,13 @@
+{
+    "@id": "dtmi:ngsild:city:extraSpotNumber;1",
+    "@type": "Interface",
+    "displayName": "ExtraSpotNumber",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Telemetry",
+            "name": "extraSpotNumber",
+            "schema": "integer"
+        }
+    ]
+}

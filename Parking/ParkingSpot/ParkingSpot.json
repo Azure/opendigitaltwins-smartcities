@@ -7,60 +7,9 @@
     "contents": [
         { 
             "@type": "Property",
-            "name": "location",
-            "schema":{
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "geoProperty",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "coordinates",
-                        "schema": "string" 
-                    }
-                ]
-
-            },
-            "writable": true	 
-        },
-        { 
-            "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
             "writable": true	
-        },
-        { 
-            "@type": "Telemetry",
-            "name": "status",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "occupied",
-                        "displayName": "Occupied",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "free",
-                        "displayName": "Free",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "closed",
-                        "displayName": "Closed",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unkown",
-                        "displayName": "Unkown",
-                        "enumValue": 4
-                    }
-                    
-                ]
-            }
         },
         { 
             "@type": "Property",
@@ -78,12 +27,6 @@
             "@type": "Property",
             "name": "timeInstant",
             "schema": "dateTime",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
             "writable": true	
         },
         { 
@@ -121,6 +64,48 @@
             },
             "writable": true
         },
+        { 
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "occupied",
+                        "displayName": "Occupied",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "free",
+                        "displayName": "Free",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "closed",
+                        "displayName": "Closed",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "unkown",
+                        "displayName": "Unkown",
+                        "enumValue": 4
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },
+        {
+            "@type": "Component",
+            "name": "areaServed",
+            "schema": "dtmi:ngsild:city:areaServed;1"
+        },
         {
             "@type": "Relationship",
             "name": "refParkingGroup",
@@ -130,10 +115,17 @@
         },
         {
             "@type": "Relationship",
-            "name": "refParkingSite",
+            "name": "refOnStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:ParkingSite;1"	
+            "target": "dtmi:ngsild:city:OnStreetParking;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "refOffStreetParking",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:OffStreetParking;1"	
             
         },
         {
