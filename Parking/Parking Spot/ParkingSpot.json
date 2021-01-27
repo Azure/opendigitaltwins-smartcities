@@ -7,25 +7,6 @@
     "contents": [
         { 
             "@type": "Property",
-            "name": "location",
-            "schema":{
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "geoProperty",
-                        "schema": "string"
-                    },
-                    {
-                        "name" : "coordinates",
-                        "schema": "string" 
-                    }
-                ]
-
-            },
-            "writable": true	 
-        },
-        { 
-            "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
             "writable": true	

@@ -17,11 +17,6 @@
             "schema": "string",
             "writable": true	
         },
-        {
-            "@type": "Component",
-            "name": "location",
-            "schema": "dtmi:ngsild:city:geoLocation;1"
-        },
         { 
             "@type": "Relationship",
             "name": "refPointOfInterest",
