@@ -1117,6 +1117,11 @@
             }
         },
         {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },
+        {
             "@type": "Relationship",
             "name": "refParkingAccess",
             "minMultiplicity": 0,

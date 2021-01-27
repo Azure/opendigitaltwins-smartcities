@@ -12,38 +12,6 @@
             "writable": true	
         },
         { 
-            "@type": "Telemetry",
-            "name": "status",
-            "schema": 
-            {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "occupied",
-                        "displayName": "Occupied",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "free",
-                        "displayName": "Free",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "closed",
-                        "displayName": "Closed",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "unkown",
-                        "displayName": "Unkown",
-                        "enumValue": 4
-                    }
-                    
-                ]
-            }
-        },
-        { 
             "@type": "Property",
             "name": "width",
             "schema": "double",
@@ -101,6 +69,43 @@
                 ]
             },
             "writable": true
+        },
+        { 
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "occupied",
+                        "displayName": "Occupied",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "free",
+                        "displayName": "Free",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "closed",
+                        "displayName": "Closed",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "unkown",
+                        "displayName": "Unkown",
+                        "enumValue": 4
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
         },
         {
             "@type": "Relationship",

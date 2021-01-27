@@ -1,0 +1,14 @@
+{
+    "@id": "dtmi:ngsild:city:OnStreetParking;1",
+    "@type": "Interface",
+    "displayName": "OnStreetParking",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        }
+    ]
+}
