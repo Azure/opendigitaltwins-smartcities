@@ -539,6 +539,11 @@
                             "name": "visitorPermit",
                             "displayName": "VisitorPermit",
                             "enumValue": 8
+                        },
+                        {
+                            "name": "disabledPermit",
+                            "displayName": "DisabledPermit",
+                            "enumValue": 9
                         }
                     ]
                 }

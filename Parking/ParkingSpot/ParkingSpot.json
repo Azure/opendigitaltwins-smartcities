@@ -111,10 +111,18 @@
         },
         {
             "@type": "Relationship",
-            "name": "refParkingSite",
+            "name": "refOnStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:ParkingSite;1"	
+            "target": "dtmi:ngsild:city:OnStreetParking;1"	
+            
+        },
+        {
+            "@type": "Relationship",
+            "name": "refOffStreetParking",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:OffStreetParking;1"	
             
         },
         {
