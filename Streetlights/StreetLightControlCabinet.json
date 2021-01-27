@@ -377,23 +377,9 @@
       "maximum": 1
     },
     {
-      "@type": "Property",
+      "@type": "Component",
       "name": "location",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "geoProperty",
-            "schema": "string"
-          },
-          {
-            "name": "coordinates",
-            "schema": "string"
-          }
-        ]
-
-      },
-      "writable": true
+      "schema": "dtmi:ngsild:city:geoLocation;1"
     }
 
   ],

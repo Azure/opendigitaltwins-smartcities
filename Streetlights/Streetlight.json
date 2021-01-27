@@ -253,25 +253,11 @@
         "minimum": 0,
         "maximum": 1
       },
-    {
-      "@type": "Property",
-      "name": "location",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "geoProperty",
-            "schema": "string"
-          },
-          {
-            "name": "coordinates",
-            "schema": "string"
-          }
-        ]
-
-      },
-      "writable": true
-    }
+      {
+        "@type": "Component",
+        "name": "location",
+        "schema": "dtmi:ngsild:city:geoLocation;1"
+      }
   ],
     "@context": "dtmi:dtdl:context;2"
   }
