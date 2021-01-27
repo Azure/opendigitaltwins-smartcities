@@ -1,0 +1,66 @@
+{
+    "@id": "dtmi:ngsild:city:requiredPermit;1",
+    "@type": "Interface",
+    "displayName": "RequiredPermit",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "requiredPermit",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "employeePermit",
+                            "displayName": "EmployeePermit",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "fairPermit",
+                            "displayName": "FairPermit",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "governmentPermit",
+                            "displayName": "GovernmentPermit",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "noPermitNeeded",
+                            "displayName": "NoPermitNeeded",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "residentPermit",
+                            "displayName": "ResidentPermit",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "specificIdentifiedVehiclePermit",
+                            "displayName": "SpecificIdentifiedVehiclePermit",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "studentPermit",
+                            "displayName": "StudentPermit",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "visitorPermit",
+                            "displayName": "VisitorPermit",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "disabledPermit",
+                            "displayName": "DisabledPermit",
+                            "enumValue": 9
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

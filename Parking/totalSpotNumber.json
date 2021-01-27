@@ -1,0 +1,14 @@
+{
+    "@id": "dtmi:ngsild:city:totalSpotNumber;1",
+    "@type": "Interface",
+    "displayName": "TotalSpotNumber",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "totalSpotNumber",
+            "schema": "integer",
+            "writable": true	
+        }
+    ]
+}

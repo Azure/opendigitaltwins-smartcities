@@ -5,189 +5,6 @@
     "@context" : "dtmi:dtdl:context;2",
     "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents": [
-        { 
-            "@type": "Property",
-            "name": "acceptedPaymentMethod",
-            "schema": 
-            {
-                "@type": "Array",
-                "elementSchema": 
-                {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "byBankTransferInAdvance",
-                            "displayName": "ByBankTransferInAdvance",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "byInvoice",
-                            "displayName": "ByInvoice",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "cash",
-                            "displayName": "Cash",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "checkInAdvance",
-                            "displayName": "CheckInAdvance",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "COD",
-                            "displayName": "COD",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "directDebit",
-                            "displayName": "DirectDebit",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "GoogleCheckout",
-                            "displayName": "GoogleCheckout",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "PayPal",
-                            "displayName": "PayPal",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "PaySwarm",
-                            "displayName": "PaySwarm",
-                            "enumValue": 9
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "@type": "Property",
-            "name": "allowedVehicleType",
-            "schema": {
-                "@type": "Array",
-                "elementSchema": 
-                {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "agriculturalVehicle",
-                            "displayName": "AgriculturalVehicle",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "anyVehicle",
-                            "displayName": "AnyVehicle",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "bicycle",
-                            "displayName": "Bicycle",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "bus",
-                            "displayName": "Bus",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "car",
-                            "displayName": "Car",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "caravan",
-                            "displayName": "Caravan",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "carWithCaravan",
-                            "displayName": "CarWithCaravan",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "carWithTrailer",
-                            "displayName": "CarWithTrailer",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "constructionOrMaintenanceVehicle",
-                            "displayName": "ConstructionOrMaintenanceVehicle",
-                            "enumValue": 9
-                        },
-                        {
-                            "name": "lorry",
-                            "displayName": "Lorry",
-                            "enumValue": 10
-                        },
-                        {
-                            "name": "moped",
-                            "displayName": "Moped",
-                            "enumValue": 11
-                        },
-                        {
-                            "name": "motorcycle",
-                            "displayName": "Motorcycle",
-                            "enumValue": 12
-                        },
-                        {
-                            "name": "motorcycleWithSideCar",
-                            "displayName": "MotorcycleWithSideCar",
-                            "enumValue": 13
-                        },
-                        {
-                            "name": "motorscooter",
-                            "displayName": "Motorscooter",
-                            "enumValue": 14
-                        },
-                        {
-                            "name": "tanker",
-                            "displayName": "Tanker",
-                            "enumValue": 15
-                        },
-                        {
-                            "name": "trailer",
-                            "displayName": "Trailer",
-                            "enumValue": 16
-                        },
-                        {
-                            "name": "van",
-                            "displayName": "Van",
-                            "enumValue": 17
-                        }
-                    ]
-                }
-            }
-        },
-        { 
-            "@type": "Property",
-            "name": "areBordersMarked",
-            "schema": "boolean",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "averageSpotLength",
-            "schema": "double",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "averageSpotWidth",
-            "schema": "double",
-            "writable": true	
-        },
         {
             "@type": "Property",
             "name": "category",
@@ -263,152 +80,6 @@
         },
         { 
             "@type": "Property",
-            "name": "chargeType",
-            "schema": 
-            {
-                "@type": "Array",
-                "elementSchema": 
-                {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "additionalIntervalPrice",
-                            "displayName": "AdditionalIntervalPrice",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "annualPayment",
-                            "displayName": "AnnualPayment",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "firstIntervalPrice",
-                            "displayName": "FirstIntervalPrice",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "flat",
-                            "displayName": "Flat",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "free",
-                            "displayName": "Free",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "minimum",
-                            "displayName": "Minimum",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "maximum",
-                            "displayName": "Maximum",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "monthlyPayment",
-                            "displayName": "MonthlyPayment",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "seasonTicket",
-                            "displayName": "SeasonTicket",
-                            "enumValue": 9
-                        },
-                        {
-                            "name": "temporaryFee",
-                            "displayName": "TemporaryFee",
-                            "enumValue": 10
-                        },
-                        {
-                            "name": "temporaryPrice",
-                            "displayName": "TemporaryPrice",
-                            "enumValue": 11
-                        },
-                        {
-                            "name": "unknown",
-                            "displayName": "Unknown",
-                            "enumValue": 12
-                        },
-                        {
-                            "name": "other",
-                            "displayName": "Other",
-                            "enumValue": 13
-                        }
-                    ]
-                }
-            }
-        },
-        { 
-            "@type": "Property",
-            "name": "maximumParkingDuration",
-            "schema": "string",
-            "writable": true	
-        },
-        {
-            "@type": "Property",
-            "name": "occupancyDetectionType",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "balancing",
-                        "displayName": "Balancing",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "manual",
-                        "displayName": "Manual",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "modelBased",
-                        "displayName": "ModelBased",
-                        "enumValue": 3
-                    },
-                    {
-                        "name": "none",
-                        "displayName": "None",
-                        "enumValue": 4
-                    },
-                    {
-                        "name": "singleSpaceDetection",
-                        "displayName": "SingleSpaceDetection",
-                        "enumValue": 5
-                    }
-                ]
-            }
-        },
-        {
-            "@type": "Property",
-            "name": "parkingMode",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "integer",
-                "enumValues": [
-                    {
-                        "name": "echelonParking",
-                        "displayName": "EchelonParking",
-                        "enumValue": 1
-                    },
-                    {
-                        "name": "parallelParking",
-                        "displayName": "ParallelParking",
-                        "enumValue": 2
-                    },
-                    {
-                        "name": "perpendicularParking",
-                        "displayName": "perpendicularParking",
-                        "enumValue": 3
-                    }
-                ]
-            }
-        },
-        { 
-            "@type": "Property",
             "name": "permitActiveHours",
             "schema": 
             {
@@ -424,70 +95,6 @@
                     }
                 ]
             }
-        },
-        {
-            "@type": "Property",
-            "name": "requiredPermit",
-            "schema": {
-                "@type": "Array",
-                "elementSchema": {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "employeePermit",
-                            "displayName": "EmployeePermit",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "fairPermit",
-                            "displayName": "FairPermit",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "governmentPermit",
-                            "displayName": "GovernmentPermit",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "noPermitNeeded",
-                            "displayName": "NoPermitNeeded",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "residentPermit",
-                            "displayName": "ResidentPermit",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "specificIdentifiedVehiclePermit",
-                            "displayName": "SpecificIdentifiedVehiclePermit",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "studentPermit",
-                            "displayName": "StudentPermit",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "visitorPermit",
-                            "displayName": "VisitorPermit",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "disabledPermit",
-                            "displayName": "DisabledPermit",
-                            "enumValue": 9
-                        }
-                    ]
-                }
-            }
-        },
-        { 
-            "@type": "Property",
-            "name": "totalSpotNumber",
-            "schema": "integer",
-            "writable": true	
         },
         {
             "@type": "Property",
@@ -552,20 +159,86 @@
                 }
             }
         },
-        {
-            "@type": "Telemetry",
-            "name": "extraSpotNumber",
-            "schema": "integer"
+        { 
+            "@type": "Property",
+            "name": "maximumAllowedStay",
+            "schema": "string",
+            "writable": true	
         },
         {
-            "@type": "Telemetry",
-            "name": "availableSpotNumber",
-            "schema": "integer"
+            "@type": "Component",
+            "name": "areBordersMarked",
+            "schema": "dtmi:ngsild:city:areBordersMarked;1"
         },
         {
             "@type": "Component",
             "name": "address",
             "schema": "dtmi:ngsild:city:address;1"
+        },
+        {
+            "@type": "Component",
+            "name": "availableSpotNumber",
+            "schema": "dtmi:ngsild:city:availableSpotNumber;1"
+        },
+        {
+            "@type": "Component",
+            "name": "averageSpotLength",
+            "schema": "dtmi:ngsild:city:averageSpotLength;1"
+        },
+        {
+            "@type": "Component",
+            "name": "averageSpotWidth",
+            "schema": "dtmi:ngsild:city:averageSpotWidth;1"
+        },
+        {
+            "@type": "Component",
+            "name": "maximumParkingDuration",
+            "schema": "dtmi:ngsild:city:maximumParkingDuration;1"
+        },
+        {
+            "@type": "Component",
+            "name": "occupancyDetectionType",
+            "schema": "dtmi:ngsild:city:occupancyDetectionType;1"
+        },
+        {
+            "@type": "Component",
+            "name": "parkingMode",
+            "schema": "dtmi:ngsild:city:parkingMode;1"
+        },
+        {
+            "@type": "Component",
+            "name": "acceptedPaymentMethod",
+            "schema": "dtmi:ngsild:city:acceptedPaymentMethod;1"
+        },
+        {
+            "@type": "Component",
+            "name": "allowedVehicleType",
+            "schema": "dtmi:ngsild:city:allowedVehicleType;1"
+        },
+        {
+            "@type": "Component",
+            "name": "areaServed",
+            "schema": "dtmi:ngsild:city:areaServed;1"
+        },
+        {
+            "@type": "Component",
+            "name": "chargeType",
+            "schema": "dtmi:ngsild:city:chargeType;1"
+        },
+        {
+            "@type": "Component",
+            "name": "extraSpotNumber",
+            "schema": "dtmi:ngsild:city:extraSpotNumber;1"
+        },
+        {
+            "@type": "Component",
+            "name": "requiredPermit",
+            "schema": "dtmi:ngsild:city:requiredPermit;1"
+        },
+        {
+            "@type": "Component",
+            "name": "totalSpotNumber",
+            "schema": "dtmi:ngsild:city:totalSpotNumber;1"
         },
         {
             "@type": "Relationship",

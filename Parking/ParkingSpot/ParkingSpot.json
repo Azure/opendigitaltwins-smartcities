@@ -31,12 +31,6 @@
         },
         { 
             "@type": "Property",
-            "name": "areaServed",
-            "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
             "name": "image",
             "schema": "string",
             "writable": true	
@@ -108,6 +102,11 @@
             "schema": "dtmi:ngsild:city:address;1"
         },
         {
+            "@type": "Component",
+            "name": "areaServed",
+            "schema": "dtmi:ngsild:city:areaServed;1"
+        },
+        {
             "@type": "Relationship",
             "name": "refParkingGroup",
             "minMultiplicity": 0,
@@ -119,8 +118,7 @@
             "name": "refOnStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:OnStreetParking;1"	
-            
+            "target": "dtmi:ngsild:city:OnStreetParking;1"
         },
         {
             "@type": "Relationship",

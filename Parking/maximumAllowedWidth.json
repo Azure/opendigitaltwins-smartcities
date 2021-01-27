@@ -1,0 +1,13 @@
+{
+    "@id": "dtmi:ngsild:city:maximumAllowedWidth;1",
+    "@type": "Interface",
+    "displayName": "MaximumAllowedWidth",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "maximumAllowedWidth",
+            "schema": "double"
+        }
+    ]
+}

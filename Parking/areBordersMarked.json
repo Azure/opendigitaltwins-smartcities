@@ -1,0 +1,13 @@
+{
+    "@id": "dtmi:ngsild:city:areBordersMarked;1",
+    "@type": "Interface",
+    "displayName": "AreBordersmarked",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "level",
+            "schema": "boolean"
+        }
+    ]
+}

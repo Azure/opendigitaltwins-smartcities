@@ -1,0 +1,107 @@
+{
+    "@id": "dtmi:ngsild:city:allowedVehicleType;1",
+    "@type": "Interface",
+    "displayName": "AllowedVehicleType",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "allowedVehicleType",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": 
+                {
+                    "@type": "Enum",
+                    "valueSchema": "integer",
+                    "enumValues": [
+                        {
+                            "name": "agriculturalVehicle",
+                            "displayName": "AgriculturalVehicle",
+                            "enumValue": 1
+                        },
+                        {
+                            "name": "anyVehicle",
+                            "displayName": "AnyVehicle",
+                            "enumValue": 2
+                        },
+                        {
+                            "name": "bicycle",
+                            "displayName": "Bicycle",
+                            "enumValue": 3
+                        },
+                        {
+                            "name": "bus",
+                            "displayName": "Bus",
+                            "enumValue": 4
+                        },
+                        {
+                            "name": "car",
+                            "displayName": "Car",
+                            "enumValue": 5
+                        },
+                        {
+                            "name": "caravan",
+                            "displayName": "Caravan",
+                            "enumValue": 6
+                        },
+                        {
+                            "name": "carWithCaravan",
+                            "displayName": "CarWithCaravan",
+                            "enumValue": 7
+                        },
+                        {
+                            "name": "carWithTrailer",
+                            "displayName": "CarWithTrailer",
+                            "enumValue": 8
+                        },
+                        {
+                            "name": "constructionOrMaintenanceVehicle",
+                            "displayName": "ConstructionOrMaintenanceVehicle",
+                            "enumValue": 9
+                        },
+                        {
+                            "name": "lorry",
+                            "displayName": "Lorry",
+                            "enumValue": 10
+                        },
+                        {
+                            "name": "moped",
+                            "displayName": "Moped",
+                            "enumValue": 11
+                        },
+                        {
+                            "name": "motorcycle",
+                            "displayName": "Motorcycle",
+                            "enumValue": 12
+                        },
+                        {
+                            "name": "motorcycleWithSideCar",
+                            "displayName": "MotorcycleWithSideCar",
+                            "enumValue": 13
+                        },
+                        {
+                            "name": "motorscooter",
+                            "displayName": "Motorscooter",
+                            "enumValue": 14
+                        },
+                        {
+                            "name": "tanker",
+                            "displayName": "Tanker",
+                            "enumValue": 15
+                        },
+                        {
+                            "name": "trailer",
+                            "displayName": "Trailer",
+                            "enumValue": 16
+                        },
+                        {
+                            "name": "van",
+                            "displayName": "Van",
+                            "enumValue": 17
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
