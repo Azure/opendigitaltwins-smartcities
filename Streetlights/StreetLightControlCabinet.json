@@ -2,29 +2,9 @@
   "@id": "dtmi:ngsild:city:StreetlightControlCabinet;1",
   "@type": "Interface",
   "DisplayName": "StreetlightControlCabinet",
+  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
-    {
-      "@type": "Property",
-      "name": "Type",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "integer",
-        "enumValues": [
-          {
-            "name": "StreetlightControlCabinet",
-            "displayName": "StreetlightControlCabinet",
-            "enumValue": 1
-          }
-        ]
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "areaServed",
-      "schema": "string",
-      "writable": true
-    },
+  
     {
       "@type": "Property",
       "name": "serialNumber",
@@ -34,6 +14,7 @@
     {
       "@type": "Relationship",
       "name": "refStreetlightGroup",
+      "description": "Streetlight group(s) controlled. List of references to entities of type StreetlightGroup",
       "schema": "dtmi:ngsild:city:StreetlightGroup:1"
     },
     {
@@ -63,22 +44,22 @@
         "enumValues": [
           {
             "name": "plastic",
-            "displayName": "Plastic",
+            "displayName": "plastic",
             "enumValue": 1
           },
           {
             "name": "metal",
-            "displayName": "Metal",
+            "displayName": "metal",
             "enumValue": 2
           },
           {
             "name": "concrete",
-            "displayName": "Concrete",
+            "displayName": "concrete",
             "enumValue": 3
           },
           {
             "name": "other",
-            "displayName": "Other",
+            "displayName": "other",
             "enumValue": 4
           }
         ]
@@ -109,6 +90,7 @@
     {
       "@type": "Property",
       "name": "compliantWith",
+      "description": "A list of standards to which the cabinet controller is compliant with (ex. IP54)",
       "schema": {
         "@type": "Array",
         "elementSchema": "string"
@@ -117,6 +99,7 @@
     {
       "@type": "Property",
       "name": "annotations",
+      "description": "A field reserved for annotations (incidences, remarks, etc.)",
       "schema": {
         "@type": "Array",
         "elementSchema": "string"
@@ -125,6 +108,7 @@
     {
       "@type": "Component",
       "name": "refDevice",
+      "description": "Reference to the device(s) used to monitor this control cabinet.",
       "schema": "dtmi:ngsild:city:device;1"
     },
     {
@@ -148,6 +132,7 @@
     {
       "@type": "Property",
       "name": "responsible",
+      "description": "Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.).",
       "writable": true,
       "schema": "string"
     },
@@ -179,25 +164,22 @@
     },
     {
       "@type": "Property",
-      "name": "description",
-      "writable": true,
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "name": "maximumPowerAvailable",
+      "description": "The maximum power available (by contract) for the circuits controlled by this cabinet. Units:'Kilowatts (kW)'",
       "writable": true,
       "schema": "double"
     },
     {
       "@type": "Property",
       "name": "energyConsumed",
+      "description": "Energy consumed by the circuits controlled since metering started (since dateMeteringStarted). Units:'Kilowatts per hour (kWh).",
       "writable": true,
       "schema": "double"
     },
     {
       "@type": "Property",
       "name": "energyCost",
+      "description": "Cost of the energy consumed by the circuits controlled since the metering start date.",
       "writable": true,
       "schema": "double"
     },

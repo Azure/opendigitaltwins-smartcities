@@ -2,31 +2,25 @@
   "@id": "dtmi::ngsild:city:StreetlightGroup;1",
   "@type": "Interface",
   "displayName": "StreetlightGroup",
+  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
+     
     {
-      "@type": "Property",
-      "name": "Type",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "integer",
-        "enumValues": [
-          {
-            "name": "StreetlightGroup",
-            "displayName": "StreetlightGroup",
-            "enumValue": 1
-          }
-        ]
-      },
-      "writable": true
+      "@type": "Relationship",
+      "name": "refStreetLight",
+      "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights.",
+      "target": "dtmi:ngsild:city:Streetlight;1"
     },
     {
-      "@type": "Property",
-      "name": "areaServed",
-      "schema": "string"
+      "@type": "Relationship",
+      "name": "refStreetlightControlCabinet",
+      "description": "Streetlight group's control cabinet",
+      "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
     },
     {
       "@type": "Property",
       "name": "powerState",
+      "description": "Streetlight group's power state. Enum:'on, off, low, bootingUp'.",
       "schema": {
         "@type": "Enum",
         "valueSchema": "integer",
@@ -54,11 +48,6 @@
         ]
       },
       "writable": true
-    },
-    {
-      "@type": "Relationship",
-      "name": "refStreetlightControlCabinet",
-      "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
     },
     {
       "@type": "Property",
@@ -145,6 +134,7 @@
     {
       "@type": "Property",
       "name": "illuminanceLevel",
+      "description": "Relative illuminance level setting for the group. Allowed values: A number between 0 and 1.",
       "writable": true,
       "schema": "double",
       "minimum": 0,
@@ -153,11 +143,7 @@
     {
       "@type": "Property",
       "name": "activeProgramId",
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
-      "name": "description",
+      "description": "Identifier of the active program for this streetlight group.",
       "schema": "string"
     },
     {
@@ -167,11 +153,6 @@
         "@type": "Array",
         "elementSchema": "string"
       }
-    },
-    {
-      "@type": "Relationship",
-      "name": "refStreetLight",
-      "target": "dtmi:ngsild:city:Streetlight;1"
     }
   ],
   "@context": "dtmi:dtdl:context;2"
