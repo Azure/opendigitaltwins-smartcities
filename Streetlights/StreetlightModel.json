@@ -2,38 +2,13 @@
   "@id": "dtmi:ngsild:city:StreetlightModel;1",
   "@type": "Interface",
   "DisplayName": "StreetlightModel",
+  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
-    {
-      "@type": "Property",
-      "name": "Type",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "integer",
-        "enumValues": [
-          {
-            "name": "StreetlightModel",
-            "displayName": "StreetlightModel",
-            "enumValue": 1
-          }
-        ]
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "name",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "description",
-      "writable": true,
-      "schema": "string"
-    },
+  
     {
       "@type": "Property",
       "name": "maxPowerConsumption",
+      "description": "Maximum power consumption supported by the lantern. Units:'Watts (W)'.",
       "writable": true,
       "schema": "double"
     },
@@ -70,22 +45,22 @@
         "enumValues": [
           {
             "name": "steel",
-            "displayName": "Steel",
+            "displayName": "steel",
             "enumValue": 1
           },
           {
             "name": "aluminium",
-            "displayName": "Aluminium",
+            "displayName": "aluminium",
             "enumValue": 2
           },
           {
             "name": "wood",
-            "displayName": "Wood",
+            "displayName": "wood",
             "enumValue": 3
           },
           {
             "name": "other",
-            "displayName": "Other",
+            "displayName": "other",
             "enumValue": 4
           }
         ]
@@ -178,18 +153,21 @@
     {
       "@type": "Property",
       "name": "colorTemperature",
+      "description": "Correlated color temperature of the lamp.Units:'Kelvin degrees (K)'",
       "writable": true,
       "schema": "integer"
     },
     {
       "@type": "Property",
       "name": "colorRenderingIndex",
+      "description": "Color rendering index of the lamp.",
       "writable": true,
       "schema": "integer"
     },
     {
       "@type": "Property",
       "name": "luminousFlux",
+      "description": "Maximum light output which can be provided by the lamp. Units:'Lumens (lm)'.",
       "writable": true,
       "schema": "integer"
     },
@@ -202,16 +180,11 @@
     {
       "@type": "Property",
       "name": "compliantWith",
+      "description": "A list of standards to which this streetlight model is compliant with.",
       "schema": {
         "@type": "Array",
         "elementSchema": "string"
       }
-    },
-    {
-      "@type": "Property",
-      "name": "image",
-      "writable": true,
-      "schema": "string"
     },
     {
       "@type": "Property",
@@ -223,22 +196,22 @@
         "enumValues": [
           {
             "name": "postTop",
-            "displayName": "PostTop",
+            "displayName": "postTop",
             "enumValue": 1
           },
           {
             "name": "bollard",
-            "displayName": "Bollard",
+            "displayName": "bollard",
             "enumValue": 2
           },
           {
             "name": "lamppost",
-            "displayName": "Lampost",
+            "displayName": "lampost",
             "enumValue": 3
           },
           {
             "name": "lightTower",
-            "displayName": "LightTower",
+            "displayName": "lightTower",
             "enumValue": 4
           },
           {
@@ -248,17 +221,17 @@
           },
           {
             "name": "sideEntry",
-            "displayName": "SideEntry",
+            "displayName": "sideEntry",
             "enumValue": 6
           },
           {
             "name": "signLight",
-            "displayName": "SignLight",
+            "displayName": "signLight",
             "enumValue": 7
           },
           {
             "name": "ornamentLantern",
-            "displayName": "OrnamentLantern",
+            "displayName": "ornamentLantern",
             "enumValue": 8
           }
         ]

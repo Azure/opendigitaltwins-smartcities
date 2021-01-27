@@ -2,6 +2,7 @@
     "@id": "dtmi:ngsild:city:Streetlight;1",
     "@type": "Interface",
     "DisplayName": "Streetlight",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents": [
     {
       "@type": "Property",
@@ -21,12 +22,6 @@
     },
     {
       "@type": "Property",
-      "name": "areaServed",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
       "name": "circuit",
       "schema": "string",
       "writable": true
@@ -34,13 +29,16 @@
     {
       "@type": "Relationship",
       "name": "refStreetlightModel",
+      "description": "Streetlight's model.",
       "schema": "dtmi:ngsild:city:StreetlightModel:1"
     },
     {
       "@type": "Relationship",
       "name": "refStreetlightControlCabinet",
+      "description": "If this streetlight is individually controlled, reference to the control cabinet in charge of.",
       "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
     },
+    
     {
       "@type": "Property",
       "name": "status",
@@ -50,22 +48,22 @@
         "enumValues": [
           {
             "name": "ok",
-            "displayName": "Ok",
+            "displayName": "ok",
             "enumValue": 1
           },
           {
             "name": "defectiveLamp",
-            "displayName": "DefectiveLamp",
+            "displayName": "defectiveLamp",
             "enumValue": 2
           },
           {
             "name": "columnIssue",
-            "displayName": "ColumnIssue",
+            "displayName": "columnIssue",
             "enumValue": 3
           },
           {
             "name": "brokenLantern",
-            "displayName": "BrokenLantern",
+            "displayName": "brokenLantern",
             "enumValue": 4
           }
         ]
@@ -81,22 +79,22 @@
         "enumValues": [
           {
             "name": "on",
-            "displayName": "ON",
+            "displayName": "on",
             "enumValue": 1
           },
           {
             "name": "off",
-            "displayName": "OFF",
+            "displayName": "off",
             "enumValue": 2
           },
           {
             "name": "low",
-            "displayName": "LOW",
+            "displayName": "low",
             "enumValue": 3
           },
           {
             "name": "bootingUp",
-            "displayName": "BootingUp",
+            "displayName": "bootingUp",
             "enumValue": 4
           }
         ]
@@ -106,11 +104,13 @@
     {
       "@type": "Relationship",
       "name": "refDevice",
+      "description": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.",
       "schema": "dtmi:ngsild:city:Device;1"
     },
     {
       "@type": "Relationship",
       "name": "refStreetlightGroup",
+      "description": "Streetlight's group, if this streetlight belongs to any group.",
       "schema": "dtmi:ngsild:city:StreetlightGroup;1"
     },
     {
@@ -163,12 +163,6 @@
       "name": "Image",
       "schema": "string",
       "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "description",
-      "writable": true,
-      "schema": "string"
     },
     {
       "@type": "Property",
@@ -259,25 +253,11 @@
         "minimum": 0,
         "maximum": 1
       },
-    {
-      "@type": "Property",
-      "name": "location",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "geoProperty",
-            "schema": "string"
-          },
-          {
-            "name": "coordinates",
-            "schema": "string"
-          }
-        ]
-
-      },
-      "writable": true
-    }
+      {
+        "@type": "Component",
+        "name": "location",
+        "schema": "dtmi:ngsild:city:geoLocation;1"
+      }
   ],
     "@context": "dtmi:dtdl:context;2"
   }

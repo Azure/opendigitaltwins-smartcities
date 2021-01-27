@@ -1,0 +1,93 @@
+{
+    "@id": "dtmi:ngsild:city:CrowdFlowObserved;1",
+    "@type": "Interface",
+    "displayName": "CrowdFlowObserved",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
+    "contents":[
+
+        { 
+            "@type": "Relationship",
+            "name": "refRoadSegment",
+            "description": "Concerned road segment on which the observation has been made. Model:'https://schema.org/URL",
+            "target": "dtmi:ngsild:city:RoadSegment;1"	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObservedFrom",
+            "schema": "date-time",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObservedTo",
+            "schema": "date-time",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "peopleCount",
+            "schema": "integer",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "occupancy",
+            "description": "Property. Fraction of the observation time where a person has been occupying the observed walkway.",
+            "schema": "boolean",
+            "writable": true	
+        },
+
+        { 
+            "@type": "Property",
+            "name": "averageCrowdSpeed",
+            "description": "Average speed of the crowd transiting during the observation period. Units:'Kilometer per hour (Km/h).'",
+            "schema": "integer",
+            "writable": true	
+        },
+
+        { 
+            "@type": "Property",
+            "name": "congested",
+            "description": "Flags whether there was a crowd congestion during the observation period in the referred walkway. The absence of this attribute means no crowd congestion.",
+            "schema": "boolean",
+            "writable": true	
+        },
+
+        { 
+            "@type": "Property",
+            "name": "averageHeadwayTime",
+            "description": "Average headway time. Headway time is the time\n    elapsed between two consecutive persons.Units:'second (s)'",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "direction",
+            "description": "Usual direction of travel in the walkway referred by this observation with respect to the city center. Enum:'inbound, outbound'",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "inbound",
+                        "displayName": "Inbound",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "outbound",
+                        "displayName": "Outbound",
+                        "enumValue": 2
+                    }
+                ]
+            },
+            "writable": true	
+        }
+
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+
+    
+}
