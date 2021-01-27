@@ -1134,21 +1134,18 @@
             "@type": "Relationship",
             "name": "refParkingAccess",
             "minMultiplicity": 0,
-            "maxMultiplicity": 1,
             "target": "dtmi:ngsild:city:ParkingAccess;1"	
         },
         {
             "@type": "Relationship",
             "name": "refParkingGroup",
             "minMultiplicity": 0,
-            "maxMultiplicity": 1,
             "target": "dtmi:ngsild:city:ParkingGroup;1"	
         },
         {
             "@type": "Relationship",
             "name": "refParkingSpot",
             "minMultiplicity": 0,
-            "maxMultiplicity": 1,
             "target": "dtmi:ngsild:city:ParkingSpot;1"	
         }
     ]
