@@ -1123,12 +1123,6 @@
         },
         {
             "@type": "Relationship",
-            "name": "refParkingAccess",
-            "minMultiplicity": 0,
-            "target": "dtmi:ngsild:city:ParkingAccess;1"	
-        },
-        {
-            "@type": "Relationship",
             "name": "refParkingGroup",
             "minMultiplicity": 0,
             "target": "dtmi:ngsild:city:ParkingGroup;1"	
