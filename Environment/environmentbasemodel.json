@@ -17,6 +17,11 @@
             "schema": "string",
             "writable": true	
         },
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },
         { 
             "@type": "Relationship",
             "name": "refPointOfInterest",
