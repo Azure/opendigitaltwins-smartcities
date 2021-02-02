@@ -14,13 +14,13 @@
         { 
             "@type": "Property",
             "name": "dateObservedFrom",
-            "schema": "date-time",
+            "schema": "datetime",
             "writable": true	
         },
         { 
             "@type": "Property",
             "name": "dateObservedTo",
-            "schema": "date-time",
+            "schema": "datetime",
             "writable": true	
         },
         { 
