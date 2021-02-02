@@ -1,20 +1,20 @@
 {
     "@id": "dtmi:ngsild:city:Streetlight;1",
     "@type": "Interface",
-    "DisplayName": "Streetlight",
+    "displayName": "Streetlight",
     "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
     "contents": [
         {
           "@type": "Relationship",
           "name": "refStreetlightModel",
           "description": "Streetlight's model.",
-          "schema": "dtmi:ngsild:city:StreetlightModel:1"
+          "target": "dtmi:ngsild:city:StreetlightModel;1" 
         },
         {
           "@type": "Relationship",
           "name": "refStreetlightControlCabinet",
           "description": "If this streetlight is individually controlled, reference to the control cabinet in charge of.",
-          "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
+          "target": "dtmi:ngsild:city:StreetlightControlCabinet;1"
         },
         {
           "@type": "Property",
@@ -29,7 +29,7 @@
           "description": "The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'",
           "schema": {
             "@type": "Enum",
-            "valueSchema": "string",
+            "valueSchema": "integer",
             "enumValues": [
               {
                 "name": "ok",
@@ -90,13 +90,13 @@
           "@type": "Relationship",
           "name": "refDevice",
           "description": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.",
-          "schema": "dtmi:ngsild:city:Device;1"
+          "target": "dtmi:ngsild:city:Device;1"
         },
         {
           "@type": "Relationship",
           "name": "refStreetlightGroup",
           "description": "Streetlight's group, if this streetlight belongs to any group.",
-          "schema": "dtmi:ngsild:city:StreetlightGroup;1"
+          "target": "dtmi:ngsild:city:StreetlightGroup;1"
         },
         {
           "@type": "Property",
@@ -121,7 +121,7 @@
           "name": "controllingMethod",
           "schema": {
             "@type": "Enum",
-            "valueSchema": "string",
+            "valueSchema": "integer",
             "enumValues": [
               {
                 "name": "group",
@@ -153,10 +153,7 @@
         {
           "@type": "Property",
           "name": "annotations",
-          "schema": {
-            "@type": "Array",
-            "elementSchema": "string"
-          }
+          "schema": "string"
         },
         
         {
@@ -169,16 +166,8 @@
             "@type": "Property",
             "name": "illuminanceLevel",
             "writable": true,
-            "schema": "double",
-            "minimum": 0,
-            "maximum": 1
+            "schema": "double"
           },
-          {
-            "@type": "Component",
-            "name": "location",
-            "schema": "dtmi:ngsild:city:geoLocation;1"
-          },
-          
           {
             "@type": "Property",
             "name": "locationCategory",

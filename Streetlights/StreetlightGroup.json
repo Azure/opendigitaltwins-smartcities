@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi::ngsild:city:StreetlightGroup;1",
+  "@id": "dtmi:ngsild:city:StreetlightGroup;1",
   "@type": "Interface",
   "displayName": "StreetlightGroup",
   "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
@@ -15,7 +15,7 @@
       "@type": "Relationship",
       "name": "refStreetlightControlCabinet",
       "description": "Streetlight group's control cabinet",
-      "schema": "dtmi:ngsild:city:StreetlightControlCabinet:1"
+      "target": "dtmi:ngsild:city:StreetlightControlCabinet;1"
     },
     {
       "@type": "Property",
@@ -92,37 +92,37 @@
         "valueSchema": "integer",
         "enumValues": [
           {
-            "name": "night-ON",
+            "name": "nightON",
             "displayName": "night-ON",
             "enumValue": 1
           },
           {
-            "name": "night-OFF",
+            "name": "nightOFF",
             "displayName": "night-OFF",
             "enumValue": 2
           },
           {
-            "name": "night-LOW",
+            "name": "nightLOW",
             "displayName": "night-LOW",
             "enumValue": 3
           },
           {
-            "name": "always-ON",
+            "name": "alwaysON",
             "displayName": "always-ON",
             "enumValue": 4
           },
           {
-            "name": "day-ON",
+            "name": "dayON",
             "displayName": "day-ON",
             "enumValue": 5
           },
           {
-            "name": "day-OFF",
+            "name": "dayOFF",
             "displayName": "day-OFF",
             "enumValue": 6
           },
           {
-            "name": "day-LOW",
+            "name": "dayLOW",
             "displayName": "day-LOW",
             "enumValue": 7
           }
@@ -136,9 +136,7 @@
       "name": "illuminanceLevel",
       "description": "Relative illuminance level setting for the group. Allowed values: A number between 0 and 1.",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
@@ -149,10 +147,7 @@
     {
       "@type": "Property",
       "name": "annotations",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "schema": "string"
     }
   ],
   "@context": "dtmi:dtdl:context;2"

@@ -1,7 +1,7 @@
 {
   "@id": "dtmi:ngsild:city:StreetlightControlCabinet;1",
   "@type": "Interface",
-  "DisplayName": "StreetlightControlCabinet",
+  "displayName": "StreetlightControlCabinet",
   "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
   
@@ -15,7 +15,7 @@
       "@type": "Relationship",
       "name": "refStreetlightGroup",
       "description": "Streetlight group(s) controlled. List of references to entities of type StreetlightGroup",
-      "schema": "dtmi:ngsild:city:StreetlightGroup:1"
+      "target": "dtmi:ngsild:city:StreetlightGroup;1"
     },
     {
       "@type": "Property",
@@ -40,7 +40,7 @@
       "name": "cupboardMadeOf",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "plastic",
@@ -71,7 +71,7 @@
       "name": "features",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "astronomicalClock",
@@ -91,25 +91,20 @@
       "@type": "Property",
       "name": "compliantWith",
       "description": "A list of standards to which the cabinet controller is compliant with (ex. IP54)",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "schema": "string"
     },
     {
       "@type": "Property",
       "name": "annotations",
       "description": "A field reserved for annotations (incidences, remarks, etc.)",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "schema": "string"
+    
     },
     {
-      "@type": "Component",
+      "@type": "Relationship",
       "name": "refDevice",
       "description": "Reference to the device(s) used to monitor this control cabinet.",
-      "schema": "dtmi:ngsild:city:device;1"
+      "target": "dtmi:ngsild:city:device;1"
     },
     {
       "@type": "Property",
@@ -141,7 +136,7 @@
       "name": "workingMode",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "automatic",
@@ -193,7 +188,7 @@
       "@type": "Property",
       "name": "dateMeteringStarted",
       "writable": true,
-      "schema": "date-time"
+      "schema": "dateTime"
     },
     {
       "@type": "Property",
@@ -265,121 +260,91 @@
       "@type": "Property",
       "name": "powerFactorR",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "powerFactorS",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "powerFactorT",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "cosPhi",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "intensityR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "intensityS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
-    },
-    {
-      "@type": "Component",
-      "name": "location",
-      "schema": "dtmi:ngsild:city:geoLocation;1"
+      "schema": "double"
     }
 
   ],

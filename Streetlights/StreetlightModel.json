@@ -1,7 +1,7 @@
 {
   "@id": "dtmi:ngsild:city:StreetlightModel;1",
   "@type": "Interface",
-  "DisplayName": "StreetlightModel",
+  "displayName": "StreetlightModel",
   "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
   
@@ -41,7 +41,7 @@
       "name": "columnMadeOf",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "steel",
@@ -130,9 +130,10 @@
     {
       "@type": "Property",
       "name": "lampTechnology",
-      "writable": true,
-      "schema": "string",
-      "enumValues": [
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "integer",
+        "enumValues": [
         {
           "name": "LED",
           "displayName": "LED",
@@ -149,6 +150,8 @@
           "enumValue": 3
         }
       ]
+    },
+      "writable": true
     },
     {
       "@type": "Property",
@@ -181,10 +184,7 @@
       "@type": "Property",
       "name": "compliantWith",
       "description": "A list of standards to which this streetlight model is compliant with.",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "schema": "string"
     },
     {
       "@type": "Property",
@@ -192,7 +192,7 @@
       "writable": true,
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "postTop",
