@@ -129,10 +129,10 @@
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","VolumeFlowRateUnit"],
+            "@type" : ["Telemetry","VolumeFlowRate"],
             "name": "precipitation",
             "schema": "double",
-            "unit": "litrePerSquareMetre"
+            "unit": "litrePerSecond"
         },
         {
             "@type" : ["Telemetry"],
@@ -140,19 +140,19 @@
             "schema": "double"
         },
         {
-            "@type" : ["Telemetry","TemperatureUnit"],
+            "@type" : ["Telemetry","Temperature"],
             "name": "temperature",
             "schema": "double",
             "unit": "degreeCelsius" 
         },
         {
-            "@type" : ["Telemetry","AngleUnit"],
+            "@type" : ["Telemetry","Angle"],
             "name": "WindDirection",
             "schema": "double",
             "unit": "degreeOfArc" 
         },
         {
-            "@type" : ["Telemetry","VelocityUnit"],
+            "@type" : ["Telemetry","Velocity"],
             "name": "WindSpeed",
             "schema": "double",
             "unit": "knot" 
