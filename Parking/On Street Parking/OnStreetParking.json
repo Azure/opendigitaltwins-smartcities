@@ -84,16 +84,14 @@
             "schema": 
             {
                 "@type": "Map",
-                "fields": [
-                    {
-                        "name": "permit",
-                        "schema": "string"
-                    },
-                    {
-                        "name": "activeHours",
-                        "schema": "string"
-                    }
-                ]
+                "mapKey": {
+                    "name": "permit",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "activeHours",
+                    "schema": "string"
+                }
             }
         },
         {
