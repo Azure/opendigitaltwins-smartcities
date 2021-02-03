@@ -6,12 +6,6 @@
     "description": "",
     "contents": [
     
-        { 
-            "@type": "Relationship",
-            "name": "refCityObject",
-            "target": "dtmi:s4city:city:CityObject;1"	
-        }
-
 
     ],
     "@context" :  "dtmi:dtdl:context;2"
