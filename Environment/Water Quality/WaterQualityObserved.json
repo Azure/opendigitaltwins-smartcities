@@ -7,67 +7,67 @@
     "displayName": "WaterQualityObserved",
     "contents":[
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "Chla",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
-            "name": "Cl-",
+            "@type" : ["Telemetry","Density"],
+            "name": "Cl",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "NH3",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "NH4",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "NO3",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "O2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "PC",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "PE",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Current"],
             "name": "conductance",
             "schema": "double",
-            "unit": "SiemensPerMetre"
+            "unit": "ampere"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Current"],
             "name": "conductivity",
             "schema": "double",
-            "unit": "SiemensPerMetre"
+            "unit": "ampere"
         },
         {
-            "@type" : ["Telemetry","VoltageUnit"],
+            "@type" : ["Telemetry","Voltage"],
             "name": "orp",
             "schema": "double",
             "unit": "millivolt"
@@ -78,31 +78,31 @@
             "schema": "double"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "salinity",
             "schema": "double",
-            "unit": "gramPerKilogram"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "tds",
             "schema": "double",
-            "unit": "milligramPerLitre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","DensityUnit"],
+            "@type" : ["Telemetry","Density"],
             "name": "tss",
             "schema": "double",
-            "unit": "milligramPerLitre"
+            "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","TemperatureUnit"],
+            "@type" : ["Telemetry","Temperature"],
             "name": "temperature",
             "schema": "double",
             "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","distanceUnit"],
+            "@type" : ["Telemetry","distance"],
             "name": "turbidity",
             "schema": "double",
             "unit": "nanometre"

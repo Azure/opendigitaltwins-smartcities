@@ -7,19 +7,19 @@
     "displayName": "WeatherObserved",
     "contents":[
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "weatherType",
             "schema": "string",
             "writable": true
         },
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "stationCode",
             "schema": "string",
             "writable": true
         },
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "stationName",
             "schema": "string",
             "writable": true
@@ -51,40 +51,40 @@
             }
         },
         {
-            "@type" : ["Telemetry","PressureUnit"],
+            "@type" : ["Telemetry","Pressure"],
             "name": "atmosphericPressure",
             "schema": "double",
-            "unit": "hectoPascal" 
+            "unit": "pascal"
         },
         {
-            "@type" : ["Telemetry","TemperatureUnit"],
+            "@type" : ["Telemetry","Temperature"],
             "name": "dewpoint",
             "schema": "double",
             "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","TemperatureUnit"],
+            "@type" : ["Telemetry","Temperature"],
             "name": "FeelsLikeTemperature",
             "schema": "double",
             "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","TemperatureUnit"],
+            "@type" : ["Telemetry","Temperature"],
             "name": "temperature",
             "schema": "double",
             "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","IlluminanceUnit"],
+            "@type" : ["Telemetry","Illuminance"],
             "name": "illuminance",
             "schema": "double",
             "unit": "lux"
         },
         {
-            "@type" : ["Telemetry","VolumeFlowRateUnit"],
+            "@type" : ["Telemetry","VolumeFlowRate"],
             "name": "precipitation",
             "schema": "double",
-            "unit": "litrePerSquareMetre"
+            "unit": "litrePerSecond"
         },
         {
             "@type" : ["Telemetry"],
@@ -92,19 +92,19 @@
             "schema": "double"
         },
         {
-            "@type" : ["Telemetry","LengthUnit"],
+            "@type" : ["Telemetry","Length"],
             "name": "snowHeight",
             "schema": "double",
             "unit": "centimetre"
         },
         {
-            "@type" : ["Telemetry","energyUnit"],
+            "@type" : ["Telemetry","energy"],
             "name": "solarRadiation",
             "schema": "double",
             "unit": "wattPerSquareMetre"
         },
         {
-            "@type" : ["Telemetry","LengthUnit"],
+            "@type" : ["Telemetry","Length"],
             "name": "streamGauge",
             "schema": "double",
             "unit": "centimetre"
@@ -115,19 +115,19 @@
             "schema": "double"
         },
         {
-            "@type" : ["Telemetry","LengthUnit"],
+            "@type" : ["Telemetry","Length"],
             "name": "visibility",
             "schema": "double",
             "unit": "metre"
         },
         {
-            "@type" : ["Telemetry","AngleUnit"],
+            "@type" : ["Telemetry","Angle"],
             "name": "WindDirection",
             "schema": "double",
             "unit": "degreeOfArc" 
         },
         {
-            "@type" : ["Telemetry","VelocityUnit"],
+            "@type" : ["Telemetry","Velocity"],
             "name": "WindSpeed",
             "schema": "double",
             "unit": "knot" 

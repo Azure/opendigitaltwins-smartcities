@@ -7,43 +7,43 @@
     "description":"The Noise level observed at a certain spot",
     "contents":[
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "dateObservedFrom",
             "schema": "dateTime",
             "writable": true
         },
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "dateObservedTo",
             "schema": "dateTime",
             "writable": true
         },
         {
-            "@type" : "property",
+            "@type" : "Property",
             "name": "sonometerClass",
             "schema": "integer",
             "writable": true
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAS",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAeq",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAeq_d",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAmax",
             "schema": "double",
             "unit": "decibel"
