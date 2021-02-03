@@ -54,7 +54,7 @@
             "@type" : ["Telemetry","Pressure"],
             "name": "atmosphericPressure",
             "schema": "double",
-            "unit": "hectoPascal" 
+            "unit": "pascal"
         },
         {
             "@type" : ["Telemetry","Temperature"],
@@ -84,7 +84,7 @@
             "@type" : ["Telemetry","VolumeFlowRate"],
             "name": "precipitation",
             "schema": "double",
-            "unit": "litrePerSquareMetre"
+            "unit": "litrePerSecond"
         },
         {
             "@type" : ["Telemetry"],

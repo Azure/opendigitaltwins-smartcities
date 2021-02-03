@@ -55,16 +55,16 @@
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type" : ["Telemetry","Current"],
             "name": "conductance",
             "schema": "double",
-            "unit": "SiemensPerMetre"
+            "unit": "ampere"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type" : ["Telemetry","Current"],
             "name": "conductivity",
             "schema": "double",
-            "unit": "SiemensPerMetre"
+            "unit": "ampere"
         },
         {
             "@type" : ["Telemetry","Voltage"],
@@ -81,19 +81,19 @@
             "@type" : ["Telemetry","Density"],
             "name": "salinity",
             "schema": "double",
-            "unit": "gramPerKilogram"
+            "unit": "gramPerCubicMetre"
         },
         {
             "@type" : ["Telemetry","Density"],
             "name": "tds",
             "schema": "double",
-            "unit": "milligramPerLitre"
+            "unit": "gramPerCubicMetre"
         },
         {
             "@type" : ["Telemetry","Density"],
             "name": "tss",
             "schema": "double",
-            "unit": "milligramPerLitre"
+            "unit": "gramPerCubicMetre"
         },
         {
             "@type" : ["Telemetry","Temperature"],
