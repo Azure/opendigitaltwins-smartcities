@@ -48,19 +48,13 @@
         { 
             "@type": "Property",
             "name": "owner",
-            "schema" : {
-                "@type": "Array",
-                "elementSchema": "string"
-            },
+            "schema":"string",
             "writable": true
         },
         { 
             "@type": "Property",
             "name": "seeAlso",
-            "schema" : {
-                "@type": "Array",
-                "elementSchema": "string"
-            },
+            "schema" : "string",
             "writable": true
         },
         {
