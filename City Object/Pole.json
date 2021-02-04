@@ -1,0 +1,50 @@
+{
+    "@id": "dtmi:city:Pole;1",
+    "@type": "Interface",
+    "displayName": "Pole",
+    "extends": "dtmi:s4city:city:CityObject;1",
+    "description": "",
+    "contents": [
+    
+        { 
+            "@type": "Relationship",
+            "name": "refStreetlight",
+            "target": "dtmi:ngsild:city:Streetlight;1"	
+        },
+
+        { 
+            "@type": "Relationship",
+            "name": "refAirQualityObserved",
+            "target": "dtmi:ngsild:city:AirQualityObserved;1"	
+        },
+
+        { 
+            "@type": "Relationship",
+            "name": "refNoiseLevel",
+            "target": "dtmi:ngsild:city:NoiseLevelObserved;1"	
+        },
+
+        { 
+            "@type": "Relationship",
+            "name": "refWeather",
+            "target": "dtmi:ngsild:city:WeatherObserved;1"	
+        },
+
+        { 
+            "@type": "Relationship",
+            "name": "refCrowdFlow",
+            "target": "dtmi:ngsild:city:CrowdFlowObserved;1"	
+        },
+
+        { 
+            "@type": "Relationship",
+            "name": "refEVChargingStation",
+            "target": "dtmi:ngsild:city:EVChargingStation;1"	
+        }
+
+
+    ],
+    "@context" :  "dtmi:dtdl:context;2"
+
+    
+}

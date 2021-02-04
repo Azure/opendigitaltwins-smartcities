@@ -1,30 +1,10 @@
 {
   "@id": "dtmi:ngsild:city:StreetlightControlCabinet;1",
   "@type": "Interface",
-  "DisplayName": "StreetlightControlCabinet",
+  "displayName": "StreetlightControlCabinet",
+  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
   "contents": [
-    {
-      "@type": "Property",
-      "name": "Type",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "integer",
-        "enumValues": [
-          {
-            "name": "StreetlightControlCabinet",
-            "displayName": "StreetlightControlCabinet",
-            "enumValue": 1
-          }
-        ]
-      },
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "areaServed",
-      "schema": "string",
-      "writable": true
-    },
+  
     {
       "@type": "Property",
       "name": "serialNumber",
@@ -34,7 +14,8 @@
     {
       "@type": "Relationship",
       "name": "refStreetlightGroup",
-      "schema": "dtmi:ngsild:city:StreetlightGroup:1"
+      "description": "Streetlight group(s) controlled. List of references to entities of type StreetlightGroup",
+      "target": "dtmi:ngsild:city:StreetlightGroup;1"
     },
     {
       "@type": "Property",
@@ -59,26 +40,26 @@
       "name": "cupboardMadeOf",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "plastic",
-            "displayName": "Plastic",
+            "displayName": "plastic",
             "enumValue": 1
           },
           {
             "name": "metal",
-            "displayName": "Metal",
+            "displayName": "metal",
             "enumValue": 2
           },
           {
             "name": "concrete",
-            "displayName": "Concrete",
+            "displayName": "concrete",
             "enumValue": 3
           },
           {
             "name": "other",
-            "displayName": "Other",
+            "displayName": "other",
             "enumValue": 4
           }
         ]
@@ -90,7 +71,7 @@
       "name": "features",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "astronomicalClock",
@@ -109,23 +90,21 @@
     {
       "@type": "Property",
       "name": "compliantWith",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "description": "A list of standards to which the cabinet controller is compliant with (ex. IP54)",
+      "schema": "string"
     },
     {
       "@type": "Property",
       "name": "annotations",
-      "schema": {
-        "@type": "Array",
-        "elementSchema": "string"
-      }
+      "description": "A field reserved for annotations (incidences, remarks, etc.)",
+      "schema": "string"
+    
     },
     {
-      "@type": "Component",
+      "@type": "Relationship",
       "name": "refDevice",
-      "schema": "dtmi:ngsild:city:device;1"
+      "description": "Reference to the device(s) used to monitor this control cabinet.",
+      "target": "dtmi:ngsild:city:device;1"
     },
     {
       "@type": "Property",
@@ -148,6 +127,7 @@
     {
       "@type": "Property",
       "name": "responsible",
+      "description": "Responsible for the cabinet controller, i.e. entity in charge of actuating (programming, etc.).",
       "writable": true,
       "schema": "string"
     },
@@ -156,7 +136,7 @@
       "name": "workingMode",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "string",
+        "valueSchema": "integer",
         "enumValues": [
           {
             "name": "automatic",
@@ -179,25 +159,22 @@
     },
     {
       "@type": "Property",
-      "name": "description",
-      "writable": true,
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "name": "maximumPowerAvailable",
+      "description": "The maximum power available (by contract) for the circuits controlled by this cabinet. Units:'Kilowatts (kW)'",
       "writable": true,
       "schema": "double"
     },
     {
       "@type": "Property",
       "name": "energyConsumed",
+      "description": "Energy consumed by the circuits controlled since metering started (since dateMeteringStarted). Units:'Kilowatts per hour (kWh).",
       "writable": true,
       "schema": "double"
     },
     {
       "@type": "Property",
       "name": "energyCost",
+      "description": "Cost of the energy consumed by the circuits controlled since the metering start date.",
       "writable": true,
       "schema": "double"
     },
@@ -211,7 +188,7 @@
       "@type": "Property",
       "name": "dateMeteringStarted",
       "writable": true,
-      "schema": "date-time"
+      "schema": "dateTime"
     },
     {
       "@type": "Property",
@@ -283,135 +260,91 @@
       "@type": "Property",
       "name": "powerFactorR",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "powerFactorS",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "powerFactorT",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "cosPhi",
       "writable": true,
-      "schema": "double",
-      "minimum": -1,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "intensityR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "intensityS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "voltageT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrVoltageT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityR",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityS",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
+      "schema": "double"
     },
     {
       "@type": "Property",
       "name": "thdrIntensityT",
       "writable": true,
-      "schema": "double",
-      "minimum": 0,
-      "maximum": 1
-    },
-    {
-      "@type": "Property",
-      "name": "location",
-      "schema": {
-        "@type": "Object",
-        "fields": [
-          {
-            "name": "geoProperty",
-            "schema": "string"
-          },
-          {
-            "name": "coordinates",
-            "schema": "string"
-          }
-        ]
-
-      },
-      "writable": true
+      "schema": "double"
     }
 
   ],

@@ -1,0 +1,38 @@
+{
+    "@id": "dtmi:ngsild:city:reservationType;1",
+    "@type": "Interface",
+    "displayName": "ReservationType",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "reservationType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "mandatory",
+                        "displayName": "Mandatory",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "notAvailable",
+                        "displayName": "NotAvailable",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "optional",
+                        "displayName": "Optional",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "partly",
+                        "displayName": "Partly",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}

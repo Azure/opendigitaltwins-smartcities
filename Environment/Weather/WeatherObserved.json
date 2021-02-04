@@ -1,0 +1,143 @@
+{
+    
+    "@id": "dtmi:ngsild:city:WeatherObserved;1",
+    "@type": "Interface",
+    "@context" : "dtmi:dtdl:context;2",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
+    "displayName": "WeatherObserved",
+    "contents":[
+        {
+            "@type" : "Property",
+            "name": "weatherType",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type" : "Property",
+            "name": "stationCode",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type" : "Property",
+            "name": "stationName",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "pressureTendency",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "raising",
+                        "displayName": "Raising",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "steady",
+                        "displayName": "Steady",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "falling",
+                        "displayName": "Falling",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        },
+        {
+            "@type" : ["Telemetry","Pressure"],
+            "name": "atmosphericPressure",
+            "schema": "double",
+            "unit": "pascal"
+        },
+        {
+            "@type" : ["Telemetry","Temperature"],
+            "name": "dewpoint",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type" : ["Telemetry","Temperature"],
+            "name": "FeelsLikeTemperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type" : ["Telemetry","Temperature"],
+            "name": "temperature",
+            "schema": "double",
+            "unit": "degreeCelsius"
+        },
+        {
+            "@type" : ["Telemetry","Illuminance"],
+            "name": "illuminance",
+            "schema": "double",
+            "unit": "lux"
+        },
+        {
+            "@type" : ["Telemetry","VolumeFlowRate"],
+            "name": "precipitation",
+            "schema": "double",
+            "unit": "litrePerSecond"
+        },
+        {
+            "@type" : ["Telemetry"],
+            "name": "relativeHumidity",
+            "schema": "double"
+        },
+        {
+            "@type" : ["Telemetry","Length"],
+            "name": "snowHeight",
+            "schema": "double",
+            "unit": "centimetre"
+        },
+        {
+            "@type" : ["Telemetry","energy"],
+            "name": "solarRadiation",
+            "schema": "double",
+            "unit": "wattPerSquareMetre"
+        },
+        {
+            "@type" : ["Telemetry","Length"],
+            "name": "streamGauge",
+            "schema": "double",
+            "unit": "centimetre"
+        },
+        {
+            "@type" : ["Telemetry"],
+            "name": "uVIndexMax",
+            "schema": "double"
+        },
+        {
+            "@type" : ["Telemetry","Length"],
+            "name": "visibility",
+            "schema": "double",
+            "unit": "metre"
+        },
+        {
+            "@type" : ["Telemetry","Angle"],
+            "name": "WindDirection",
+            "schema": "double",
+            "unit": "degreeOfArc" 
+        },
+        {
+            "@type" : ["Telemetry","Velocity"],
+            "name": "WindSpeed",
+            "schema": "double",
+            "unit": "knot" 
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refDevice",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:device;1"	
+        }
+    ]
+}

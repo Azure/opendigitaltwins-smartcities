@@ -1,0 +1,240 @@
+{
+    "@id": "dtmi:ngsild:city:Streetlight;1",
+    "@type": "Interface",
+    "displayName": "Streetlight",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+          "@type": "Relationship",
+          "name": "refStreetlightModel",
+          "description": "Streetlight's model.",
+          "target": "dtmi:ngsild:city:StreetlightModel;1" 
+        },
+        {
+          "@type": "Relationship",
+          "name": "refStreetlightControlCabinet",
+          "description": "If this streetlight is individually controlled, reference to the control cabinet in charge of.",
+          "target": "dtmi:ngsild:city:StreetlightControlCabinet;1"
+        },
+        {
+          "@type": "Property",
+          "name": "circuit",
+          "description": "The circuit to which this streetlight connects to and gets power from. Typically it will contain an identifier that will allow to obtain more information about such circuit.",
+          "schema": "string",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "status",
+          "description": "The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              {
+                "name": "ok",
+                "displayName": "ok",
+                "enumValue": 1
+              },
+              {
+                "name": "defectiveLamp",
+                "displayName": "defectiveLamp",
+                "enumValue": 2
+              },
+              {
+                "name": "columnIssue",
+                "displayName": "columnIssue",
+                "enumValue": 3
+              },
+              {
+                "name": "brokenLantern",
+                "displayName": "brokenLantern",
+                "enumValue": 4
+              }
+            ]
+          },
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "powerState",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              {
+                "name": "on",
+                "displayName": "on",
+                "enumValue": 1
+              },
+              {
+                "name": "off",
+                "displayName": "off",
+                "enumValue": 2
+              },
+              {
+                "name": "low",
+                "displayName": "low",
+                "enumValue": 3
+              },
+              {
+                "name": "bootingUp",
+                "displayName": "bootingUp",
+                "enumValue": 4
+              }
+            ]
+          },
+          "writable": true
+        },
+        {
+          "@type": "Relationship",
+          "name": "refDevice",
+          "description": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.",
+          "target": "dtmi:ngsild:city:Device;1"
+        },
+        {
+          "@type": "Relationship",
+          "name": "refStreetlightGroup",
+          "description": "Streetlight's group, if this streetlight belongs to any group.",
+          "target": "dtmi:ngsild:city:StreetlightGroup;1"
+        },
+        {
+          "@type": "Property",
+          "name": "dateLastLampChange",
+          "writable": true,
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Property",
+          "name": "dateLastSwitchingOn",
+          "writable": true,
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Property",
+          "name": "dateLastSwitchingOff",
+          "writable": true,
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Property",
+          "name": "controllingMethod",
+          "schema": {
+            "@type": "Enum",
+            "valueSchema": "integer",
+            "enumValues": [
+              {
+                "name": "group",
+                "displayName": "group",
+                "enumValue": 1
+              },
+              {
+                "name": "individual",
+                "displayName": "individual",
+                "enumValue": 2
+              }
+            ]
+          },
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "dateServiceStarted",
+          "writable": true,
+          "schema": "dateTime"
+        },
+        {
+          "@type": "Property",
+          "name": "Image",
+          "description": "Model:'https://schema.org/image'. A URL containing a photo of the streetlight",
+          "schema": "string",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "annotations",
+          "schema": "string"
+        },
+        
+        {
+          "@type": "Property",
+          "name": "lanternHeight",
+          "writable": true,
+          "schema": "double"
+        },
+          {
+            "@type": "Property",
+            "name": "illuminanceLevel",
+            "writable": true,
+            "schema": "double"
+          },
+          {
+            "@type": "Property",
+            "name": "locationCategory",
+            "schema": {
+              "@type": "Enum",
+              "valueSchema": "integer",
+              "enumValues": [
+                {
+                  "name": "facade",
+                  "displayName": "Facade",
+                  "enumValue": 1
+                },
+                {
+                  "name": "sidewalk",
+                  "displayName": "SideWalk",
+                  "enumValue": 2
+                },
+                {
+                  "name": "pedestrianPath",
+                  "displayName": "PedestrianPath",
+                  "enumValue": 3
+                },
+                {
+                  "name": "road",
+                  "displayName": "Road",
+                  "enumValue": 4
+                },
+                {
+                  "name": "playground",
+                  "displayName": "PlayGround",
+                  "enumValue": 5
+                },
+                {
+                  "name": "park",
+                  "displayName": "Park",
+                  "enumValue": 6
+                },
+                {
+                  "name": "garden",
+                  "displayName": "Garden",
+                  "enumValue": 7
+                },
+                {
+                  "name": "bridge",
+                  "displayName": "Bridge",
+                  "enumValue": 8
+                },
+                {
+                  "name": "tunnel",
+                  "displayName": "Tunnel",
+                  "enumValue": 9
+                },
+                {
+                  "name": "parking",
+                  "displayName": "Parking",
+                  "enumValue": 10
+                },
+                {
+                  "name": "centralIsland",
+                  "displayName": "CentralIslan",
+                  "enumValue": 11
+                }
+              ]
+            },
+            "writable": true
+  
+          }
+  ],
+    "@context": "dtmi:dtdl:context;2"
+  }

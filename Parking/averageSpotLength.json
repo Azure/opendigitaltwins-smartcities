@@ -1,0 +1,13 @@
+{
+    "@id": "dtmi:ngsild:city:averageSpotLength;1",
+    "@type": "Interface",
+    "displayName": "AverageSpotLength",
+    "@context" : "dtmi:dtdl:context;2",
+    "contents":[
+        {
+            "@type": "Property",
+            "name": "averageSpotLength",
+            "schema": "double"
+        }
+    ]
+}

@@ -2,45 +2,58 @@
     
     "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
     "@type": "Interface",   
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
     "displayName": "NoiseLevelObserved",
     "description":"The Noise level observed at a certain spot",
     "contents":[
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : "Property",
+            "name": "dateObservedFrom",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type" : "Property",
+            "name": "dateObservedTo",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type" : "Property",
+            "name": "sonometerClass",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAS",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAeq",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAeq_d",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressureUnit"],
+            "@type" : ["Telemetry","SoundPressure"],
             "name": "LAmax",
             "schema": "double",
             "unit": "decibel"
         },
         { 
-            "@type": "Component",
-            "name": "refDevice",
-            "schema" : "dtmi:ngsild:city:device;1"	
-        },
-        { 
             "@type": "Relationship",
-            "name": "refPointOfInterest",
+            "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:pointOfInterest;1"	
+            "target": "dtmi:ngsild:city:device;1"	
         },
         { 
             "@type": "Relationship",

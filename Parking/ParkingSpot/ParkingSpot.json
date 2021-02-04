@@ -1,0 +1,140 @@
+{
+    "@id": "dtmi:ngsild:city:ParkingSpot;1",
+    "@type": "Interface",
+    "displayName": "ParkingSpot",  
+    "@context" : "dtmi:dtdl:context;2",
+    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "contents": [
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "width",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "length",
+            "schema": "double",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "timeInstant",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "image",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "color",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "category",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "offStreet",
+                        "displayName": "Offstreet",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "onStreet",
+                        "displayName": "OnStreet",
+                        "enumValue": 2
+                    }
+                    
+                ]
+            },
+            "writable": true
+        },
+        { 
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": 
+            {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "occupied",
+                        "displayName": "Occupied",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "free",
+                        "displayName": "Free",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "closed",
+                        "displayName": "Closed",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "unkown",
+                        "displayName": "Unkown",
+                        "enumValue": 4
+                    }
+                    
+                ]
+            }
+        },
+        {
+            "@type": "Component",
+            "name": "address",
+            "schema": "dtmi:ngsild:city:address;1"
+        },
+        {
+            "@type": "Component",
+            "name": "areaServed",
+            "schema": "dtmi:ngsild:city:areaServed;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "refParkingGroup",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:ParkingGroup;1"	
+        },
+        {
+            "@type": "Relationship",
+            "name": "refOnStreetParking",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:OnStreetParking;1"
+        },
+        {
+            "@type": "Relationship",
+            "name": "refOffStreetParking",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:OffStreetParking;1"	
+            
+        },
+        {
+            "@type": "Relationship",
+            "name": "refdevice",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:Device;1"	
+            
+        }
+    ]
+}

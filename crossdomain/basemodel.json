@@ -23,27 +23,46 @@
         },
         { 
             "@type": "Property",
-            "name": "dateObserved",
-            "schema": "double",
+            "name": "source",
+            "schema": "string",
             "writable": true	
         },
         { 
             "@type": "Property",
-            "name": "source",
+            "name": "alternedName",
             "schema": "string",
             "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "name",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "description",
+            "schema": "string",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "owner",
+            "schema":"string",
+            "writable": true
+        },
+        { 
+            "@type": "Property",
+            "name": "seeAlso",
+            "schema" : "string",
+            "writable": true
         },
         {
             "@type": "Component",
             "name": "location",
             "schema": "dtmi:ngsild:city:geoLocation;1"
-        },
-        
-        {
-            "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        }],
+        }
+    ],
         
     "@context" : [
         "dtmi:dtdl:context;2"
