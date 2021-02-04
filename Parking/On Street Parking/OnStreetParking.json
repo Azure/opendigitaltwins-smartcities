@@ -9,74 +9,72 @@
             "@type": "Property",
             "name": "category",
             "schema": {
-                "@type": "Array",
-                "elementSchema": {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "blueZone",
-                            "displayName": "BlueZone",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "feeCharged",
-                            "displayName": "FeeCharged",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "forDisabled",
-                            "displayName": "ForDisabled",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "forElectricalCharging",
-                            "displayName": "ForElectricalCharging",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "forLoadUnload",
-                            "displayName": "ForLoadUnload",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "forResidents",
-                            "displayName": "ForResidents",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "free",
-                            "displayName": "Free",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "greenZone",
-                            "displayName": "GreenZone",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "mediumTerm",
-                            "displayName": "MediumTerm",
-                            "enumValue": 9
-                        },
-                        {
-                            "name": "onlyWithPermit",
-                            "displayName": "OnlyWithPermit",
-                            "enumValue": 10
-                        },
-                        {
-                            "name": "shortTerm",
-                            "displayName": "ShortTerm",
-                            "enumValue": 11
-                        },
-                        {
-                            "name": "taxiStop",
-                            "displayName": "TaxiStop",
-                            "enumValue": 12
-                        }
-                    ]
-                }
-            }
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "blueZone",
+                        "displayName": "BlueZone",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "feeCharged",
+                        "displayName": "FeeCharged",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "forDisabled",
+                        "displayName": "ForDisabled",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "forElectricalCharging",
+                        "displayName": "ForElectricalCharging",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "forLoadUnload",
+                        "displayName": "ForLoadUnload",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "forResidents",
+                        "displayName": "ForResidents",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "free",
+                        "displayName": "Free",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "greenZone",
+                        "displayName": "GreenZone",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "mediumTerm",
+                        "displayName": "MediumTerm",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "onlyWithPermit",
+                        "displayName": "OnlyWithPermit",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "shortTerm",
+                        "displayName": "ShortTerm",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "taxiStop",
+                        "displayName": "TaxiStop",
+                        "enumValue": 12
+                    }
+                ]
+            },
+            "writable": true
         },
         { 
             "@type": "Property",
@@ -92,70 +90,69 @@
                     "name": "activeHours",
                     "schema": "string"
                 }
-            }
+            },
+            "writable": true
         },
         {
-            "@type": "Property",
-            "name": "usageScenario",
-            "schema": {
-                "@type": "Array",
-                "elementSchema": {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "carSharing",
-                            "displayName": "CarSharing",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "dropOff",
-                            "displayName": "DropOff",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "kissAndRide",
-                            "displayName": "KissAndRide",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "liftShare",
-                            "displayName": "LiftShare",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "loadingBay",
-                            "displayName": "LoadingBay",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "overnightParking",
-                            "displayName": "OvernightParking",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "parkAndRide",
-                            "displayName": "ParkAndRide",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "parkAndCycle",
-                            "displayName": "ParkAndCycle",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "parkAndWalk",
-                            "displayName": "ParkAndWalk",
-                            "enumValue": 9
-                        },
-                        {
-                            "name": "vehicleLift",
-                            "displayName": "VehicleLift",
-                            "enumValue": 10
-                        }
-                    ]
-                }
-            }
+        "@type": "Property",
+        "name": "usageScenario",
+        "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "carSharing",
+                        "displayName": "CarSharing",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "dropOff",
+                        "displayName": "DropOff",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "kissAndRide",
+                        "displayName": "KissAndRide",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "liftShare",
+                        "displayName": "LiftShare",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "loadingBay",
+                        "displayName": "LoadingBay",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "overnightParking",
+                        "displayName": "OvernightParking",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "parkAndRide",
+                        "displayName": "ParkAndRide",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "parkAndCycle",
+                        "displayName": "ParkAndCycle",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "parkAndWalk",
+                        "displayName": "ParkAndWalk",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "vehicleLift",
+                        "displayName": "VehicleLift",
+                        "enumValue": 10
+                    }
+                ]
+            },
+            "writable": true
         },
         { 
             "@type": "Property",

@@ -48,110 +48,109 @@
                         "enumValue": 7
                     }
                 ]
-            }
+            },
+            "writable": true
         },
         {
             "@type": "Property",
             "name": "category",
             "schema": {
-                "@type": "Array",
-                "elementSchema": {
-                    "@type": "Enum",
-                    "valueSchema": "integer",
-                    "enumValues": [
-                        {
-                            "name": "adjacentSpaces",
-                            "displayName": "AdjacentSpaces",
-                            "enumValue": 1
-                        },
-                        {
-                            "name": "blueZone",
-                            "displayName": "BlueZone",
-                            "enumValue": 2
-                        },
-                        {
-                            "name": "completeFloor",
-                            "displayName": "CompleteFloor",
-                            "enumValue": 3
-                        },
-                        {
-                            "name": "free",
-                            "displayName": "Free",
-                            "enumValue": 4
-                        },
-                        {
-                            "name": "feeCharged",
-                            "displayName": "FeeCharged",
-                            "enumValue": 5
-                        },
-                        {
-                            "name": "greenZone",
-                            "displayName": "GreenZone",
-                            "enumValue": 6
-                        },
-                        {
-                            "name": "loadUnloadZone",
-                            "displayName": "LoadUnloadZone",
-                            "enumValue": 7
-                        },
-                        {
-                            "name": "nonAdjacentSpaces",
-                            "displayName": "NonAdjacentSpaces",
-                            "enumValue": 8
-                        },
-                        {
-                            "name": "offStreet",
-                            "displayName": "OffStreet",
-                            "enumValue": 9
-                        },
-                        {
-                            "name": "onlyDisabled",
-                            "displayName": "OnlyDisabled",
-                            "enumValue": 10
-                        },
-                        {
-                            "name": "onlyElectricalCharging",
-                            "displayName": "OnlyElectricalCharging",
-                            "enumValue": 11
-                        },
-                        {
-                            "name": "onlyResidents",
-                            "displayName": "OnlyResidents",
-                            "enumValue": 12
-                        },
-                        {
-                            "name": "onlyWithPermit",
-                            "displayName": "OnlyWithPermit",
-                            "enumValue": 13
-                        },
-                        {
-                            "name": "onStreet",
-                            "displayName": "OnStreet",
-                            "enumValue": 14
-                        },
-                        {
-                            "name": "particularConditionsSpaces",
-                            "displayName": "ParticularConditionsSpaces",
-                            "enumValue": 15
-                        },
-                        {
-                            "name": "shortTermMediumTermLongTerm",
-                            "displayName": "ShortTermMediumTermLongTerm",
-                            "enumValue": 16
-                        },
-                        {
-                            "name": "statisticsOnly",
-                            "displayName": "StatisticsOnly",
-                            "enumValue": 17
-                        },
-                        {
-                            "name": "vehicleTypeSpaces",
-                            "displayName": "VehicleTypeSpaces",
-                            "enumValue": 18
-                        }
-                    ]
-                }
-            }
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "adjacentSpaces",
+                        "displayName": "AdjacentSpaces",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "blueZone",
+                        "displayName": "BlueZone",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "completeFloor",
+                        "displayName": "CompleteFloor",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "free",
+                        "displayName": "Free",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "feeCharged",
+                        "displayName": "FeeCharged",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "greenZone",
+                        "displayName": "GreenZone",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "loadUnloadZone",
+                        "displayName": "LoadUnloadZone",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "nonAdjacentSpaces",
+                        "displayName": "NonAdjacentSpaces",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "offStreet",
+                        "displayName": "OffStreet",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "onlyDisabled",
+                        "displayName": "OnlyDisabled",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "onlyElectricalCharging",
+                        "displayName": "OnlyElectricalCharging",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "onlyResidents",
+                        "displayName": "OnlyResidents",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "onlyWithPermit",
+                        "displayName": "OnlyWithPermit",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "onStreet",
+                        "displayName": "OnStreet",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "particularConditionsSpaces",
+                        "displayName": "ParticularConditionsSpaces",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "shortTermMediumTermLongTerm",
+                        "displayName": "ShortTermMediumTermLongTerm",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "statisticsOnly",
+                        "displayName": "StatisticsOnly",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "vehicleTypeSpaces",
+                        "displayName": "VehicleTypeSpaces",
+                        "enumValue": 18
+                    }
+                ]
+            },
+            "writable": true
         },
         { 
             "@type": "Property",
@@ -167,12 +166,14 @@
                     "name": "activeHours",
                     "schema": "string"
                 }
-            }
+            },
+            "writable": true
         },
         {
             "@type": "Property",
             "name": "requiredPermit",
-            "schema": "string"
+            "schema": "string",
+            "writable": true
         },
         {
             "@type": "Component",
