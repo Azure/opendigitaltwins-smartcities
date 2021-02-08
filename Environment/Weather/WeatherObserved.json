@@ -98,7 +98,7 @@
             "unit": "centimetre"
         },
         {
-            "@type" : ["Telemetry","Energy"],
+            "@type" : ["Telemetry","Power"],
             "name": "solarRadiation",
             "schema": "double",
             "unit": "watt"
