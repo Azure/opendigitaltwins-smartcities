@@ -5,13 +5,53 @@
     "contents":[
         { 
             "@type": "Property",
-            "name": "geoProperty",
-            "schema": "string",
+            "name": "type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "position",
+                        "displayName": "Position",
+                        "enumValue": "Position"
+                    },
+                    {
+                        "name": "point",
+                        "displayName": "Point",
+                        "enumValue": "Point"
+                    },
+                    {
+                        "name": "multiPoint",
+                        "displayName": "MultiPoint",
+                        "enumValue": "MultiPoint"
+                    },
+                    {
+                        "name": "lineString",
+                        "displayName": "LineString",
+                        "enumValue": "LineString"
+                    },
+                    {
+                        "name": "multiLineString",
+                        "displayName": "MultiLineString",
+                        "enumValue": "MultiLineString"
+                    },
+                    {
+                        "name": "polygon",
+                        "displayName": "Polygon",
+                        "enumValue": "Polygon"
+                    },
+                    {
+                        "name": "multiPolygon",
+                        "displayName": "MultiPolygon",
+                        "enumValue": "MultiPolygon"
+                    }
+                ]
+            },
             "writable": true	
         },
         { 
             "@type": "Property",
-            "name": "Coordinates",
+            "name": "coordinates",
             "schema": "string",
             "writable": true	
         }
