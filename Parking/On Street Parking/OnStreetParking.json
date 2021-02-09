@@ -167,11 +167,6 @@
         },
         {
             "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        },
-        {
-            "@type": "Component",
             "name": "availableSpotNumber",
             "schema": "dtmi:ngsild:city:availableSpotNumber;1"
         },

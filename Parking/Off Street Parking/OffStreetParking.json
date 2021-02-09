@@ -676,11 +676,6 @@
         },
         {
             "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        },
-        {
-            "@type": "Component",
             "name": "averageSpotLength",
             "schema": "dtmi:ngsild:city:averageSpotLength;1"
         },

@@ -98,11 +98,6 @@
         },
         {
             "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
-        },
-        {
-            "@type": "Component",
             "name": "areaServed",
             "schema": "dtmi:ngsild:city:areaServed;1"
         },
