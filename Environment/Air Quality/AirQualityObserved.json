@@ -29,17 +29,17 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "inside",
                         "displayName": "Inside",
-                        "enumValue": 1
+                        "enumValue": "inside"
                     },
                     {
                         "name": "outside",
                         "displayName": "Outside",
-                        "enumValue": 2
+                        "enumValue": "outside"
                     }
                 ]
             }

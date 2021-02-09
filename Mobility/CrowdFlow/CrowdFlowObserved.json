@@ -67,17 +67,17 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "inbound",
                         "displayName": "Inbound",
-                        "enumValue": 1
+                        "enumValue": "inbound"
                     },
                     {
                         "name": "outbound",
                         "displayName": "Outbound",
-                        "enumValue": 2
+                        "enumValue": "outbound"
                     }
                 ]
             },

@@ -9,52 +9,52 @@
             "name": "requiredPermit",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "employeePermit",
                         "displayName": "EmployeePermit",
-                        "enumValue": 1
+                        "enumValue": "employeePermit"
                     },
                     {
                         "name": "fairPermit",
                         "displayName": "FairPermit",
-                        "enumValue": 2
+                        "enumValue": "fairPermit"
                     },
                     {
                         "name": "governmentPermit",
                         "displayName": "GovernmentPermit",
-                        "enumValue": 3
+                        "enumValue": "governmentPermit"
                     },
                     {
                         "name": "noPermitNeeded",
                         "displayName": "NoPermitNeeded",
-                        "enumValue": 4
+                        "enumValue": "noPermitNeeded"
                     },
                     {
                         "name": "residentPermit",
                         "displayName": "ResidentPermit",
-                        "enumValue": 5
+                        "enumValue": "residentPermit"
                     },
                     {
                         "name": "specificIdentifiedVehiclePermit",
                         "displayName": "SpecificIdentifiedVehiclePermit",
-                        "enumValue": 6
+                        "enumValue": "specificIdentifiedVehiclePermit"
                     },
                     {
                         "name": "studentPermit",
                         "displayName": "StudentPermit",
-                        "enumValue": 7
+                        "enumValue": "studentPermit"
                     },
                     {
                         "name": "visitorPermit",
                         "displayName": "VisitorPermit",
-                        "enumValue": 8
+                        "enumValue": "visitorPermit"
                     },
                     {
                         "name": "disabledPermit",
                         "displayName": "DisabledPermit",
-                        "enumValue": 9
+                        "enumValue": "disabledPermit"
                     }
                 ]
             }

@@ -10,67 +10,67 @@
             "name": "category",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "blueZone",
                         "displayName": "BlueZone",
-                        "enumValue": 1
+                        "enumValue": "blueZone"
                     },
                     {
                         "name": "feeCharged",
                         "displayName": "FeeCharged",
-                        "enumValue": 2
+                        "enumValue": "feeCharged"
                     },
                     {
                         "name": "forDisabled",
                         "displayName": "ForDisabled",
-                        "enumValue": 3
+                        "enumValue": "forDisabled"
                     },
                     {
                         "name": "forElectricalCharging",
                         "displayName": "ForElectricalCharging",
-                        "enumValue": 4
+                        "enumValue": "forElectricalCharging"
                     },
                     {
                         "name": "forLoadUnload",
                         "displayName": "ForLoadUnload",
-                        "enumValue": 5
+                        "enumValue": "forLoadUnload"
                     },
                     {
                         "name": "forResidents",
                         "displayName": "ForResidents",
-                        "enumValue": 6
+                        "enumValue": "forResidents"
                     },
                     {
                         "name": "free",
                         "displayName": "Free",
-                        "enumValue": 7
+                        "enumValue": "free"
                     },
                     {
                         "name": "greenZone",
                         "displayName": "GreenZone",
-                        "enumValue": 8
+                        "enumValue": "greenZone"
                     },
                     {
                         "name": "mediumTerm",
                         "displayName": "MediumTerm",
-                        "enumValue": 9
+                        "enumValue": "mediumTerm"
                     },
                     {
                         "name": "onlyWithPermit",
                         "displayName": "OnlyWithPermit",
-                        "enumValue": 10
+                        "enumValue": "onlyWithPermit"
                     },
                     {
                         "name": "shortTerm",
                         "displayName": "ShortTerm",
-                        "enumValue": 11
+                        "enumValue": "shortTerm"
                     },
                     {
                         "name": "taxiStop",
                         "displayName": "TaxiStop",
-                        "enumValue": 12
+                        "enumValue": "taxiStop"
                     }
                 ]
             },
@@ -98,57 +98,57 @@
         "name": "usageScenario",
         "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "carSharing",
                         "displayName": "CarSharing",
-                        "enumValue": 1
+                        "enumValue": "carSharing"
                     },
                     {
                         "name": "dropOff",
                         "displayName": "DropOff",
-                        "enumValue": 2
+                        "enumValue": "dropOff"
                     },
                     {
                         "name": "kissAndRide",
                         "displayName": "KissAndRide",
-                        "enumValue": 3
+                        "enumValue": "kissAndRide"
                     },
                     {
                         "name": "liftShare",
                         "displayName": "LiftShare",
-                        "enumValue": 4
+                        "enumValue": "liftShare"
                     },
                     {
                         "name": "loadingBay",
                         "displayName": "LoadingBay",
-                        "enumValue": 5
+                        "enumValue": "loadingBay"
                     },
                     {
                         "name": "overnightParking",
                         "displayName": "OvernightParking",
-                        "enumValue": 6
+                        "enumValue": "overnightParking"
                     },
                     {
                         "name": "parkAndRide",
                         "displayName": "ParkAndRide",
-                        "enumValue": 7
+                        "enumValue": "parkAndRide"
                     },
                     {
                         "name": "parkAndCycle",
                         "displayName": "ParkAndCycle",
-                        "enumValue": 8
+                        "enumValue": "parkAndCycle"
                     },
                     {
                         "name": "parkAndWalk",
                         "displayName": "ParkAndWalk",
-                        "enumValue": 9
+                        "enumValue": "parkAndWalk"
                     },
                     {
                         "name": "vehicleLift",
                         "displayName": "VehicleLift",
-                        "enumValue": 10
+                        "enumValue": "vehicleLift"
                     }
                 ]
             },

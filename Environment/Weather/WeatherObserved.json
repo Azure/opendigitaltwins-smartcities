@@ -30,22 +30,22 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "raising",
                         "displayName": "Raising",
-                        "enumValue": 1
+                        "enumValue": "raising"
                     },
                     {
                         "name": "steady",
                         "displayName": "Steady",
-                        "enumValue": 2
+                        "enumValue": "steady"
                     },
                     {
                         "name": "falling",
                         "displayName": "Falling",
-                        "enumValue": 3
+                        "enumValue": "falling"
                     }
                 ]
             }

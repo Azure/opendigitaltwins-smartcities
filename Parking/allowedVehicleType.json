@@ -9,92 +9,92 @@
             "name": "allowedVehicleType",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "agriculturalVehicle",
                         "displayName": "AgriculturalVehicle",
-                        "enumValue": 1
+                        "enumValue": "agriculturalVehicle"
                     },
                     {
                         "name": "anyVehicle",
                         "displayName": "AnyVehicle",
-                        "enumValue": 2
+                        "enumValue": "anyVehicle"
                     },
                     {
                         "name": "bicycle",
                         "displayName": "Bicycle",
-                        "enumValue": 3
+                        "enumValue": "bicycle"
                     },
                     {
                         "name": "bus",
                         "displayName": "Bus",
-                        "enumValue": 4
+                        "enumValue": "bus"
                     },
                     {
                         "name": "car",
                         "displayName": "Car",
-                        "enumValue": 5
+                        "enumValue": "car"
                     },
                     {
                         "name": "caravan",
                         "displayName": "Caravan",
-                        "enumValue": 6
+                        "enumValue": "caravan"
                     },
                     {
                         "name": "carWithCaravan",
                         "displayName": "CarWithCaravan",
-                        "enumValue": 7
+                        "enumValue": "carWithCaravan"
                     },
                     {
                         "name": "carWithTrailer",
                         "displayName": "CarWithTrailer",
-                        "enumValue": 8
+                        "enumValue": "carWithTrailer"
                     },
                     {
                         "name": "constructionOrMaintenanceVehicle",
                         "displayName": "ConstructionOrMaintenanceVehicle",
-                        "enumValue": 9
+                        "enumValue": "constructionOrMaintenanceVehicle"
                     },
                     {
                         "name": "lorry",
                         "displayName": "Lorry",
-                        "enumValue": 10
+                        "enumValue": "lorry"
                     },
                     {
                         "name": "moped",
                         "displayName": "Moped",
-                        "enumValue": 11
+                        "enumValue": "moped"
                     },
                     {
                         "name": "motorcycle",
                         "displayName": "Motorcycle",
-                        "enumValue": 12
+                        "enumValue": "motorcycle"
                     },
                     {
                         "name": "motorcycleWithSideCar",
                         "displayName": "MotorcycleWithSideCar",
-                        "enumValue": 13
+                        "enumValue": "motorcycleWithSideCar"
                     },
                     {
                         "name": "motorscooter",
                         "displayName": "Motorscooter",
-                        "enumValue": 14
+                        "enumValue": "motorscooter"
                     },
                     {
                         "name": "tanker",
                         "displayName": "Tanker",
-                        "enumValue": 15
+                        "enumValue": "tanker"
                     },
                     {
                         "name": "trailer",
                         "displayName": "Trailer",
-                        "enumValue": 16
+                        "enumValue": "trailer"
                     },
                     {
                         "name": "van",
                         "displayName": "Van",
-                        "enumValue": 17
+                        "enumValue": "van"
                     }
                 ]
             }
