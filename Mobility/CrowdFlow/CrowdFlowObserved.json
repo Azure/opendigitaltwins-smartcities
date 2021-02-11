@@ -25,12 +25,6 @@
         },
         { 
             "@type": "Property",
-            "name": "peopleCount",
-            "schema": "integer",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
             "name": "occupancy",
             "description": "Property. Fraction of the observation time where a person has been occupying the observed walkway.",
             "schema": "boolean",
@@ -82,6 +76,11 @@
                 ]
             },
             "writable": true	
+        },
+        { 
+            "@type": "Telemetry",
+            "name": "peopleCount",
+            "schema": "integer"	
         }
 
     ],
