@@ -30,6 +30,7 @@
             "schema": "dtmi:ngsild:city:deviceCategory;1",
             "displayName": "Category"
         }
+
     ],
     "@context" : [
         "dtmi:dtdl:context;2"
