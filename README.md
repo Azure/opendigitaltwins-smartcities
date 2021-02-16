@@ -8,7 +8,7 @@ description: "Add 150 character max description"
 urlFragment: "update-this-to-unique-url-stub"
 ---
 
-# Smart City DTDL Ontology
+# Digital Twins Definition Language (DTDL) ontology for Smart Cities
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -18,7 +18,14 @@ Guidance on onboarding samples to docs.microsoft.com/samples: https://review.doc
 Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
 -->
 
-Give a short description for your sample here. What does it do and why is it important?
+<!-- Give a short description for your sample here. What does it do and why is it important? --> 
+
+The concept of digital twins—a digital model and representation of real-world environment brought to life with real time data from sensors and other data sources—has entered the realm of smart cities and promises to enable city administrations and urban planners to make better decisions with the help of data integration and visualization from across the urban space. 
+
+Last year, we announced general availability of [Azure Digital Twins](https://azure.microsoft.com/en-us/blog/azure-digital-twins-now-generally-available-create-iot-solutions-that-model-the-real-world/) platform which enables modeling and creating digital representations of connected environments like buildings, factories, farms, energy networks, railways, stadiums, and cities, then bring these entities to life with a live execution environment that integrates IoT and other data sources. To drive openness and interoperability, Azure Digital Twins comes with an open modeling language, [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl), which provides flexibility, ease of use, and integration into the rest of the Azure platform. Using DTDL, developers can describe entities and their models for digital twins: the telemetry they emit, the properties they report or synchronize, the commands they respond to, and the relationship between them.
+
+To accelerate DTDL based digital twins solutions for smart cities we worked with our partners to provide DTDL-based smart cities ontologies leveraging well-established industry stardards, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like OASC. The goals of the resulting open-source DTDL Smart Cities ontology is to provide common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
+
 
 ## Contents
 
@@ -52,9 +59,14 @@ Provide users with more context on the tools and services used in the sample. Ex
 
 # Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+This project welcomes contributions and suggestions.  
+
+<!--  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+
+-->
+## Modeling conventions
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
