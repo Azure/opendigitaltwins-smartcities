@@ -41,27 +41,27 @@
       "name": "columnMadeOf",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "steel",
             "displayName": "steel",
-            "enumValue": 1
+            "enumValue": "steel"
           },
           {
             "name": "aluminium",
             "displayName": "aluminium",
-            "enumValue": 2
+            "enumValue": "aluminium"
           },
           {
             "name": "wood",
             "displayName": "wood",
-            "enumValue": 3
+            "enumValue": "wood"
           },
           {
             "name": "other",
             "displayName": "other",
-            "enumValue": 4
+            "enumValue": "other"
           }
         ]
       },
@@ -132,22 +132,22 @@
       "name": "lampTechnology",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
         {
           "name": "LED",
           "displayName": "LED",
-          "enumValue": 1
+          "enumValue": "LED"
         },
         {
           "name": "LPS",
           "displayName": "LPS",
-          "enumValue": 2
+          "enumValue": "LPS"
         },
         {
           "name": "HPS",
           "displayName": "HPS",
-          "enumValue": 3
+          "enumValue": "HPS"
         }
       ]
     },
@@ -192,47 +192,47 @@
       "writable": true,
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "postTop",
             "displayName": "postTop",
-            "enumValue": 1
+            "enumValue": "postTop"
           },
           {
             "name": "bollard",
             "displayName": "bollard",
-            "enumValue": 2
+            "enumValue": "bollard"
           },
           {
             "name": "lamppost",
             "displayName": "lampost",
-            "enumValue": 3
+            "enumValue": "lamppost"
           },
           {
             "name": "lightTower",
             "displayName": "lightTower",
-            "enumValue": 4
+            "enumValue": "lightTower"
           },
           {
             "name": "flashingBeacon",
             "displayName": "FlashingBeacon",
-            "enumValue": 5
+            "enumValue": "flashingBeacon"
           },
           {
             "name": "sideEntry",
             "displayName": "sideEntry",
-            "enumValue": 6
+            "enumValue": "sideEntry"
           },
           {
             "name": "signLight",
             "displayName": "signLight",
-            "enumValue": 7
+            "enumValue": "signLight"
           },
           {
             "name": "ornamentLantern",
             "displayName": "ornamentLantern",
-            "enumValue": 8
+            "enumValue": "ornamentLantern"
           }
         ]
       }

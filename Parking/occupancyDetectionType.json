@@ -9,32 +9,32 @@
             "name": "occupancyDetectionType",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "balancing",
                         "displayName": "Balancing",
-                        "enumValue": 1
+                        "enumValue": "balancing"
                     },
                     {
                         "name": "manual",
                         "displayName": "Manual",
-                        "enumValue": 2
+                        "enumValue": "manual"
                     },
                     {
                         "name": "modelBased",
                         "displayName": "ModelBased",
-                        "enumValue": 3
+                        "enumValue": "modelBased"
                     },
                     {
                         "name": "none",
                         "displayName": "None",
-                        "enumValue": 4
+                        "enumValue": "none"
                     },
                     {
                         "name": "singleSpaceDetection",
                         "displayName": "SingleSpaceDetection",
-                        "enumValue": 5
+                        "enumValue": "singleSpaceDetection"
                     }
                 ]
             }

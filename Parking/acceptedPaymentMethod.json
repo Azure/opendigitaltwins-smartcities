@@ -10,52 +10,52 @@
             "schema": 
             {  
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "byBankTransferInAdvance",
                         "displayName": "ByBankTransferInAdvance",
-                        "enumValue": 1
+                        "enumValue": "byBankTransferInAdvance"
                     },
                     {
                         "name": "byInvoice",
                         "displayName": "ByInvoice",
-                        "enumValue": 2
+                        "enumValue": "byInvoice"
                     },
                     {
                         "name": "cash",
                         "displayName": "Cash",
-                        "enumValue": 3
+                        "enumValue": "cash"
                     },
                     {
                         "name": "checkInAdvance",
                         "displayName": "CheckInAdvance",
-                        "enumValue": 4
+                        "enumValue": "checkInAdvance"
                     },
                     {
                         "name": "COD",
                         "displayName": "COD",
-                        "enumValue": 5
+                        "enumValue": "COD"
                     },
                     {
                         "name": "directDebit",
                         "displayName": "DirectDebit",
-                        "enumValue": 6
+                        "enumValue": "directDebit"
                     },
                     {
                         "name": "GoogleCheckout",
                         "displayName": "GoogleCheckout",
-                        "enumValue": 7
+                        "enumValue": "GoogleCheckout"
                     },
                     {
                         "name": "PayPal",
                         "displayName": "PayPal",
-                        "enumValue": 8
+                        "enumValue": "PayPal"
                     },
                     {
                         "name": "PaySwarm",
                         "displayName": "PaySwarm",
-                        "enumValue": 9
+                        "enumValue": "PaySwarm"
                     }
                 ]
             }

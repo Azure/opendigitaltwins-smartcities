@@ -33,42 +33,42 @@
                 "schema": 
                 {
                     "@type": "Enum",
-                    "valueSchema": "integer",
+                    "valueSchema": "string",
                     "enumValues": [
                         {
                             "name": "bicycle",
                             "displayName": "bicycle",
-                            "enumValue": 1
+                            "enumValue": "bicycle"
                         },
                         {
                             "name": "bus",
                             "displayName": "bus",
-                            "enumValue": 2
+                            "enumValue": "bus"
                         },
                         {
                             "name": "car",
                             "displayName": "car",
-                            "enumValue": 3
+                            "enumValue": "car"
                         },
                         {
                             "name": "caravan",
                             "displayName": "caravan",
-                            "enumValue": 4
+                            "enumValue": "caravan"
                         },
                         {
                             "name": "motorcycle",
                             "displayName": "motorcycle",
-                            "enumValue": 5
+                            "enumValue": "motorcycle"
                         },
                         {
                             "name": "motorscooter",
                             "displayName": "motorscooter",
-                            "enumValue": 6
+                            "enumValue": "motorscooter"
                         },
                         {
                             "name": "truck",
                             "displayName": "truck",
-                            "enumValue": 7
+                            "enumValue": "truck"
                         }
                     ]
                 }
@@ -81,72 +81,72 @@
                 "schema": 
                 {
                     "@type": "Enum",
-                    "valueSchema": "integer",
+                    "valueSchema": "string",
                     "enumValues": [
                         {
-                            "name": "Caravan_Mains_Socket",
+                            "name": "caravan_Mains_Socket",
                             "displayName": "Caravan_Mains_Socket",
-                            "enumValue": 1
+                            "enumValue": "Caravan_Mains_Socket"
                         },
                         {
                             "name": "CHAdeMO",
                             "displayName": "CHAdeMO",
-                            "enumValue": 2
+                            "enumValue": "CHAdeMO"
                         },
                         {
                             "name": "CCSSAE",
                             "displayName": "CCSSAE",
-                            "enumValue": 3
+                            "enumValue": "CCSSAE"
                         },
                         {
                             "name": "DualCHAdeMO",
                             "displayName": "Dual_CHAdeMO",
-                            "enumValue": 4
+                            "enumValue": "DualCHAdeMO"
                         },
                         {
                             "name": "DualJ1772",
                             "displayName": "Dual_J-1772",
-                            "enumValue": 5
+                            "enumValue": "DualJ1772"
                         },
                         {
                             "name": "DualMennekes",
                             "displayName": "Dual_Mennekes",
-                            "enumValue": 6
+                            "enumValue": "DualMennekes"
                         },
                         {
                             "name": "J1772",
                             "displayName": "J-1772",
-                            "enumValue": 7
+                            "enumValue": "J1772"
                         },
                         {
                             "name": "Mennekes",
                             "displayName": "Mennekes",
-                            "enumValue": 8
+                            "enumValue": "Mennekes"
                         },
                         {
-                            "name": "Other",
+                            "name": "other",
                             "displayName": "Other",
-                            "enumValue": 9
+                            "enumValue": "Other"
                         },
                         {
                             "name": "Tesla",
                             "displayName": "Tesla",
-                            "enumValue": 10
+                            "enumValue": "Tesla"
                         },
                         {
-                            "name": "Type2",
+                            "name": "type2",
                             "displayName": "Type2",
-                            "enumValue": 11
+                            "enumValue": "Type2"
                         },
                         {
-                            "name": "Type3",
+                            "name": "type3",
                             "displayName": "Type3",
-                            "enumValue": 12
+                            "enumValue": "Type3"
                         },
                         {
                             "name": "WallEuro",
                             "displayName": "Wall_Euro",
-                            "enumValue": 13
+                            "enumValue": "WallEuro"
                         }
                     ]
 
@@ -167,42 +167,42 @@
             "description": "Model:'http://schema.org/Text'. Status of the charging station. Enum:'almostEmpty, almostFull, empty, full, outOfService, withIncidence, working'. Or any other application-specific.",
             "schema": {
               "@type": "Enum",
-              "valueSchema": "integer",
+              "valueSchema": "string",
               "enumValues": [
                 {
                   "name": "almostEmpty",
                   "displayName": "almostEmpty",
-                  "enumValue": 1
+                  "enumValue": "almostEmpty"
                 },
                 {
                   "name": "almostFull",
                   "displayName": "almostFull",
-                  "enumValue": 2
+                  "enumValue": "almostFull"
                 },
                 {
                   "name": "empty",
                   "displayName": "empty",
-                  "enumValue": 3
+                  "enumValue": "empty"
                 },
                 {
                   "name": "full",
                   "displayName": "full",
-                  "enumValue": 4
+                  "enumValue": "full"
                 },
                 {
                   "name": "outOfService",
                   "displayName": "outOfService",
-                  "enumValue": 5
+                  "enumValue": "outOfService"
                 },
                 {
                   "name": "withIncidence",
                   "displayName": "withIncidence",
-                  "enumValue": 6
+                  "enumValue": "withIncidence"
                 },
                 {
                   "name": "working",
                   "displayName": "working",
-                  "enumValue": 7
+                  "enumValue": "working"
                 }
               ]
             },
@@ -233,11 +233,11 @@
             "writable": true	
         },
         {
-            "@type" : ["Property","Amperage"],
+            "@type" : ["Property","Current"],
             "name": "amperage",
             "description": "The total amperage offered by the charging station.. Model:'http://schema.org/Number'. Units:'Ampers (A)'",
             "schema": "double",
-            "unit": "amper",
+            "unit": "ampere",
             "writable": true	
         },
         
@@ -249,7 +249,6 @@
             "unit": "volt",
             "writable": true	
         },
-
         {
             "@type": "Property",
                 "name": "chargeType",
@@ -257,32 +256,32 @@
                 "schema": 
                 {
                     "@type": "Enum",
-                    "valueSchema": "integer",
+                    "valueSchema": "string",
                     "enumValues": [
                         {
                             "name": "annualPayment",
                             "displayName": "annualPayment",
-                            "enumValue": 1
+                            "enumValue": "annualPayment"
                         },
                         {
                             "name": "flat",
                             "displayName": "flat",
-                            "enumValue": 2
+                            "enumValue": "flat"
                         },
                         {
                             "name": "free",
                             "displayName": "free",
-                            "enumValue": 3
+                            "enumValue": "free"
                         },
                         {
                             "name": "monthlyPayment",
                             "displayName": "monthlyPayment",
-                            "enumValue": 4
+                            "enumValue": "monthlyPayment"
                         },
                         {
                             "name": "other",
                             "displayName": "other",
-                            "enumValue": 5
+                            "enumValue": "other"
                         }
                     ]
                 }
@@ -295,52 +294,52 @@
                 "schema": 
                 {
                     "@type": "Enum",
-                    "valueSchema": "integer",
+                    "valueSchema": "string",
                     "enumValues": [
                         {
-                            "name": "ByBankTransferInAdvance",
+                            "name": "byBankTransferInAdvance",
                             "displayName": "ByBankTransferInAdvance",
-                            "enumValue": 1
+                            "enumValue": "ByBankTransferInAdvance"
                         },
                         {
-                            "name": "ByInvoice",
+                            "name": "byInvoice",
                             "displayName": "ByInvoice",
-                            "enumValue": 2
+                            "enumValue": "ByInvoice"
                         },
                         {
-                            "name": "Cash",
+                            "name": "cash",
                             "displayName": "Cash",
-                            "enumValue": 3
+                            "enumValue": "Cash"
                         },
                         {
-                            "name": "CheckInAdvance",
+                            "name": "checkInAdvance",
                             "displayName": "CheckInAdvance",
-                            "enumValue": 4
+                            "enumValue": "CheckInAdvance"
                         },
                         {
                             "name": "COD",
                             "displayName": "COD",
-                            "enumValue": 5
+                            "enumValue": "COD"
                         },
                         {
-                            "name": "DirectDebit",
+                            "name": "directDebit",
                             "displayName": "DirectDebit",
-                            "enumValue": 6
+                            "enumValue": "DirectDebit"
                         },
                         {
                             "name": "GoogleCheckout",
                             "displayName": "GoogleCheckout",
-                            "enumValue": 7
+                            "enumValue": "GoogleCheckout"
                         },
                         {
                             "name": "PayPal",
                             "displayName": "PayPal",
-                            "enumValue": 8
+                            "enumValue": "PayPal"
                         },
                         {
                             "name": "PaySwarm",
                             "displayName": "PaySwarm",
-                            "enumValue": 9
+                            "enumValue": "PaySwarm"
                         }
                     ]
                 }

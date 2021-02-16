@@ -70,147 +70,147 @@
             "name": "facilities",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "bikeParking",
                         "displayName": "BikeParking",
-                        "enumValue": 1
+                        "enumValue": "bikeParking"
                     },
                     {
                         "name": "cashMachine",
                         "displayName": "CashMachine",
-                        "enumValue": 2
+                        "enumValue": "cashMachine"
                     },
                     {
                         "name": "copyMachineOrService",
                         "displayName": "CopyMachineOrService",
-                        "enumValue": 3
+                        "enumValue": "copyMachineOrService"
                     },
                     {
                         "name": "defibrillator",
                         "displayName": "Defibrillator",
-                        "enumValue": 4
+                        "enumValue": "defibrillator"
                     },
                     {
                         "name": "dumpingStation",
                         "displayName": "DumpingStation",
-                        "enumValue": 5
+                        "enumValue": "dumpingStation"
                     },
                     {
                         "name": "electricChargingStation",
                         "displayName": "ElectricChargingStation",
-                        "enumValue": 6
+                        "enumValue": "electricChargingStation"
                     },
                     {
                         "name": "elevator",
                         "displayName": "Elevator",
-                        "enumValue": 7
+                        "enumValue": "elevator"
                     },
                     {
                         "name": "faxMachineOrService",
                         "displayName": "FaxMachineOrService",
-                        "enumValue": 8
+                        "enumValue": "faxMachineOrService"
                     },
                     {
                         "name": "fireHose",
                         "displayName": "FireHose",
-                        "enumValue": 9
+                        "enumValue": "fireHose"
                     },
                     {
                         "name": "fireExtinguisher",
                         "displayName": "FireExtinguisher",
-                        "enumValue": 10
+                        "enumValue": "fireExtinguisher"
                     },
                     {
                         "name": "fireHydrant",
                         "displayName": "FireHydrant",
-                        "enumValue": 11
+                        "enumValue": "fireHydrant"
                     },
                     {
                         "name": "firstAidEquipment",
                         "displayName": "FirstAidEquipment",
-                        "enumValue": 12
+                        "enumValue": "firstAidEquipment"
                     },
                     {
                         "name": "freshWater",
                         "displayName": "FreshWater",
-                        "enumValue": 13
+                        "enumValue": "freshWater"
                     },
                     {
                         "name": "iceFreeScaffold",
                         "displayName": "IceFreeScaffold",
-                        "enumValue": 14
+                        "enumValue": "iceFreeScaffold"
                     },
                     {
                         "name": "informationPoint",
                         "displayName": "InformationPoint",
-                        "enumValue": 15
+                        "enumValue": "informationPoint"
                     },
                     {
                         "name": "internetWireless",
                         "displayName": "InternetWireless",
-                        "enumValue": 16
+                        "enumValue": "internetWireless"
                     },
                     {
                         "name": "luggageLocker",
                         "displayName": "LuggageLocker",
-                        "enumValue": 17
+                        "enumValue": "luggageLocker"
                     },
                     {
                         "name": "payDesk",
                         "displayName": "PayDesk",
-                        "enumValue": 18
+                        "enumValue": "payDesk"
                     },
                     {
                         "name": "paymentMachine",
                         "displayName": "PaymentMachine",
-                        "enumValue": 19
+                        "enumValue": "paymentMachine"
                     },
                     {
                         "name": "playground",
                         "displayName": "Playground",
-                        "enumValue": 20
+                        "enumValue": "playground"
                     },
                     {
                         "name": "publicPhone",
                         "displayName": "PublicPhone",
-                        "enumValue": 21
+                        "enumValue": "publicPhone"
                     },
                     {
                         "name": "refuseBin",
                         "displayName": "RefuseBin",
-                        "enumValue": 22
+                        "enumValue": "refuseBin"
                     },
                     {
                         "name": "safeDeposit",
                         "displayName": "SafeDeposit",
-                        "enumValue": 23
+                        "enumValue": "safeDeposit"
                     },
                     {
                         "name": "shower",
                         "displayName": "Shower",
-                        "enumValue": 24
+                        "enumValue": "shower"
                     },
                     {
                         "name": "toilet",
                         "displayName": "Toilet",
-                        "enumValue": 25
+                        "enumValue": "toilet"
                     },
                     {
                         "name": "tollTerminal",
                         "displayName": "TollTerminal",
-                        "enumValue": 26
+                        "enumValue": "tollTerminal"
                     },
                     {
                         "name": "vendingMachine",
                         "displayName": "VendingMachine",
-                        "enumValue": 27
+                        "enumValue": "vendingMachine"
                     },
                     {
                         "name": "wasteDisposal",
                         "displayName": "WasteDisposal",
-                        "enumValue": 28
+                        "enumValue": "wasteDisposal"
                     }
                 ]
             },
@@ -221,77 +221,77 @@
             "name": "layout",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "automatedParkingGarage",
                         "displayName": "AutomatedParkingGarage",
-                        "enumValue": 1
+                        "enumValue": "automatedParkingGarage"
                     },
                     {
                         "name": "carports",
                         "displayName": "Carports",
-                        "enumValue": 2
+                        "enumValue": "carports"
                     },
                     {
                         "name": "covered",
                         "displayName": "Covered",
-                        "enumValue": 3
+                        "enumValue": "covered"
                     },
                     {
                         "name": "field",
                         "displayName": "Field",
-                        "enumValue": 4
+                        "enumValue": "field"
                     },
                     {
                         "name": "garageBoxes",
                         "displayName": "GarageBoxes",
-                        "enumValue": 5
+                        "enumValue": "garageBoxes"
                     },
                     {
                         "name": "multiLevel",
                         "displayName": "MultiLevel",
-                        "enumValue": 6
+                        "enumValue": "multiLevel"
                     },
                     {
                         "name": "multiStorey",
                         "displayName": "MultiStorey",
-                        "enumValue": 7
+                        "enumValue": "multiStorey"
                     },
                     {
                         "name": "nested",
                         "displayName": "Nested",
-                        "enumValue": 8
+                        "enumValue": "nested"
                     },
                     {
                         "name": "openSpace",
                         "displayName": "OpenSpace",
-                        "enumValue": 9
+                        "enumValue": "openSpace"
                     },
                     {
                         "name": "rooftop",
                         "displayName": "Rooftop",
-                        "enumValue": 10
+                        "enumValue": "rooftop"
                     },
                     {
                         "name": "sheds",
                         "displayName": "Sheds",
-                        "enumValue": 11
+                        "enumValue": "sheds"
                     },
                     {
                         "name": "singleLevel",
                         "displayName": "SingleLevel",
-                        "enumValue": 12
+                        "enumValue": "singleLevel"
                     },
                     {
                         "name": "surface",
                         "displayName": "Surface",
-                        "enumValue": 13
+                        "enumValue": "surface"
                     },
                     {
                         "name": "other",
                         "displayName": "Other",
-                        "enumValue": 14
+                        "enumValue": "other"
                     }
                 ]
             },
@@ -302,102 +302,102 @@
             "name": "usageScenario",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "automaticParkingGuidance",
                         "displayName": "AutomaticParkingGuidance",
-                        "enumValue": 1
+                        "enumValue": "automaticParkingGuidance"
                     },
                     {
                         "name": "carSharing",
                         "displayName": "CarSharing",
-                        "enumValue": 2
+                        "enumValue": "carSharing"
                     },
                     {
                         "name": "dropOffWithValet",
                         "displayName": "DropOffWithValet",
-                        "enumValue": 3
+                        "enumValue": "dropOffWithValet"
                     },
                     {
                         "name": "dropOffMechanical",
                         "displayName": "DropOffMechanical",
-                        "enumValue": 4
+                        "enumValue": "dropOffMechanical"
                     },
                     {
                         "name": "dropOff",
                         "displayName": "DropOff",
-                        "enumValue": 5
+                        "enumValue": "dropOff"
                     },
                     {
                         "name": "eventParking",
                         "displayName": "EventParking",
-                        "enumValue": 6
+                        "enumValue": "eventParking"
                     },
                     {
                         "name": "kissAndRide",
                         "displayName": "KissAndRide",
-                        "enumValue": 7
+                        "enumValue": "kissAndRide"
                     },
                     {
                         "name": "liftShare",
                         "displayName": "LiftShare",
-                        "enumValue": 8
+                        "enumValue": "liftShare"
                     },
                     {
                         "name": "loadingBay",
                         "displayName": "LoadingBay",
-                        "enumValue": 9
+                        "enumValue": "loadingBay"
                     },
                     {
                         "name": "overnightParking",
                         "displayName": "OvernightParking",
-                        "enumValue": 10
+                        "enumValue": "overnightParking"
                     },
                     {
                         "name": "parkAndCycle",
                         "displayName": "ParkAndCycle",
-                        "enumValue": 11
+                        "enumValue": "parkAndCycle"
                     },
                     {
                         "name": "parkAndRide",
                         "displayName": "ParkAndRide",
-                        "enumValue": 12
+                        "enumValue": "parkAndRide"
                     },
                     {
                         "name": "parkAndWalk",
                         "displayName": "ParkAndWalk",
-                        "enumValue": 13
+                        "enumValue": "parkAndWalk"
                     },
                     {
                         "name": "restArea",
                         "displayName": "RestArea",
-                        "enumValue": 14
+                        "enumValue": "restArea"
                     },
                     {
                         "name": "serviceArea",
                         "displayName": "ServiceArea",
-                        "enumValue": 15
+                        "enumValue": "serviceArea"
                     },
                     {
                         "name": "staffGuidesToSpace",
                         "displayName": "StaffGuidesToSpace",
-                        "enumValue": 16
+                        "enumValue": "staffGuidesToSpace"
                     },
                     {
                         "name": "truckParking",
                         "displayName": "TruckParking",
-                        "enumValue": 17
+                        "enumValue": "truckParking"
                     },
                     {
                         "name": "vehicleLift",
                         "displayName": "VehicleLift",
-                        "enumValue": 18
+                        "enumValue": "vehicleLift"
                     },
                     {
                         "name": "other",
                         "displayName": "Other",
-                        "enumValue": 19
+                        "enumValue": "other"
                     }
                 ]
             },
@@ -408,57 +408,57 @@
             "name": "security",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "areaSeparatedFromSurroundings",
                         "displayName": "AreaSeparatedFromSurroundings",
-                        "enumValue": 1
+                        "enumValue": "areaSeparatedFromSurroundings"
                     },
                     {
                         "name": "cctv",
                         "displayName": "Cctv",
-                        "enumValue": 2
+                        "enumValue": "cctv"
                     },
                     {
                         "name": "dog",
                         "displayName": "Dog",
-                        "enumValue": 3
+                        "enumValue": "dog"
                     },
                     {
                         "name": "externalSecurity",
                         "displayName": "ExternalSecurity",
-                        "enumValue": 4
+                        "enumValue": "externalSecurity"
                     },
                     {
                         "name": "fences",
                         "displayName": "Fences",
-                        "enumValue": 5
+                        "enumValue": "fences"
                     },
                     {
                         "name": "floodLight",
                         "displayName": "FloodLight",
-                        "enumValue": 6
+                        "enumValue": "floodLight"
                     },
                     {
                         "name": "guard24hours",
                         "displayName": "Guard24hours",
-                        "enumValue": 7
+                        "enumValue": "guard24hours"
                     },
                     {
                         "name": "lighting",
                         "displayName": "Lighting",
-                        "enumValue": 8
+                        "enumValue": "lighting"
                     },
                     {
                         "name": "patrolled",
                         "displayName": "Patrolled",
-                        "enumValue": 9
+                        "enumValue": "patrolled"
                     },
                     {
                         "name": "securityStaff",
                         "displayName": "SecurityStaff",
-                        "enumValue": 10
+                        "enumValue": "securityStaff"
                     }
                 ]
             },
@@ -469,102 +469,102 @@
             "name": "specialLocation",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "airportTerminal",
                         "displayName": "AirportTerminal",
-                        "enumValue": 1
+                        "enumValue": "airportTerminal"
                     },
                     {
                         "name": "cableCarStation",
                         "displayName": "CableCarStation",
-                        "enumValue": 2
+                        "enumValue": "cableCarStation"
                     },
                     {
                         "name": "campground",
                         "displayName": "Campground",
-                        "enumValue": 3
+                        "enumValue": "campground"
                     },
                     {
                         "name": "cinema",
                         "displayName": "Cinema",
-                        "enumValue": 4
+                        "enumValue": "cinema"
                     },
                     {
                         "name": "coachStation",
                         "displayName": "CoachStation",
-                        "enumValue": 5
+                        "enumValue": "coachStation"
                     },
                     {
                         "name": "conventionCentre",
                         "displayName": "ConventionCentre",
-                        "enumValue": 6
+                        "enumValue": "conventionCentre"
                     },
                     {
                         "name": "exhibitionCentre",
                         "displayName": "ExhibitionCentre",
-                        "enumValue": 7
+                        "enumValue": "exhibitionCentre"
                     },
                     {
                         "name": "ferryTerminal",
                         "displayName": "FerryTerminal",
-                        "enumValue": 8
+                        "enumValue": "ferryTerminal"
                     },
                     {
                         "name": "hotel",
                         "displayName": "Hotel",
-                        "enumValue": 9
+                        "enumValue": "hotel"
                     },
                     {
                         "name": "market",
                         "displayName": "Market",
-                        "enumValue": 10
+                        "enumValue": "market"
                     },
                     {
                         "name": "publicTransportStation",
                         "displayName": "PublicTransportStation",
-                        "enumValue": 11
+                        "enumValue": "publicTransportStation"
                     },
                     {
                         "name": "religiousCentre",
                         "displayName": "ReligiousCentre",
-                        "enumValue": 12
+                        "enumValue": "religiousCentre"
                     },
                     {
                         "name": "shoppingCentre",
                         "displayName": "ShoppingCentre",
-                        "enumValue": 13
+                        "enumValue": "shoppingCentre"
                     },
                     {
                         "name": "skilift",
                         "displayName": "Skilift",
-                        "enumValue": 14
+                        "enumValue": "skilift"
                     },
                     {
                         "name": "specificFacility",
                         "displayName": "SpecificFacility",
-                        "enumValue": 15
+                        "enumValue": "specificFacility"
                     },
                     {
                         "name": "themePark",
                         "displayName": "ThemePark",
-                        "enumValue": 16
+                        "enumValue": "themePark"
                     },
                     {
                         "name": "trainStation",
                         "displayName": "TrainStation",
-                        "enumValue": 17
+                        "enumValue": "trainStation"
                     },
                     {
                         "name": "vehicleOnRailTerminal",
                         "displayName": "VehicleOnRailTerminal",
-                        "enumValue": 18
+                        "enumValue": "vehicleOnRailTerminal"
                     },
                     {
                         "name": "other",
                         "displayName": "Other",
-                        "enumValue": 19
+                        "enumValue": "other"
                     }
                 ]
             },
@@ -628,56 +628,51 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "full",
                         "displayName": "Full",
-                        "enumValue": 1
+                        "enumValue": "full"
                     },
                     {
                         "name": "almostFull",
                         "displayName": "AlmostFull",
-                        "enumValue": 2
+                        "enumValue": "almostFull"
                     },
                     {
                         "name": "fullAtEntrance",
                         "displayName": "FullAtEntrance",
-                        "enumValue": 3
+                        "enumValue": "fullAtEntrance"
                     },
                     {
                         "name": "spacesAvailable",
                         "displayName": "SpacesAvailable",
-                        "enumValue": 4
+                        "enumValue": "spacesAvailable"
                     },
                     {
                         "name": "open",
                         "displayName": "Open",
-                        "enumValue": 5
+                        "enumValue": "open"
                     },
                     {
                         "name": "openingTimesInForce",
                         "displayName": "OpeningTimesInForce",
-                        "enumValue": 6
+                        "enumValue": "openingTimesInForce"
                     },
                     {
                         "name": "closed",
                         "displayName": "Closed",
-                        "enumValue": 7
+                        "enumValue": "closed"
                     },
                     {
                         "name": "closedAbnormal",
                         "displayName": "ClosedAbnormal",
-                        "enumValue": 8
+                        "enumValue": "closedAbnormal"
                     }
                     
                 ]
             }
-        },
-        {
-            "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
         },
         {
             "@type": "Component",

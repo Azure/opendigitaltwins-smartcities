@@ -47,17 +47,17 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "offStreet",
                         "displayName": "Offstreet",
-                        "enumValue": 1
+                        "enumValue": "offStreet"
                     },
                     {
                         "name": "onStreet",
                         "displayName": "OnStreet",
-                        "enumValue": 2
+                        "enumValue": "onStreet"
                     }
                     
                 ]
@@ -70,36 +70,31 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "occupied",
                         "displayName": "Occupied",
-                        "enumValue": 1
+                        "enumValue": "occupied"
                     },
                     {
                         "name": "free",
                         "displayName": "Free",
-                        "enumValue": 2
+                        "enumValue": "free"
                     },
                     {
                         "name": "closed",
                         "displayName": "Closed",
-                        "enumValue": 3
+                        "enumValue": "closed"
                     },
                     {
                         "name": "unkown",
                         "displayName": "Unkown",
-                        "enumValue": 4
+                        "enumValue": "unkown"
                     }
                     
                 ]
             }
-        },
-        {
-            "@type": "Component",
-            "name": "address",
-            "schema": "dtmi:ngsild:city:address;1"
         },
         {
             "@type": "Component",

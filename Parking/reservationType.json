@@ -9,27 +9,27 @@
             "name": "reservationType",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "mandatory",
                         "displayName": "Mandatory",
-                        "enumValue": 1
+                        "enumValue": "mandatory"
                     },
                     {
                         "name": "notAvailable",
                         "displayName": "NotAvailable",
-                        "enumValue": 2
+                        "enumValue": "notAvailable"
                     },
                     {
                         "name": "optional",
                         "displayName": "Optional",
-                        "enumValue": 3
+                        "enumValue": "optional"
                     },
                     {
                         "name": "partly",
                         "displayName": "Partly",
-                        "enumValue": 4
+                        "enumValue": "partly"
                     }
                 ]
             }

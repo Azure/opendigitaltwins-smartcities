@@ -10,72 +10,72 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "additionalIntervalPrice",
                         "displayName": "AdditionalIntervalPrice",
-                        "enumValue": 1
+                        "enumValue": "additionalIntervalPrice"
                     },
                     {
                         "name": "annualPayment",
                         "displayName": "AnnualPayment",
-                        "enumValue": 2
+                        "enumValue": "annualPayment"
                     },
                     {
                         "name": "firstIntervalPrice",
                         "displayName": "FirstIntervalPrice",
-                        "enumValue": 3
+                        "enumValue": "firstIntervalPrice"
                     },
                     {
                         "name": "flat",
                         "displayName": "Flat",
-                        "enumValue": 4
+                        "enumValue": "flat"
                     },
                     {
                         "name": "free",
                         "displayName": "Free",
-                        "enumValue": 5
+                        "enumValue": "free"
                     },
                     {
                         "name": "minimum",
                         "displayName": "Minimum",
-                        "enumValue": 6
+                        "enumValue": "minimum"
                     },
                     {
                         "name": "maximum",
                         "displayName": "Maximum",
-                        "enumValue": 7
+                        "enumValue": "maximum"
                     },
                     {
                         "name": "monthlyPayment",
                         "displayName": "MonthlyPayment",
-                        "enumValue": 8
+                        "enumValue": "monthlyPayment"
                     },
                     {
                         "name": "seasonTicket",
                         "displayName": "SeasonTicket",
-                        "enumValue": 9
+                        "enumValue": "seasonTicket"
                     },
                     {
                         "name": "temporaryFee",
                         "displayName": "TemporaryFee",
-                        "enumValue": 10
+                        "enumValue": "temporaryFee"
                     },
                     {
                         "name": "temporaryPrice",
                         "displayName": "TemporaryPrice",
-                        "enumValue": 11
+                        "enumValue": "temporaryPrice"
                     },
                     {
                         "name": "unknown",
                         "displayName": "Unknown",
-                        "enumValue": 12
+                        "enumValue": "unknown"
                     },
                     {
                         "name": "other",
                         "displayName": "Other",
-                        "enumValue": 13
+                        "enumValue": "other"
                     }
                 ]
             }

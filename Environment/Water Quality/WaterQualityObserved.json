@@ -102,7 +102,7 @@
             "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","distance"],
+            "@type" : ["Telemetry","Distance"],
             "name": "turbidity",
             "schema": "double",
             "unit": "nanometre"

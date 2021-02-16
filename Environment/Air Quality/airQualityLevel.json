@@ -10,37 +10,37 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "good",
                         "displayName": "Good",
-                        "enumValue": 1
+                        "enumValue": "good"
                     },
                     {
                         "name": "moderate",
                         "displayName": "Moderate",
-                        "enumValue": 2
+                        "enumValue": "moderate"
                     },
                     {
                         "name": "unhealthyForSensitiveGroups",
                         "displayName": "UnhealthyForSensitiveGroups",
-                        "enumValue": 3
+                        "enumValue": "unhealthyForSensitiveGroups"
                     },
                     {
                         "name": "unhealthy",
                         "displayName": "Unhealthy",
-                        "enumValue": 4
+                        "enumValue": "unhealthy"
                     },
                     {
                         "name": "veryUnhealthy",
                         "displayName": "VeryUnhealthy",
-                        "enumValue": 5
+                        "enumValue": "veryUnhealthy"
                     },
                     {
                         "name": "hazardous",
                         "displayName": "Hazardous",
-                        "enumValue": 6
+                        "enumValue": "hazardous"
                     }
                 ]
             }
