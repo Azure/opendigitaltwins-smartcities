@@ -30,22 +30,22 @@
             "schema": 
             {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "raising",
                         "displayName": "Raising",
-                        "enumValue": 1
+                        "enumValue": "raising"
                     },
                     {
                         "name": "steady",
                         "displayName": "Steady",
-                        "enumValue": 2
+                        "enumValue": "steady"
                     },
                     {
                         "name": "falling",
                         "displayName": "Falling",
-                        "enumValue": 3
+                        "enumValue": "falling"
                     }
                 ]
             }
@@ -98,10 +98,10 @@
             "unit": "centimetre"
         },
         {
-            "@type" : ["Telemetry","energy"],
+            "@type" : ["Telemetry","Power"],
             "name": "solarRadiation",
             "schema": "double",
-            "unit": "wattPerSquareMetre"
+            "unit": "watt"
         },
         {
             "@type" : ["Telemetry","Length"],

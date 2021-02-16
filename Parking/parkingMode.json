@@ -9,22 +9,22 @@
             "name": "parkingMode",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "echelonParking",
                         "displayName": "EchelonParking",
-                        "enumValue": 1
+                        "enumValue": "echelonParking"
                     },
                     {
                         "name": "parallelParking",
                         "displayName": "ParallelParking",
-                        "enumValue": 2
+                        "enumValue": "parallelParking"
                     },
                     {
                         "name": "perpendicularParking",
                         "displayName": "perpendicularParking",
-                        "enumValue": 3
+                        "enumValue": "perpendicularParking"
                     }
                 ]
             }

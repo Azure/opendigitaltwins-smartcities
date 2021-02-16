@@ -23,27 +23,27 @@
       "description": "Streetlight group's power state. Enum:'on, off, low, bootingUp'.",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "on",
             "displayName": "ON",
-            "enumValue": 1
+            "enumValue": "on"
           },
           {
             "name": "off",
             "displayName": "OFF",
-            "enumValue": 2
+            "enumValue": "off"
           },
           {
             "name": "low",
             "displayName": "LOW",
-            "enumValue": 3
+            "enumValue": "low"
           },
           {
             "name": "bootingUp",
             "displayName": "BootingUp",
-            "enumValue": 4
+            "enumValue": "bootingUp"
           }
         ]
       },
@@ -89,42 +89,42 @@
       "name": "switchingMode",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "nightON",
             "displayName": "night-ON",
-            "enumValue": 1
+            "enumValue": "nightON"
           },
           {
             "name": "nightOFF",
             "displayName": "night-OFF",
-            "enumValue": 2
+            "enumValue": "nightOFF"
           },
           {
             "name": "nightLOW",
             "displayName": "night-LOW",
-            "enumValue": 3
+            "enumValue": "nightLOW"
           },
           {
             "name": "alwaysON",
             "displayName": "always-ON",
-            "enumValue": 4
+            "enumValue": "alwaysON"
           },
           {
             "name": "dayON",
             "displayName": "day-ON",
-            "enumValue": 5
+            "enumValue": "dayON"
           },
           {
             "name": "dayOFF",
             "displayName": "day-OFF",
-            "enumValue": 6
+            "enumValue": "dayOFF"
           },
           {
             "name": "dayLOW",
             "displayName": "day-LOW",
-            "enumValue": 7
+            "enumValue": "dayLOW"
           }
         ]
       },

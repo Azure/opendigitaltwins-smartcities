@@ -60,7 +60,7 @@
                         "enumValue": "irrSystem"
                     },
                     {
-                        "name": "irrSectiopn",
+                        "name": "irrSection",
                         "displayName": "IrrSection",
                         "description": "A section of an IrrSystem. Different enough from a regular section. https://github.com/ADAPT/ADAPT/blob/develop/source/ADAPT/Equipment/IrrSectionConfiguration.cs",
                         "enumValue": "irrSection"

@@ -45,9 +45,14 @@
             "schema": "string",
             "description": "level of the battery",
             "writable": true	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refDeviceModel",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:ngsild:city:deviceModel;1"	
         }
-
-
     ],
     "@context" : [
         "dtmi:dtdl:context;2"

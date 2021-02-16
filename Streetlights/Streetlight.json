@@ -29,27 +29,27 @@
           "description": "The overall status of this street light. Enum:'brokenLantern, columnIssue, defectiveLamp, ok'",
           "schema": {
             "@type": "Enum",
-            "valueSchema": "integer",
+            "valueSchema": "string",
             "enumValues": [
               {
                 "name": "ok",
                 "displayName": "ok",
-                "enumValue": 1
+                "enumValue": "ok"
               },
               {
                 "name": "defectiveLamp",
                 "displayName": "defectiveLamp",
-                "enumValue": 2
+                "enumValue": "defectiveLamp"
               },
               {
                 "name": "columnIssue",
                 "displayName": "columnIssue",
-                "enumValue": 3
+                "enumValue": "columnIssue"
               },
               {
                 "name": "brokenLantern",
                 "displayName": "brokenLantern",
-                "enumValue": 4
+                "enumValue": "brokenLantern"
               }
             ]
           },
@@ -60,27 +60,27 @@
           "name": "powerState",
           "schema": {
             "@type": "Enum",
-            "valueSchema": "integer",
+            "valueSchema": "string",
             "enumValues": [
               {
                 "name": "on",
                 "displayName": "on",
-                "enumValue": 1
+                "enumValue": "on"
               },
               {
                 "name": "off",
                 "displayName": "off",
-                "enumValue": 2
+                "enumValue": "off"
               },
               {
                 "name": "low",
                 "displayName": "low",
-                "enumValue": 3
+                "enumValue": "low"
               },
               {
                 "name": "bootingUp",
                 "displayName": "bootingUp",
-                "enumValue": 4
+                "enumValue": "bootingUp"
               }
             ]
           },
@@ -121,17 +121,17 @@
           "name": "controllingMethod",
           "schema": {
             "@type": "Enum",
-            "valueSchema": "integer",
+            "valueSchema": "string",
             "enumValues": [
               {
                 "name": "group",
                 "displayName": "group",
-                "enumValue": 1
+                "enumValue": "group"
               },
               {
                 "name": "individual",
                 "displayName": "individual",
-                "enumValue": 2
+                "enumValue": "individual"
               }
             ]
           },
@@ -173,62 +173,62 @@
             "name": "locationCategory",
             "schema": {
               "@type": "Enum",
-              "valueSchema": "integer",
+              "valueSchema": "string",
               "enumValues": [
                 {
                   "name": "facade",
                   "displayName": "Facade",
-                  "enumValue": 1
+                  "enumValue": "facade"
                 },
                 {
                   "name": "sidewalk",
                   "displayName": "SideWalk",
-                  "enumValue": 2
+                  "enumValue": "sidewalk"
                 },
                 {
                   "name": "pedestrianPath",
                   "displayName": "PedestrianPath",
-                  "enumValue": 3
+                  "enumValue": "pedestrianPath"
                 },
                 {
                   "name": "road",
                   "displayName": "Road",
-                  "enumValue": 4
+                  "enumValue": "road"
                 },
                 {
                   "name": "playground",
                   "displayName": "PlayGround",
-                  "enumValue": 5
+                  "enumValue": "playground"
                 },
                 {
                   "name": "park",
                   "displayName": "Park",
-                  "enumValue": 6
+                  "enumValue": "park"
                 },
                 {
                   "name": "garden",
                   "displayName": "Garden",
-                  "enumValue": 7
+                  "enumValue": "garden"
                 },
                 {
                   "name": "bridge",
                   "displayName": "Bridge",
-                  "enumValue": 8
+                  "enumValue": "bridge"
                 },
                 {
                   "name": "tunnel",
                   "displayName": "Tunnel",
-                  "enumValue": 9
+                  "enumValue": "tunnel"
                 },
                 {
                   "name": "parking",
                   "displayName": "Parking",
-                  "enumValue": 10
+                  "enumValue": "parking"
                 },
                 {
                   "name": "centralIsland",
                   "displayName": "CentralIslan",
-                  "enumValue": 11
+                  "enumValue": "centralIsland"
                 }
               ]
             },

@@ -40,27 +40,27 @@
       "name": "cupboardMadeOf",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "plastic",
             "displayName": "plastic",
-            "enumValue": 1
+            "enumValue": "plastic"
           },
           {
             "name": "metal",
             "displayName": "metal",
-            "enumValue": 2
+            "enumValue": "metal"
           },
           {
             "name": "concrete",
             "displayName": "concrete",
-            "enumValue": 3
+            "enumValue": "concrete"
           },
           {
             "name": "other",
             "displayName": "other",
-            "enumValue": 4
+            "enumValue": "other"
           }
         ]
       },
@@ -71,17 +71,17 @@
       "name": "features",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "astronomicalClock",
             "displayName": "astronomicalClock",
-            "enumValue": 1
+            "enumValue": "astronomicalClock"
           },
           {
             "name": "individualControl",
             "displayName": "individualControl",
-            "enumValue": 2
+            "enumValue": "individualControl"
           }
         ]
       },
@@ -136,22 +136,22 @@
       "name": "workingMode",
       "schema": {
         "@type": "Enum",
-        "valueSchema": "integer",
+        "valueSchema": "string",
         "enumValues": [
           {
             "name": "automatic",
             "displayName": "automatic",
-            "enumValue": 1
+            "enumValue": "automatic"
           },
           {
             "name": "manual",
             "displayName": "manual",
-            "enumValue": 2
+            "enumValue": "manual"
           },
           {
             "name": "semiautomatic",
             "displayName": "semiautomatic",
-            "enumValue": 3
+            "enumValue": "semiautomatic"
           }
         ]
       },

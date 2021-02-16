@@ -10,42 +10,42 @@
             "name": "allowedVehicleType",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "bicycle",
                         "displayName": "Bicycle",
-                        "enumValue": 1
+                        "enumValue": "bicycle"
                     },
                     {
                         "name": "bus",
                         "displayName": "Bus",
-                        "enumValue": 2
+                        "enumValue": "bus"
                     },
                     {
                         "name": "car",
                         "displayName": "Car",
-                        "enumValue": 3
+                        "enumValue": "car"
                     },
                     {
                         "name": "caravan",
                         "displayName": "Caravan",
-                        "enumValue": 4
+                        "enumValue": "caravan"
                     },
                     {
                         "name": "motorcycle",
                         "displayName": "Motorcycle",
-                        "enumValue": 5
+                        "enumValue": "motorcycle"
                     },
                     {
                         "name": "motorscooter",
                         "displayName": "Motorscooter",
-                        "enumValue": 6
+                        "enumValue": "motorscooter"
                     },
                     {
                         "name": "truck",
                         "displayName": "Truck",
-                        "enumValue": 7
+                        "enumValue": "truck"
                     }
                 ]
             },
@@ -56,97 +56,97 @@
             "name": "category",
             "schema": {
                 "@type": "Enum",
-                "valueSchema": "integer",
+                "valueSchema": "string",
                 "enumValues": [
                     {
                         "name": "adjacentSpaces",
                         "displayName": "AdjacentSpaces",
-                        "enumValue": 1
+                        "enumValue": "adjacentSpaces"
                     },
                     {
                         "name": "blueZone",
                         "displayName": "BlueZone",
-                        "enumValue": 2
+                        "enumValue": "blueZone"
                     },
                     {
                         "name": "completeFloor",
                         "displayName": "CompleteFloor",
-                        "enumValue": 3
+                        "enumValue": "completeFloor"
                     },
                     {
                         "name": "free",
                         "displayName": "Free",
-                        "enumValue": 4
+                        "enumValue": "free"
                     },
                     {
                         "name": "feeCharged",
                         "displayName": "FeeCharged",
-                        "enumValue": 5
+                        "enumValue": "feeCharged"
                     },
                     {
                         "name": "greenZone",
                         "displayName": "GreenZone",
-                        "enumValue": 6
+                        "enumValue": "greenZone"
                     },
                     {
                         "name": "loadUnloadZone",
                         "displayName": "LoadUnloadZone",
-                        "enumValue": 7
+                        "enumValue": "loadUnloadZone"
                     },
                     {
                         "name": "nonAdjacentSpaces",
                         "displayName": "NonAdjacentSpaces",
-                        "enumValue": 8
+                        "enumValue": "nonAdjacentSpaces"
                     },
                     {
                         "name": "offStreet",
                         "displayName": "OffStreet",
-                        "enumValue": 9
+                        "enumValue": "offStreet"
                     },
                     {
                         "name": "onlyDisabled",
                         "displayName": "OnlyDisabled",
-                        "enumValue": 10
+                        "enumValue": "onlyDisabled"
                     },
                     {
                         "name": "onlyElectricalCharging",
                         "displayName": "OnlyElectricalCharging",
-                        "enumValue": 11
+                        "enumValue": "onlyElectricalCharging"
                     },
                     {
                         "name": "onlyResidents",
                         "displayName": "OnlyResidents",
-                        "enumValue": 12
+                        "enumValue": "onlyResidents"
                     },
                     {
                         "name": "onlyWithPermit",
                         "displayName": "OnlyWithPermit",
-                        "enumValue": 13
+                        "enumValue": "onlyWithPermit"
                     },
                     {
                         "name": "onStreet",
                         "displayName": "OnStreet",
-                        "enumValue": 14
+                        "enumValue": "OnStreet"
                     },
                     {
                         "name": "particularConditionsSpaces",
                         "displayName": "ParticularConditionsSpaces",
-                        "enumValue": 15
+                        "enumValue": "particularConditionsSpaces"
                     },
                     {
                         "name": "shortTermMediumTermLongTerm",
                         "displayName": "ShortTermMediumTermLongTerm",
-                        "enumValue": 16
+                        "enumValue": "shortTermMediumTermLongTerm"
                     },
                     {
                         "name": "statisticsOnly",
                         "displayName": "StatisticsOnly",
-                        "enumValue": 17
+                        "enumValue": "statisticsOnly"
                     },
                     {
                         "name": "vehicleTypeSpaces",
                         "displayName": "VehicleTypeSpaces",
-                        "enumValue": 18
+                        "enumValue": "vehicleTypeSpaces"
                     }
                 ]
             },
