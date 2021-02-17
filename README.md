@@ -1,3 +1,4 @@
+<!-- 
 ---
 page_type: sample
 languages:
@@ -7,6 +8,7 @@ products:
 description: "Add 150 character max description"
 urlFragment: "update-this-to-unique-url-stub"
 ---
+-->
 
 # Digital Twins Definition Language (DTDL) ontology for Smart Cities
 
