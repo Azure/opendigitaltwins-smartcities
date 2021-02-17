@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:s4city:city:CityObject;1",
+    "@id": "dtmi:digitaltwins:s4city:city:CityObject;1",
     "@type": "Interface",
     "displayName": "City Object",
     "extends": "dtmi:GeoSPARQL:Feature;1",

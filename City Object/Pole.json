@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:city:Pole;1",
+    "@id": "dtmi:digitaltwins:city:Pole;1",
     "@type": "Interface",
     "displayName": "Pole",
     "extends": "dtmi:s4city:city:CityObject;1",
