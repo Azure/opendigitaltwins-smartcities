@@ -1,6 +1,5 @@
 {
-    
-    "@id": "dtmi:ngsild:city:WeatherObserved;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:WeatherObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
     "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",

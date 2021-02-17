@@ -1,6 +1,6 @@
 {
     
-    "@id": "dtmi:ngsild:city:AirQualityObserved;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:AirQualityObserved;1",
     "@type": "Interface",
     "displayName": "AirQualityObserved",
     "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",

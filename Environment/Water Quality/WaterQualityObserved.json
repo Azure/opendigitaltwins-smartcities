@@ -1,6 +1,6 @@
 {
     
-    "@id": "dtmi:ngsild:city:WaterQualityObserved;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:WaterQualityObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
     "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
