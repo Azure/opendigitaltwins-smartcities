@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:s4city:District;1",
+    "@id": "dtmi:digitaltwins:s4city:city:District;1",
     "@type": "Interface",
     "displayName": "District",
     "extends": "dtmi:s4city:AdministrativeArea;1",
