@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:GeoSPARQL:Feature;1",
+    "@id": "dtmi:digitaltwins:GeoSPARQL:Feature;1",
     "@type": "Interface",
     "displayName": "Feature",
     "description": "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types. GeoSPARQL 1.0 is an OGC Standard.Copyright (c) 2012 Open Geospatial Consortium.",
