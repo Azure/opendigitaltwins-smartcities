@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:ngsild:city:StreetlightModel;1",
+  "@id": "dtmi:digitaltwins:ngsild:city:StreetlightModel;1",
   "@type": "Interface",
   "displayName": "StreetlightModel",
   "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",

@@ -1,5 +1,5 @@
 {
-  "@id": "dtmi:ngsild:city:StreetlightControlCabinet;1",
+  "@id": "dtmi:digitaltwins:ngsild:city:StreetlightControlCabinet;1",
   "@type": "Interface",
   "displayName": "StreetlightControlCabinet",
   "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
