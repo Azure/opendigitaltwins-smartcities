@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:availableSpotNumber;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:availableSpotNumber;1",
     "@type": "Interface",
     "displayName": "AvailableSpotNumber",
     "@context" : "dtmi:dtdl:context;2",

@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:maximumAllowedHeight;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:maximumAllowedHeight;1",
     "@type": "Interface",
     "displayName": "MaximumAllowedHeight",
     "@context" : "dtmi:dtdl:context;2",

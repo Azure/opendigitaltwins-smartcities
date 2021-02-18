@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:requiredPermit;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:requiredPermit;1",
     "@type": "Interface",
     "displayName": "RequiredPermit",
     "@context" : "dtmi:dtdl:context;2",

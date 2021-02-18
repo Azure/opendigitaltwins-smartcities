@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:OffStreetParking;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:OffStreetParking;1",
     "@type": "Interface",
     "displayName": "OffStreetParking",  
     "@context" : "dtmi:dtdl:context;2",
