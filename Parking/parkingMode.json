@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:parkingMode;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:parkingMode;1",
     "@type": "Interface",
     "displayName": "ParkingMode",
     "@context" : "dtmi:dtdl:context;2",

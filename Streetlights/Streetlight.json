@@ -1,20 +1,20 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:Streetlight;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1",
     "@type": "Interface",
     "displayName": "Streetlight",
-    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
         {
           "@type": "Relationship",
           "name": "refStreetlightModel",
           "description": "Streetlight's model.",
-          "target": "dtmi:ngsild:city:StreetlightModel;1" 
+          "target": "dtmi:digitaltwins:ngsi_ld:city:StreetlightModel;1" 
         },
         {
           "@type": "Relationship",
           "name": "refStreetlightControlCabinet",
           "description": "If this streetlight is individually controlled, reference to the control cabinet in charge of.",
-          "target": "dtmi:ngsild:city:StreetlightControlCabinet;1"
+          "target": "dtmi:digitaltwins:ngsi_ld:city:StreetlightControlCabinet;1"
         },
         {
           "@type": "Property",
@@ -90,13 +90,13 @@
           "@type": "Relationship",
           "name": "refDevice",
           "description": "Reference to the device(s) used to monitor this streetligth. List of Reference to entity(ies) of type Device.",
-          "target": "dtmi:ngsild:city:Device;1"
+          "target": "dtmi:digitaltwins:ngsi_ld:city:Device;1"
         },
         {
           "@type": "Relationship",
           "name": "refStreetlightGroup",
           "description": "Streetlight's group, if this streetlight belongs to any group.",
-          "target": "dtmi:ngsild:city:StreetlightGroup;1"
+          "target": "dtmi:digitaltwins:ngsi_ld:city:StreetlightGroup;1"
         },
         {
           "@type": "Property",

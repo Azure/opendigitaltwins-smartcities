@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:deviceModel;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:deviceModel;1",
     "@type": "Interface",
     "displayName": "DeviceModel",
     "contents":[
@@ -27,7 +27,7 @@
         {
             "@type": "Component",
             "name": "category",
-            "schema": "dtmi:ngsild:city:deviceCategory;1",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:deviceCategory;1",
             "displayName": "Category"
         }
 

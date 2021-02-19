@@ -1,9 +1,9 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:ParkingGroup;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1",
     "@type": "Interface",
     "displayName": "ParkingGroup",  
     "@context" : "dtmi:dtdl:context;2",
-    "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
         {
             "@type": "Property",
@@ -178,82 +178,82 @@
         {
             "@type": "Component",
             "name": "areBordersMarked",
-            "schema": "dtmi:ngsild:city:areBordersMarked;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:areBordersMarked;1"
         },
         {
             "@type": "Component",
             "name": "availableSpotNumber",
-            "schema": "dtmi:ngsild:city:availableSpotNumber;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:availableSpotNumber;1"
         },
         {
             "@type": "Component",
             "name": "averageSpotLength",
-            "schema": "dtmi:ngsild:city:averageSpotLength;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:averageSpotLength;1"
         },
         {
             "@type": "Component",
             "name": "averageSpotWidth",
-            "schema": "dtmi:ngsild:city:averageSpotWidth;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:averageSpotWidth;1"
         },
         {
             "@type": "Component",
             "name": "maximumAllowedHeight",
-            "schema": "dtmi:ngsild:city:maximumAllowedHeight;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:maximumAllowedHeight;1"
         },
         {
             "@type": "Component",
             "name": "maximumAllowedWidth",
-            "schema": "dtmi:ngsild:city:maximumAllowedWidth;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:maximumAllowedWidth;1"
         },
         {
             "@type": "Component",
             "name": "maximumParkingDuration",
-            "schema": "dtmi:ngsild:city:maximumParkingDuration;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:maximumParkingDuration;1"
         },
         {
             "@type": "Component",
             "name": "occupancyDetectionType",
-            "schema": "dtmi:ngsild:city:occupancyDetectionType;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:occupancyDetectionType;1"
         },
         {
             "@type": "Component",
             "name": "parkingMode",
-            "schema": "dtmi:ngsild:city:parkingMode;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:parkingMode;1"
         },
         {
             "@type": "Component",
             "name": "reservationType",
-            "schema": "dtmi:ngsild:city:reservationType;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:reservationType;1"
         },
         {
             "@type": "Component",
             "name": "chargeType",
-            "schema": "dtmi:ngsild:city:chargeType;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:chargeType;1"
         },
         {
             "@type": "Component",
             "name": "totalSpotNumber",
-            "schema": "dtmi:ngsild:city:totalSpotNumber;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:totalSpotNumber;1"
         },
         {
             "@type": "Relationship",
             "name": "refOnStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:OnStreetParking;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:OnStreetParking;1"	
         },
         {
             "@type": "Relationship",
             "name": "refOffStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:OffStreetParking;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"	
         },
         {
             "@type": "Relationship",
             "name": "refParkingSpot",
             "minMultiplicity": 0,
-            "target": "dtmi:ngsild:city:ParkingSpot;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"	
         }
     ]
 }

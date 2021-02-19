@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:extraSpotNumber;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:extraSpotNumber;1",
     "@type": "Interface",
     "displayName": "ExtraSpotNumber",
     "@context" : "dtmi:dtdl:context;2",

@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:reservationType;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:reservationType;1",
     "@type": "Interface",
     "displayName": "ReservationType",
     "@context" : "dtmi:dtdl:context;2",

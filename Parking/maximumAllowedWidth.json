@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:maximumAllowedWidth;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:maximumAllowedWidth;1",
     "@type": "Interface",
     "displayName": "MaximumAllowedWidth",
     "@context" : "dtmi:dtdl:context;2",

@@ -1,7 +1,7 @@
 {
-    "@id": "dtmi:digitaltwins:ngsild:city:EVChargingStation;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:EVChargingStation;1",
     "@type": "Interface",   
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "displayName": "EV Charging Station",
     "description":"EV Charging Station",
     "contents":[
