@@ -71,8 +71,8 @@ To learn how to adopt the ontology for your project, refer to [How to use the on
 - Use English terms, preferably American English.
 - Use camel case syntax for attribute names (camelcase).
 - Entity Type names must start with a Capital letter, for example: Streetlight.
-- Use names and not verbs for Attributes of type Property. Example: totalSpotNumber, dateIssued
-- Use verbs for Relationship and optional an object, for example: hasStop, operatedBy
+- Use names and not verbs for Attributes of type Property, for example: totalSpotNumber, dateIssued.
+- Use verbs for Relationship and optional an object, for example: hasStop, operatedBy.
 
 ## Data Types
 DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas)
