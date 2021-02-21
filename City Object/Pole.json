@@ -2,7 +2,7 @@
     "@id": "dtmi:digitaltwins:city:Pole;1",
     "@type": "Interface",
     "displayName": "Pole",
-    "extends": "dtmi:s4city:city:CityObject;1",
+    "extends": "dtmi:digitaltwins:s4city:city:CityFurniture;1",
     "description": "",
     "contents": [
     
