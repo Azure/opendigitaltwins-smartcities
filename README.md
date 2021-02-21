@@ -47,7 +47,7 @@ We worked with our partners at [Sirus](https://sirus.be/) to provide DTDL-based 
 
 The [ETSI specification for Context Information Management](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
 
-
+<!-- 
 
 ## Contents
 
@@ -63,7 +63,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 | `LICENSE`         | The license for the sample.                |
 
 
-
+-->
 ## Running a Sample
 
 Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
