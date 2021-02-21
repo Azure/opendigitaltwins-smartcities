@@ -30,6 +30,8 @@ To drive openness and interoperability, Azure Digital Twins comes with an open m
 
 To accelerate development of digital twins solutions for smart cities, we worked with our partners to provide DTDL-based onotlogy leveraging well-established industry stardards, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like OASC. The goals of the resulting open-source DTDL Smart Cities ontology is to provide common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
 
+## Overview
+
 
 ## Contents
 
@@ -59,6 +61,25 @@ Outline step-by-step instructions to execute the sample and see its output. Incl
 ## Key concepts
 
 Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+# Modeling guidelines 
+Before creating new entities, [check if they exist already in the repo](https://github.com/Azure/opendigitaltwins-smartcities). You can look under each folder based on the use cases (e.g Environment, Mobility, etc.).
+
+To learn how to adopt the ontology for your project, refer to [How to use the ontology]().
+
+## Sytanx 
+- Use English terms, preferably American English.
+- Use camel case syntax for attribute names (camelcase).
+- Entity Type names must start with a Capital letter, for example: Streetlight.
+- Use names and not verbs for Attributes of type Property. Example: totalSpotNumber, dateIssued
+- Use verbs for Relationship and optional an object, for example: hasStop, operatedBy
+
+## Data Types
+DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas)
+
+
+## Validation 
+Use the [DTDL Validator tool](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/) to validate the model document to make sure the DTDL is valid.
 
 
 # Contributing
