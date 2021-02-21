@@ -10,7 +10,7 @@ urlFragment: "update-this-to-unique-url-stub"
 ---
 -->
 
-# Digital Twins Definition Language (DTDL) ontology for Smart Cities
+# Digital Twins Definition Language (DTDL) based ontology for Smart Cities
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -34,9 +34,9 @@ For smart cities, we started by evaluating a number of existing standards includ
 
 ## General Pricinciples
 
-- Driven-by-implementation approach: the ontology will focus on IoT driven use cases and validated in practice via Azure Digital Twins.
+- Driven-by-implementation approach: the ontology will focus on IoT driven use cases and validated in practice via [Azure Digital Twins]().
 - Leverage open source royalty-free standards. Please see [Licensing and Credits]().
-- Open contribution. Contributuon is open to anybody. Please see [contributions guidlines] ().
+- Open contribution. Contributuon is open to anybody. Please see [contributions guidlines]().
 
 
 ## Smart Cities ontology for Digital Twins Overview
