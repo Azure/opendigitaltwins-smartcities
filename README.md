@@ -10,7 +10,7 @@ urlFragment: "update-this-to-unique-url-stub"
 ---
 -->
 
-# Digital Twins Definition Language (DTDL) based ontology for Smart Cities
+# Digital Twins Definition Language based ontology for Smart Cities
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -67,7 +67,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 
 -->
-## Running a Sample
+## How To Use
 
 Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
 
