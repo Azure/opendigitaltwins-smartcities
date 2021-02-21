@@ -10,7 +10,7 @@ urlFragment: "update-this-to-unique-url-stub"
 ---
 -->
 
-# Digital Twins Definition Language (DTDL) ontology for Smart Cities
+# Digital Twins Definition Language (DTDL) based ontology for Smart Cities
 
 <!-- 
 Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
@@ -28,8 +28,29 @@ Last year, we announced general availability of [Azure Digital Twins](https://az
 
 To drive openness and interoperability, Azure Digital Twins comes with an open modeling language, [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl), which provides flexibility, ease of use, and integration into the rest of the Azure platform. Using DTDL, developers can describe twins in terms of the telemetry they emit, the properties they report or synchronize and the commands they respond to. Most importantly, DTDL also described relationship between twins.
 
-To accelerate development of digital twins solutions for smart cities, we worked with our partners to provide DTDL-based onotlogy leveraging well-established industry stardards, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like OASC. The goals of the resulting open-source DTDL Smart Cities ontology is to provide common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
+To accelerate development of digital twins solutions, our goal is to provide DTDL-based ontology definition for various domains, which learns from, builds on, and/or uses industry standards, meets the needs of downstream of developers, and will be adopted and/or extended by the industry. 
 
+For smart cities, we started by evaluating a number of existing standards including ETSI CIM NGSI-LD models for Smart Cities, Saref4City, CityGML, ISOm and others. 
+
+### General Pricinciples
+
+- Driven-by-implementation approach: the ontology will focus on IoT driven use cases and validated in practice via [Azure Digital Twins]().
+- Leverage open source royalty-free standards. Please see [Licensing and Credits]().
+- Open contribution. Contributuon is open to anybody. Please see [contributions guidlines]().
+
+
+## Ontology Overview
+In domains like Smart City, the lack of open and standardized approach for exchange of context information has been recognized as a hinderance to the widespread adoption of smart services. 
+A common representation of places, infrastructure, and assets is paramount for interoperability, re-use, and information sharing across multiple applications. 
+
+We worked with our partners at [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like [OASC](https://oascities.org/). The resulting open-source DTDL Smart Cities ontology provides common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
+
+The [ETSI Context Information Management](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
+
+### Information Model Mapping 
+
+
+<!-- 
 
 ## Contents
 
@@ -44,21 +65,42 @@ Outline the file contents of the repository. It helps users navigate the codebas
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
 
-## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
-
-## Setup
-
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
-
-## Running the sample
+-->
+## Running a Sample
 
 Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
 
-## Key concepts
+### Prerequisities 
+Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+
+### Key concepts
 
 Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+
+
+### Set up 
+Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+
+
+# Modeling guidelines 
+Before creating new entities, [check if they exist already in the repo](https://github.com/Azure/opendigitaltwins-smartcities). You can look under each folder based on the use cases (e.g Environment, Mobility, etc.).
+
+To learn how to adopt the ontology for your project, refer to [How to use the ontology]().
+
+## Sytanx 
+- Use English terms, preferably American English.
+- Use camel case syntax for attribute names (camelcase).
+- Entity Type names must start with a Capital letter, for example: Streetlight.
+- Use names and not verbs for Attributes of type Property, for example: totalSpotNumber, dateIssued.
+- Use verbs for Relationship and optional an object, for example: hasStop, operatedBy.
+
+## Data Types
+DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas)
+
+
+## Validation 
+Use the [DTDL Validator tool](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/) to validate the model document to make sure the DTDL is valid.
 
 
 # Contributing
@@ -70,7 +112,6 @@ Contributor License Agreement (CLA) declaring that you have the right to, and ac
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
 -->
-## Modeling conventions
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
