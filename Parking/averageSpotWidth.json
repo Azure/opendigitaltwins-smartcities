@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:averageSpotWidth;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:averageSpotWidth;1",
     "@type": "Interface",
     "displayName": "AverageSpotWidth",
     "@context" : "dtmi:dtdl:context;2",

@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:acceptedPaymentMethod;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:acceptedPaymentMethod;1",
     "@type": "Interface",
     "displayName": "AcceptedPaymentMethod",
     "@context" : "dtmi:dtdl:context;2",

@@ -1,8 +1,8 @@
 {
-    "@id": "dtmi:s4city:city:CityFurniture;1",
+    "@id": "dtmi:digitaltwins:s4city:city:CityFurniture;1",
     "@type": "Interface",
     "displayName": "City Furniture",
-    "extends": "dtmi:s4city:city:CityObject;1",
+    "extends": "dtmi:digitaltwins:s4city:city:CityObject;1",
     "description": "",
     "contents": [
     

@@ -1,7 +1,7 @@
 {
-    "@id": "dtmi:ngsild:city:EVChargingStation;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:EVChargingStation;1",
     "@type": "Interface",   
-    "extends": "dtmi:ngsild:city:NGSILDBaseModel;1",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "displayName": "EV Charging Station",
     "description":"EV Charging Station",
     "contents":[
@@ -235,7 +235,7 @@
         {
             "@type" : ["Property","Current"],
             "name": "amperage",
-            "description": "The total amperage offered by the charging station.. Model:'http://schema.org/Number'. Units:'Ampers (A)'",
+            "description": "The total amperage offered by the charging station. Units:'Ampers (A)'",
             "schema": "double",
             "unit": "ampere",
             "writable": true	
@@ -244,7 +244,7 @@
         {
             "@type" : ["Property","Voltage"],
             "name": "voltage",
-            "description": "The total voltage offered by the charging station. Model:'http://schema.org/Number'. Units:'Volts (V)'",
+            "description": "The total voltage offered by the charging station. Units:'Volts (V)'",
             "schema": "double",
             "unit": "volt",
             "writable": true	

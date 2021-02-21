@@ -1,8 +1,8 @@
 {
     
-    "@id": "dtmi:ngsild:city:NoiseLevelObserved;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:NoiseLevelObserved;1",
     "@type": "Interface",   
-    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:EnvironmentBaseModel;1",
     "displayName": "NoiseLevelObserved",
     "description":"The Noise level observed at a certain spot",
     "contents":[
@@ -53,14 +53,14 @@
             "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:device;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"	
         },
         { 
             "@type": "Relationship",
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:WeatherObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"	
         }
 
 

@@ -1,9 +1,8 @@
 {
-    
-    "@id": "dtmi:ngsild:city:WeatherObserved;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1",
     "@type": "Interface",
     "@context" : "dtmi:dtdl:context;2",
-    "extends": "dtmi:ngsild:city:EnvironmentBaseModel;1",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:EnvironmentBaseModel;1",
     "displayName": "WeatherObserved",
     "contents":[
         {
@@ -137,7 +136,7 @@
             "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:ngsild:city:device;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"	
         }
     ]
 }

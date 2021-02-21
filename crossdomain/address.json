@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:address;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:address;1",
     "@type": "Interface",
     "displayName": "Address",
     "contents":[

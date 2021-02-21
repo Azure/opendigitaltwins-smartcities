@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:ngsild:city:StreetlightModel;1",
+  "@id": "dtmi:digitaltwins:ngsi_ld:city:StreetlightModel;1",
   "@type": "Interface",
   "displayName": "StreetlightModel",
-  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+  "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
   
     {

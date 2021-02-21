@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:allowedVehicleType;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:allowedVehicleType;1",
     "@type": "Interface",
     "displayName": "AllowedVehicleType",
     "@context" : "dtmi:dtdl:context;2",

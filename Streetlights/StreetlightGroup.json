@@ -1,21 +1,21 @@
 {
-  "@id": "dtmi:ngsild:city:StreetlightGroup;1",
+  "@id": "dtmi:digitaltwins:ngsi_ld:city:StreetlightGroup;1",
   "@type": "Interface",
   "displayName": "StreetlightGroup",
-  "extends" : "dtmi:ngsild:city:NGSILDBaseModel;1",
+  "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
      
     {
       "@type": "Relationship",
       "name": "refStreetLight",
       "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights.",
-      "target": "dtmi:ngsild:city:Streetlight;1"
+      "target": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1"
     },
     {
       "@type": "Relationship",
       "name": "refStreetlightControlCabinet",
       "description": "Streetlight group's control cabinet",
-      "target": "dtmi:ngsild:city:StreetlightControlCabinet;1"
+      "target": "dtmi:digitaltwins:ngsi_ld:city:StreetlightControlCabinet;1"
     },
     {
       "@type": "Property",

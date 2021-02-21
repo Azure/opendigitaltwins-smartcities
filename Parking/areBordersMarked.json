@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:ngsild:city:areBordersMarked;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:areBordersMarked;1",
     "@type": "Interface",
     "displayName": "AreBordersmarked",
     "@context" : "dtmi:dtdl:context;2",
