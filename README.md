@@ -39,7 +39,7 @@ For smart cities, we started by evaluating a number of existing standards includ
 - Open contribution. Contributuon is open to anybody. Please see [contributions guidlines]().
 
 
-## Smart Cities ontology for Digital Twins Overview
+## Ontology Overview
 In domains like Smart City, the lack of open and standardized approach for exchange of context information has been recognized as a hinderance to the widespread adoption of smart services. 
 A common representation of places, infrastructure, and assets is paramount for interoperability, re-use, and information sharing across multiple applications. 
 
