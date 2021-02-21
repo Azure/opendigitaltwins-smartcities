@@ -2,7 +2,7 @@
     "@id": "dtmi:digitaltwins:s4city:city:AdministrativeArea;1",
     "@type": "Interface",
     "displayName": "Administrative Area",
-    "extends": "dtmi:GeoSPARQL:Feature;1",
+    "extends": "dtmi:digitaltwins:GeoSPARQL:Feature;1",
     "description": "",
     "contents": [
     

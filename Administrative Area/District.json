@@ -2,7 +2,7 @@
     "@id": "dtmi:digitaltwins:s4city:city:District;1",
     "@type": "Interface",
     "displayName": "District",
-    "extends": "dtmi:s4city:AdministrativeArea;1",
+    "extends": "dtmi:digitaltwins:s4city:city:AdministrativeArea;1",
     "contents": [
     
 

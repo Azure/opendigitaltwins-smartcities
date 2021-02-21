@@ -1,8 +1,8 @@
 {
-    "@id": "dtmi:s4city:Country;1",
+    "@id": "dtmi:digitaltwins:s4city:city:Country;1",
     "@type": "Interface",
     "displayName": "Country",
-    "extends": "dtmi:s4city:AdministrativeArea;1",
+    "extends": "dtmi:digitaltwins:s4city:city:AdministrativeArea;1",
     "description": "",
     "contents": [
     
