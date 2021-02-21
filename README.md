@@ -32,7 +32,7 @@ To accelerate development of digital twins solutions, our goal is to provide DTD
 
 For smart cities, we started by evaluating a number of existing standards including ETSI CIM NGSI-LD models for Smart Cities, Saref4City, CityGML, ISOm and others. 
 
-## General Pricinciples
+### General Pricinciples
 
 - Driven-by-implementation approach: the ontology will focus on IoT driven use cases and validated in practice via [Azure Digital Twins]().
 - Leverage open source royalty-free standards. Please see [Licensing and Credits]().
