@@ -43,9 +43,12 @@ For smart cities, we started by evaluating a number of existing standards includ
 In domains like Smart City, the lack of open and standardized approach for exchange of context information has been recognized as a hinderance to the widespread adoption of smart services. 
 A common representation of places, infrastructure, and assets is paramount for interoperability, re-use, and information sharing across multiple applications. 
 
-We worked with our partners at [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD models]() which have been adopted by organizations like [OASC](https://oascities.org/). The resulting open-source DTDL Smart Cities ontology provides common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
+We worked with our partners at [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like [OASC](https://oascities.org/). The resulting open-source DTDL Smart Cities ontology provides common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
 
-The [ETSI specification for Context Information Management](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
+The [ETSI Context Information Management](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
+
+### Information Model Mapping 
+
 
 <!-- 
 
