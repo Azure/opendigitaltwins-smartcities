@@ -10,13 +10,13 @@
         {
             "@type": "Relationship",
             "name": "Contains",
-            "target": "dtmi:GeoSPARQL:SpatialObject;1"
+            "target": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1"
         },
 
         {
             "@type": "Relationship",
             "name": "Within",
-            "target": "dtmi:GeoSPARQL:SpatialObject;1"
+            "target": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1"
         }
 
 
