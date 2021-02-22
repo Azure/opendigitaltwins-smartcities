@@ -55,13 +55,21 @@ The following table shows NGSI-LD core meta-model and mapping to DTDL.
 
 | NGSI-LD     | DTDL                              |
 |-------------------|--------------------------------------------|
+| `Entity`             | `Interface`|
+| `Relationship`      | [`Relationship`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#relationship) [Component](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#component)    |
+| `Property`    | [Property](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) [Telemetry](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)|
+| N/A| [Command](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) |
+
+<!--
+| NGSI-LD     | DTDL                              |
+|-------------------|--------------------------------------------|
 | `Entity`             | [Interface](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))|
 | `Relationship`      | [Relationship](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))
 [Component](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))     |
 | `Property`    | [Property](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) [Telemetry](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)|
 | N/A| [Command](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) |
 
-
+!-->
 
 <!-- 
 
