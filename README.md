@@ -49,6 +49,19 @@ The [ETSI Context Information Management](https://etsi.org/images/files/ETSIWhit
 
 ### Information Model Mapping 
 
+The NGSI-LD core meta-model provides a formal basis for representing property graphs using RDF/RDFS/OWL. It represents Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
+
+The following table shows NGSI-LD core meta-model and mapping to DTDL.
+
+| NGSI-LD     | DTDL                              |
+|-------------------|--------------------------------------------|
+| `Entity`             | [Interface](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))|
+| `Relationship`      | [Relationship](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))
+[Component](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com))     |
+| `Property`    | [Property](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) [Telemetry](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)|
+| N/A| [Command](opendigitaltwins-dtdl/dtdlv2.md at master · Azure/opendigitaltwins-dtdl (github.com)) |
+
+
 
 <!-- 
 
@@ -96,7 +109,7 @@ To learn how to adopt the ontology for your project, refer to [How to use the on
 - Use verbs for Relationship and optional an object, for example: hasStop, operatedBy.
 
 ## Data Types
-DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas)
+DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas).
 
 
 ## Validation 
