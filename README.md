@@ -45,7 +45,7 @@ A common representation of places, infrastructure, and assets is paramount for i
 
 We worked with our partners at [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with ETSI CIM NGSI-LD models which have been adopted by organizations like [OASC](https://oascities.org/). The resulting open-source DTDL Smart Cities ontology provides common ground for modeling smart cities solutions, accelerate developers time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
 
-The [ETSI Context Information Management](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
+The [ETSI CIM NGSI-LD](https://etsi.org/images/files/ETSIWhitePapers/etsi_wp31_NGSI_API.pdf) specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms and provides the tools to create domain-specific extensions to model any information. 
 
 ### Information Model Mapping 
 
@@ -59,6 +59,8 @@ The following table shows NGSI-LD core meta-model and mapping to DTDL.
 | `Relationship`      | [`Relationship`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#relationship) [`Component`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#component)    |
 | `Property`    | [`Property`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#property) [`Telemetry`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#telemetry)|
 | N/A| [`Command`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#command) |
+
+
 
 
 <!-- 
@@ -101,10 +103,10 @@ To learn how to adopt the ontology for your project, refer to [How to use the on
 
 ## Sytanx 
 - Use English terms, preferably American English.
-- Use camel case syntax for attribute names (camelcase).
-- Entity Type names must start with a Capital letter, for example: Streetlight.
-- Use names and not verbs for Attributes of type Property, for example: totalSpotNumber, dateIssued.
-- Use verbs for Relationship and optional an object, for example: hasStop, operatedBy.
+- Use camel case syntax for attribute names (`camelcase`).
+- Entity Type names must start with a Capital letter, for example: `Streetlight`.
+- Use names and not verbs for Attributes of type Property, for example: `totalSpotNumber`, `dateIssued`.
+- Use verbs for Relationship and optional an object, for example: `hasStop`, `operatedBy`.
 
 ## Data Types
 DTDL provides a full set of [primitive data types, along with support for a variety of complex schemas](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#schemas).
