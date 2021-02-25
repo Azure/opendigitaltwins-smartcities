@@ -27,6 +27,8 @@ The concept of digital twins—a digital representation of real-world environmen
 Last year, we announced general availability of [Azure Digital Twins](https://azure.microsoft.com/en-us/blog/azure-digital-twins-now-generally-available-create-iot-solutions-that-model-the-real-world/) platform which enables modeling and creating digital representations of connected environments like buildings, factories, farms, energy networks, railways, stadiums, and cities, then bring these entities to life with a live execution environment that integrates IoT and other data sources. 
 
 
+Through our collaboration with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) we are excited to make this open-source GitHub repository of Smart Cities ontology for Azure Digital Twins available to the ecosystem. 
+
 ### Why ontologies
 
 To drive openness and interoperability, Azure Digital Twins comes with an open modeling language, [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl), which provides flexibility, ease of use, and integration into the rest of the Azure platform. Using DTDL, developers can describe twins in terms of the telemetry they emit, the properties they report or synchronize and the commands they respond to. Most importantly, DTDL also allows describing relationship between twins.
@@ -41,7 +43,7 @@ Common representation of places, infrastructure, and assets will be paramount fo
 - Open contribution. Contributuon is open to anybody. Please see [contributions guidlines]().
 
 
-## Smart Cities Ontology approach and overview
+## Smart Cities ontology approach overview
 
 WE collaborated with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/006/01.01.01_60/gs_CIM006v010101p.pdf), and accelerate accelerate development of digital twins-based solutions for smart cities.
 
@@ -51,7 +53,7 @@ The ETSI CIM NGSI-LD specification defines an open framework for context informa
 
 The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community
 
-### Information Model Mapping 
+#### Information Model Mapping 
 
 The NGSI-LD core meta-model provides a formal basis for representing property graphs using RDF/RDFS/OWL. It represents Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
 
