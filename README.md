@@ -78,7 +78,7 @@ Some of the use cases that are increasingly relevant to cities given the availab
 
 In addition to the ETSI NGSI-LD, we’ve also started adapting in DTDL ETSI SAREF extension for Smart Cities (Saref4City) ontology for Topology to represent spatial objects, Administrative Area and City Object modeling. Using Saref4City ontology constructs represented in DTDL allowed us to model city objects like poles, their containment within an administrative area of a city, and linked to the smart models in the domain of mobility, environmental, parking adapted in DTDL from NGSI-LD models for Smart Cities described above. 
 
-#### Sample diagram on how to bring it all together
+#### Example on how to bring it all together
 ![DTDLsmartcitiesontologyextended](https://user-images.githubusercontent.com/33332080/109098768-bebbf500-76d6-11eb-99ed-f100c06e8ae0.PNG)
 
 
