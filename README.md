@@ -52,7 +52,7 @@ The ETSI CIM NGSI-LD specification defines an open framework for context informa
 
 The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community
 
-##### ETSI NGSI-LD to DTDL Information Model Mapping 
+#### ETSI NGSI-LD to DTDL Information Model Mapping 
 
 The NGSI-LD core meta-model provides a formal basis for representing property graphs using RDF/RDFS/OWL. It represents Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
 
