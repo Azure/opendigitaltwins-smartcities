@@ -101,7 +101,9 @@ Outline the file contents of the repository. It helps users navigate the codebas
 -->
 ## How To Use
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+Using these models you can now build Azure Digital Twins based solution and bring it to life in a live execution environment. 
+
+You can use [Azure Digital Twins Explorer](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/) to create a sample easily: upload models, instantiate entities in a twins graph, visualize the graph and run queries against the graph. See a sample instantiated from this Smart Cities ontology. 
 
 ![ADTExplorerexample](https://user-images.githubusercontent.com/33332080/109099646-46563380-76d8-11eb-9af6-7a2cf9999b65.PNG)
 
