@@ -76,7 +76,7 @@ Some of the use cases that are increasingly relevant to cities given the availab
 
 ### Extending for Spatial representation, City Administration and City Object
 
-In addition to the ETSI NGSI-LD, we’ve also started adapting in DTDL ETSI SAREF extension for Smart Cities (Saref4City) ontology for Topology to represent spatial objects, Administrative Area and City Object modeling. Using Saref4City ontology constructs represented in DTDL allowed us to model city objects like poles, their containment within an administrative area of a city, and linked to the smart models in the domain of mobility, environmental, parking adapted in DTDL from NGSI-LD models for Smart Cities described above. 
+In addition to the ETSI NGSI-LD, we’ve also started adapting in DTDL the constructs of [ETSI SAREF extension for Smart Cities (Saref4City)](https://www.etsi.org/deliver/etsi_ts/103400_103499/10341004/01.01.01_60/ts_10341004v010101p.pdf) ontology for Topology to represent spatial objects, Administrative Area and City Object modeling. Using Saref4City ontology constructs represented in DTDL allowed us to model city objects like poles, their containment within an administrative area of a city, and linked to the smart models in the domain of mobility, environmental, parking adapted in DTDL from NGSI-LD models for Smart Cities described above. 
 
 #### Example on how to bring it all together
 ![DTDLsmartcitiesontologyextended](https://user-images.githubusercontent.com/33332080/109098768-bebbf500-76d6-11eb-99ed-f100c06e8ae0.PNG)
@@ -101,7 +101,9 @@ Outline the file contents of the repository. It helps users navigate the codebas
 -->
 ## How To Use
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+Using these models you can now build Azure Digital Twins based solution and bring it to life in a live execution environment. 
+
+You can use [Azure Digital Twins Explorer](https://docs.microsoft.com/en-us/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/) to create a sample easily: upload models, instantiate entities in a twins graph, visualize the graph and run queries against the graph. See a sample instantiated from this Smart Cities ontology. 
 
 ![ADTExplorerexample](https://user-images.githubusercontent.com/33332080/109099646-46563380-76d8-11eb-9af6-7a2cf9999b65.PNG)
 
@@ -120,12 +122,22 @@ Explain how to prepare the sample once the user clones or downloads the reposito
 
 -->
 
-# Modeling guidelines 
+# Contributing 
+This project welcomes contributions and suggestions. We've focused on an initial set of models and we welcome you to contribute to extend the initial set of use cases, as well as improve the exsisting models. 
+
+For improvements, please fork this repository, make your changes and send a pull request
+Pull requests will be evaluated based on the applicability for smart cities scenarios, quality of the proposed interface models, adherence to the modeling conventions used in the repo.
+
+For issues or suggestions, file an issue. 
+
+
+
+## Modeling guidelines 
 Before creating new entities, [check if they exist already in the repo](https://github.com/Azure/opendigitaltwins-smartcities). You can look under each folder based on the use cases (e.g Environment, Mobility, etc.).
 
-To learn how to adopt the ontology for your project, refer to [How to use the ontology]().
+To learn how to adopt the ontology for your project, refer to [How to use the ontology](https://github.com/Azure/opendigitaltwins-smartcities#how-to-use).
 
-## Sytanx 
+## Syntax 
 - Use English terms, preferably American English.
 - Use camel case syntax for attribute names (`camelcase`).
 - Entity Type names must start with a Capital letter, for example: `Streetlight`.
@@ -140,19 +152,28 @@ DTDL provides a full set of [primitive data types, along with support for a vari
 Use the [DTDL Validator tool](https://docs.microsoft.com/en-us/samples/azure-samples/dtdl-validator/dtdl-validator/) to validate the model document to make sure the DTDL is valid.
 
 
-# Contributing
-
-This project welcomes contributions and suggestions.  
-
 <!--  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
--->
+
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
 provided by the bot. You will only need to do this once across all repos using our CLA.
+
+-->
+
+# Resources
+- Smart Cities Ontology for Digital Twins [Blog post]() and [IoT Show](https://www.youtube.com/watch?v=GrwI4GIp7nI&feature=youtu.be).
+- Connecting Urban Environments with IoT and Digital Twins [Blog post](https://azure.microsoft.com/en-us/blog/connecting-urban-environments-with-iot-and-digital-twins/).
+- [Azure Digital Twins product page](https://azure.microsoft.com/en-us/services/digital-twins/).
+- [Azure Digital Twins documentation](https://docs.microsoft.com/en-us/azure/digital-twins/).
+- [Azure Digital Twins Tech Deep Dive](https://www.youtube.com/watch?v=5Ku55g1GQG8&feature=youtu.be).
+- [Digital Twins Definition Language specification](https://github.com/Azure/opendigitaltwins-dtdl).
+- [DTDL Ontologies](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-ontologies).
+- [ADT Explorer](https://github.com/Azure-Samples/digital-twins-explorer).
+
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
