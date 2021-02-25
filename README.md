@@ -137,7 +137,7 @@ Before creating new entities, [check if they exist already in the repo](https://
 
 To learn how to adopt the ontology for your project, refer to [How to use the ontology](https://github.com/Azure/opendigitaltwins-smartcities#how-to-use).
 
-## Sytanx 
+## Syntax 
 - Use English terms, preferably American English.
 - Use camel case syntax for attribute names (`camelcase`).
 - Entity Type names must start with a Capital letter, for example: `Streetlight`.
