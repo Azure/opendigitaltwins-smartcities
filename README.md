@@ -45,15 +45,13 @@ Common representation of places, infrastructure, and assets will be paramount fo
 
 ## Smart Cities ontology approach overview
 
-WE collaborated with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/006/01.01.01_60/gs_CIM006v010101p.pdf), and accelerate accelerate development of digital twins-based solutions for smart cities.
-
+We collaborated with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/006/01.01.01_60/gs_CIM006v010101p.pdf), and accelerate accelerate development of digital twins-based solutions for smart cities.
 In addition to ETSI NGSI-LD, we’ve also evaluated Saref4City, CityGML, ISO and others. 
 
-The ETSI CIM NGSI-LD specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms, and a domain-specific extension to model any information. The core meta-model provides a basis for representing property graphs using RDF/RDFS/OWL, and is formed of Entities, their Relationships, and their Properties with values, encoded in JSON-LD. In addition to the core meta-model, NGSI-LD compliant open models for aspects of smart cities have been defined by organizations and projects, including OASC, FIWARE, GSMA and the Synchronicity project. The NGSI-LD models for Smart Cites comprise models in the domains of Mobility, Environment, Waste, Parking, Building, Park, Port, etc. 
+The ETSI CIM NGSI-LD specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms, and a domain-specific extension to model any information. The core meta-model provides a basis for representing property graphs using RDF/RDFS/OWL, and is formed of Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
 
-The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community
 
-#### Information Model Mapping 
+#### ETSI NGSI-LD to DTDL Information Model Mapping 
 
 The NGSI-LD core meta-model provides a formal basis for representing property graphs using RDF/RDFS/OWL. It represents Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
 
@@ -66,6 +64,19 @@ The following table shows NGSI-LD core meta-model and mapping to DTDL.
 | `Property`    | [`Property`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#property) [`Telemetry`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#telemetry)|
 | N/A| [`Command`](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md#command) |
 
+
+
+### ETSI NGSI-LD models for Smart Cities mapped in DTDL
+
+In addition to the core meta-model, NGSI-LD compliant open models for aspects of smart cities have been defined by organizations and projects, including OASC, FIWARE, GSMA and the Synchronicity project. The NGSI-LD models for Smart Cites comprise models in the domains of Mobility, Environment, Waste, Parking, Building, Park, Port, etc. The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community.
+
+![DTDLontologyoverview](https://user-images.githubusercontent.com/33332080/109090778-6e3d9b00-76c8-11eb-9472-8a67e581b3c7.PNG)
+
+Some of the use cases that are increasingly relevant to cities given the availability of IoT devices and sensors are measuring their air quality in a neighborhood, understanding the noise level in a district, the crowd flow in a road segment, traffic flow in a road segment, monitoring on-street parking in parking spots, availability of EV-Charging, or monitoring streetlights and reducing energy consumption.
+
+### Extending for Spatial representation, City Administration and City Object
+
+In addition to the ETSI NGSI-LD, we’ve also started adapting in DTDL ETSI SAREF extension for Smart Cities (Saref4City) ontology for Topology to represent spatial objects, Administrative Area and City Object modeling. Using Saref4City ontology constructs represented in DTDL allowed us to model city objects like poles, their containment within an administrative area of a city, and linked to the smart models in the domain of mobility, environmental, parking adapted in DTDL from NGSI-LD models for Smart Cities described above. 
 
 
 
