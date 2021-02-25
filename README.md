@@ -70,6 +70,7 @@ The property graph nature of NGSI-LD made it quite straightforward to map it to 
 ![DTDLontologyoverview](https://user-images.githubusercontent.com/33332080/109090778-6e3d9b00-76c8-11eb-9472-8a67e581b3c7.PNG)
 
 
+
 <!-- 
 
 ## Contents
