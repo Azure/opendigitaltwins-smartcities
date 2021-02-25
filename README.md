@@ -35,13 +35,13 @@ To drive openness and interoperability, Azure Digital Twins comes with an open m
 
 Common representation of places, infrastructure, and assets will be paramount for interoperability and enabling data sharing between multiple domains. It’s our goal to partner with industry experts and provide [DTDL-based ontologies](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-ontologies) which learn from, build on, and/or use industry standards, meet the needs of developers, and are adopted by the industry. The resulting open-source ontologies provide common ground for modeling connected environments, accelerate developers’ time to results, and enable interoperability between DTDL-based solutions from different solution providers. 
 
-
+<!--
 #### General Pricinciples
 
 - Driven-by-implementation approach: the ontology will focus on IoT driven use cases and validated in practice via [Azure Digital Twins]().
 - Leverage open source royalty-free standards. Please see [Licensing and Credits]().
 - Open contribution. Contributuon is open to anybody. Please see [contributions guidlines]().
-
+!-->
 
 ## Smart Cities ontology approach overview
 
