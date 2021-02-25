@@ -27,7 +27,7 @@ The concept of digital twins—a digital representation of real-world environmen
 Last year, we announced general availability of [Azure Digital Twins](https://azure.microsoft.com/en-us/blog/azure-digital-twins-now-generally-available-create-iot-solutions-that-model-the-real-world/) platform which enables modeling and creating digital representations of connected environments like buildings, factories, farms, energy networks, railways, stadiums, and cities, then bring these entities to life with a live execution environment that integrates IoT and other data sources. 
 
 
-Through our collaboration with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) we are excited to make this open-source GitHub repository of Smart Cities ontology for Azure Digital Twins available to the ecosystem. 
+Through our collaboration with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) we are excited to make this open-source Smart Cities ontology for building Azure Digital Twins solutions available to the ecosystem. 
 
 ### Why ontologies
 
