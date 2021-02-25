@@ -78,6 +78,8 @@ Some of the use cases that are increasingly relevant to cities given the availab
 
 In addition to the ETSI NGSI-LD, we’ve also started adapting in DTDL ETSI SAREF extension for Smart Cities (Saref4City) ontology for Topology to represent spatial objects, Administrative Area and City Object modeling. Using Saref4City ontology constructs represented in DTDL allowed us to model city objects like poles, their containment within an administrative area of a city, and linked to the smart models in the domain of mobility, environmental, parking adapted in DTDL from NGSI-LD models for Smart Cities described above. 
 
+#### Example on how to bring it all together
+![DTDLsmartcitiesontologyextended](https://user-images.githubusercontent.com/33332080/109098768-bebbf500-76d6-11eb-99ed-f100c06e8ae0.PNG)
 
 
 <!-- 
@@ -101,6 +103,10 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
 
+![ADTExplorerexample](https://user-images.githubusercontent.com/33332080/109099646-46563380-76d8-11eb-9af6-7a2cf9999b65.PNG)
+
+
+<!--
 ### Prerequisities 
 Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
 
@@ -112,6 +118,7 @@ Provide users with more context on the tools and services used in the sample. Ex
 ### Set up 
 Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
 
+-->
 
 # Modeling guidelines 
 Before creating new entities, [check if they exist already in the repo](https://github.com/Azure/opendigitaltwins-smartcities). You can look under each folder based on the use cases (e.g Environment, Mobility, etc.).
