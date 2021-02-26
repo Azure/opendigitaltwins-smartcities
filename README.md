@@ -45,7 +45,7 @@ Common representation of places, infrastructure, and assets will be paramount fo
 
 ## Smart Cities ontology approach overview
 
-We collaborated with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD](https://www.etsi.org/deliver/etsi_gs/CIM/001_099/006/01.01.01_60/gs_CIM006v010101p.pdf), and accelerate accelerate development of digital twins-based solutions for smart cities.
+We collaborated with [Open Agile Smart Cities (OASC)](https://oascities.org/) and [Sirus](https://sirus.be/) to provide DTDL-based onotlogy, starting with [ETSI CIM NGSI-LD](https://www.etsi.org/committee/cim), and accelerate accelerate development of digital twins-based solutions for smart cities.
 In addition to ETSI NGSI-LD, we’ve also evaluated Saref4City, CityGML, ISO and others. 
 
 The ETSI CIM NGSI-LD specification defines an open framework for context information exchange named NGSI-LD which comes with an information model that defines the meaning of the most needed terms, and a domain-specific extension to model any information. The core meta-model provides a basis for representing property graphs using RDF/RDFS/OWL, and is formed of Entities, their Relationships, and their Properties with values, encoded in JSON-LD. 
