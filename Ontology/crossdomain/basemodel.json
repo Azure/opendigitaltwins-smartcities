@@ -2,59 +2,59 @@
     "@id": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "@type": "Interface",
     "displayName": "NGSILDBaseModel",
-    "contents":[
-        { 
+    "contents": [
+        {
             "@type": "Property",
             "name": "dataProvider",
             "schema": "string",
-            "writable": true	
-        },    
-        { 
+            "writable": true
+        },
+        {
             "@type": "Property",
             "name": "dateModified",
             "schema": "dateTime",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "dateCreated",
             "schema": "dateTime",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "source",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
-            "name": "alternedName",
+            "name": "alternateName",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "name",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "description",
             "schema": "string",
-            "writable": true	
-        },
-        { 
-            "@type": "Property",
-            "name": "owner",
-            "schema":"string",
             "writable": true
         },
-        { 
+        {
+            "@type": "Property",
+            "name": "owner",
+            "schema": "string",
+            "writable": true
+        },
+        {
             "@type": "Property",
             "name": "seeAlso",
-            "schema" : "string",
+            "schema": "string",
             "writable": true
         },
         {
@@ -68,10 +68,7 @@
             "schema": "dtmi:digitaltwins:ngsi_ld:city:geoLocation;1"
         }
     ],
-        
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
 }
-
-             

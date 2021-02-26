@@ -1,5 +1,5 @@
 {
-    "@id": "dtmi:digitaltwins:ngsi_ld:city:deviceModel;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:DeviceModel;1",
     "@type": "Interface",
     "displayName": "DeviceModel",
     "contents":[
