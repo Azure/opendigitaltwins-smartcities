@@ -2,13 +2,12 @@
   "@id": "dtmi:digitaltwins:ngsi_ld:city:StreetlightGroup;1",
   "@type": "Interface",
   "displayName": "StreetlightGroup",
-  "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+  "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
-     
     {
       "@type": "Relationship",
       "name": "refStreetLight",
-      "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities fo type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights.",
+      "description": "Relationship. List of streetlight entities belonging to this group. List of references to entities for type Streetlight. Allowed values: There must topographical integrity between the location of the group and of the individual streetlights.",
       "target": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1"
     },
     {
@@ -80,7 +79,6 @@
             "schema": "string"
           }
         ]
-
       },
       "writable": true
     },
@@ -129,7 +127,6 @@
         ]
       },
       "writable": true
-
     },
     {
       "@type": "Property",

@@ -2,9 +2,8 @@
   "@id": "dtmi:digitaltwins:ngsi_ld:city:StreetlightModel;1",
   "@type": "Interface",
   "displayName": "StreetlightModel",
-  "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+  "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
-  
     {
       "@type": "Property",
       "name": "maxPowerConsumption",
@@ -134,29 +133,29 @@
         "@type": "Enum",
         "valueSchema": "string",
         "enumValues": [
-        {
-          "name": "LED",
-          "displayName": "LED",
-          "enumValue": "LED"
-        },
-        {
-          "name": "LPS",
-          "displayName": "LPS",
-          "enumValue": "LPS"
-        },
-        {
-          "name": "HPS",
-          "displayName": "HPS",
-          "enumValue": "HPS"
-        }
-      ]
-    },
+          {
+            "name": "LED",
+            "displayName": "LED",
+            "enumValue": "LED"
+          },
+          {
+            "name": "LPS",
+            "displayName": "LPS",
+            "enumValue": "LPS"
+          },
+          {
+            "name": "HPS",
+            "displayName": "HPS",
+            "enumValue": "HPS"
+          }
+        ]
+      },
       "writable": true
     },
     {
       "@type": "Property",
       "name": "colorTemperature",
-      "description": "Correlated color temperature of the lamp.Units:'Kelvin degrees (K)'",
+      "description": "Correlated color temperature of the lamp. Units:'Kelvin degrees (K)'",
       "writable": true,
       "schema": "integer"
     },
@@ -239,5 +238,4 @@
     }
   ],
   "@context": "dtmi:dtdl:context;2"
-
 }
