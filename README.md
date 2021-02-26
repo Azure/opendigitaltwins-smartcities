@@ -68,7 +68,9 @@ The following table shows NGSI-LD core meta-model and mapping to DTDL.
 
 ### ETSI NGSI-LD models for Smart Cities mapped in DTDL
 
-In addition to the core meta-model, NGSI-LD compliant open models for aspects of smart cities have been defined by organizations and projects, including OASC, FIWARE, GSMA and the Synchronicity project. The NGSI-LD models for Smart Cites comprise models in the domains of Mobility, Environment, Waste, Parking, Building, Park, Port, etc. The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community.
+In addition to the core meta-model, NGSI-LD compliant open models for aspects of smart cities have been defined by organizations and projects, including OASC, FIWARE, GSMA and the Synchronicity project. The NGSI-LD models for Smart Cites comprise models in the domains of Mobility, Environment, Waste, Parking, Building, Park, Port, etc. 
+
+The property graph nature of NGSI-LD made it quite straightforward to map it to DTDL, and with today’s release, we are making an initial set of DTDL models adapted from the NGSI-LD open models for Smart Cities available to the community.
 
 ![DTDLontologyoverview](https://user-images.githubusercontent.com/33332080/109090778-6e3d9b00-76c8-11eb-9472-8a67e581b3c7.PNG)
 
