@@ -2,13 +2,10 @@
     "@id": "dtmi:digitaltwins:ngsi_ld:city:Road;1",
     "@type": "Interface",
     "displayName": "Road",
-    "contents":[
-       
-
+    "contents": [
+        
     ],
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
-
-    
 }

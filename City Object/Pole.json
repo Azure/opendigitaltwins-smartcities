@@ -5,46 +5,36 @@
     "extends": "dtmi:digitaltwins:s4city:city:CityFurniture;1",
     "description": "",
     "contents": [
-    
-        { 
+        {
             "@type": "Relationship",
             "name": "refStreetlight",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1"
         },
-
-        { 
+        {
             "@type": "Relationship",
             "name": "refAirQualityObserved",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:AirQualityObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:AirQualityObserved;1"
         },
-
-        { 
+        {
             "@type": "Relationship",
             "name": "refNoiseLevel",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:NoiseLevelObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:NoiseLevelObserved;1"
         },
-
-        { 
+        {
             "@type": "Relationship",
             "name": "refWeather",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"
         },
-
-        { 
+        {
             "@type": "Relationship",
             "name": "refCrowdFlow",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:CrowdFlowObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:CrowdFlowObserved;1"
         },
-
-        { 
+        {
             "@type": "Relationship",
             "name": "refEVChargingStation",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:EVChargingStation;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:EVChargingStation;1"
         }
-
-
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

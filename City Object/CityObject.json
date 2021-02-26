@@ -3,13 +3,9 @@
     "@type": "Interface",
     "displayName": "City Object",
     "extends": "dtmi:digitaltwins:GeoSPARQL:Feature;1",
-    "description": "",
+    "description": "Generic class for describing city objects.",
     "contents": [
-    
-
-
+        
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

@@ -5,11 +5,7 @@
     "extends": "dtmi:digitaltwins:s4city:city:CityObject;1",
     "description": "",
     "contents": [
-    
-
-
+        
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

@@ -1,27 +1,19 @@
-
 {
     "@id": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1",
     "@type": "Interface",
     "displayName": "Spatial Object",
     "description": "Spatial-object represents everything that can have a spatial representation. It is superclass of feature and geometry. GeoSPARQL 1.0 is an OGC Standard.Copyright (c) 2012 Open Geospatial Consortium.",
-
     "contents": [
-    
         {
             "@type": "Relationship",
             "name": "Contains",
             "target": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1"
         },
-
         {
             "@type": "Relationship",
             "name": "Within",
             "target": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1"
         }
-
-
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

@@ -3,12 +3,9 @@
     "@type": "Interface",
     "displayName": "City",
     "extends": "dtmi:digitaltwins:s4city:city:AdministrativeArea;1",
-    "description": "",
+    "description": "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority. (https://en.wikipedia.org/wiki/City)",
     "contents": [
-    
 
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

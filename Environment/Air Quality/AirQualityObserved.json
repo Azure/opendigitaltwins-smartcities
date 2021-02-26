@@ -1,33 +1,31 @@
 {
-    
     "@id": "dtmi:digitaltwins:ngsi_ld:city:AirQualityObserved;1",
     "@type": "Interface",
     "displayName": "AirQualityObserved",
     "extends": "dtmi:digitaltwins:ngsi_ld:city:EnvironmentBaseModel;1",
-    "contents":[
-        { 
+    "contents": [
+        {
             "@type": "Property",
             "name": "airQualityIndex",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "reliability",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "volatileOrganicCompoundsTotal",
             "schema": "integer",
-            "writable": true	
+            "writable": true
         },
         {
             "@type": "Property",
             "name": "typeOfLocation",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -45,212 +43,265 @@
             }
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "CO2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "CO",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "PM10",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "PM25",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "NO",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "SO2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "C6H6",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "NI",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "AS",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "CD",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "NO2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "O3",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "PB",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","Density"],
+            "@type": [
+                "Telemetry",
+                "Density"
+            ],
             "name": "SH2",
             "schema": "double",
             "unit": "gramPerCubicMetre"
         },
         {
-            "@type" : ["Telemetry","VolumeFlowRate"],
+            "@type": [
+                "Telemetry",
+                "VolumeFlowRate"
+            ],
             "name": "precipitation",
             "schema": "double",
             "unit": "litrePerSecond"
         },
         {
-            "@type" : ["Telemetry"],
+            "@type": [
+                "Telemetry"
+            ],
             "name": "relativeHumidity",
             "schema": "double"
         },
         {
-            "@type" : ["Telemetry","Temperature"],
+            "@type": [
+                "Telemetry",
+                "Temperature"
+            ],
             "name": "temperature",
             "schema": "double",
-            "unit": "degreeCelsius" 
+            "unit": "degreeCelsius"
         },
         {
-            "@type" : ["Telemetry","Angle"],
+            "@type": [
+                "Telemetry",
+                "Angle"
+            ],
             "name": "WindDirection",
             "schema": "double",
-            "unit": "degreeOfArc" 
+            "unit": "degreeOfArc"
         },
         {
-            "@type" : ["Telemetry","Velocity"],
+            "@type": [
+                "Telemetry",
+                "Velocity"
+            ],
             "name": "WindSpeed",
             "schema": "double",
-            "unit": "knot" 
+            "unit": "knot"
         },
-        { 
+        {
             "@type": "Component",
             "name": "airQualityLevel",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
-        },  
-        { 
+        },
+        {
             "@type": "Component",
             "name": "CO2_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
-        },  
-        { 
+        },
+        {
             "@type": "Component",
             "name": "CO_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
-        },  
-        { 
+        },
+        {
             "@type": "Component",
             "name": "PM10_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
-        },  
-        { 
+        },
+        {
             "@type": "Component",
             "name": "PM25_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "NO_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
-        },  
-        { 
+        },
+        {
             "@type": "Component",
             "name": "SO2_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "C6H6level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "NI_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "AS_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "CD_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "NO2_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "O3_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "PB_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Component",
             "name": "SH2_level",
             "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
         },
-        { 
+        {
             "@type": "Relationship",
             "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"
         },
-        { 
+        {
             "@type": "Relationship",
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"
         }
-        
     ],
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
-
-    
 }

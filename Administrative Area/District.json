@@ -3,12 +3,9 @@
     "@type": "Interface",
     "displayName": "District",
     "extends": "dtmi:digitaltwins:s4city:city:AdministrativeArea;1",
+    "description": "A district is a type of administrative division that, in some countries, is managed by local government. Across the world, areas known as 'districts' vary greatly in size, spanning regions or counties, several municipalities, subdivisions of municipalities, school district, or political district. (https://en.wikipedia.org/wiki/District)",
     "contents": [
-    
-
 
     ],
-    "@context" :  "dtmi:dtdl:context;2"
-
-    
+    "@context": "dtmi:dtdl:context;2"
 }

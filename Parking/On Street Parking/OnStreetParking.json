@@ -1,9 +1,9 @@
 {
     "@id": "dtmi:digitaltwins:ngsi_ld:city:OnStreetParking;1",
     "@type": "Interface",
-    "displayName": "OnStreetParking",  
-    "@context" : "dtmi:dtdl:context;2",
-    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "displayName": "OnStreetParking",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
         {
             "@type": "Property",
@@ -76,11 +76,10 @@
             },
             "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "permitActiveHours",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Map",
                 "mapKey": {
                     "name": "permit",
@@ -94,9 +93,9 @@
             "writable": true
         },
         {
-        "@type": "Property",
-        "name": "usageScenario",
-        "schema": {
+            "@type": "Property",
+            "name": "usageScenario",
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -154,11 +153,11 @@
             },
             "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "maximumAllowedStay",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
         {
             "@type": "Component",
@@ -234,13 +233,13 @@
             "@type": "Relationship",
             "name": "refParkingGroup",
             "minMultiplicity": 0,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"
         },
         {
             "@type": "Relationship",
             "name": "refParkingSpot",
             "minMultiplicity": 0,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"
         }
     ]
 }
