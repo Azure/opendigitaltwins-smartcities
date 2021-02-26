@@ -2,8 +2,8 @@
     "@id": "dtmi:digitaltwins:ngsi_ld:city:geoLocation;1",
     "@type": "Interface",
     "displayName": "GeoLocation",
-    "contents":[
-        { 
+    "contents": [
+        {
             "@type": "Property",
             "name": "type",
             "schema": {
@@ -47,18 +47,16 @@
                     }
                 ]
             },
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "coordinates",
             "schema": "string",
-            "writable": true	
+            "writable": true
         }
     ],
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
 }
-
-

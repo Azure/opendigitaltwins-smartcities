@@ -4,7 +4,5 @@
     "displayName": "Feature",
     "description": "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types. GeoSPARQL 1.0 is an OGC Standard.Copyright (c) 2012 Open Geospatial Consortium.",
     "extends": "dtmi:digitaltwins:GeoSPARQL:SpatialObject;1",
-    
-    "@context" : "dtmi:dtdl:context;2"
-    
+    "@context": "dtmi:dtdl:context;2"
 }
