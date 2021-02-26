@@ -12,7 +12,7 @@
         },
         { 
             "@type": "Property",
-            "name": "dateProvider",
+            "name": "dataProvider",
             "description": "Specifies the URL to information about the provider of this information",
             "schema": "string",
             "writable": true	
