@@ -1,9 +1,9 @@
 {
     "@id": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1",
     "@type": "Interface",
-    "displayName": "ParkingGroup",  
-    "@context" : "dtmi:dtdl:context;2",
-    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "displayName": "ParkingGroup",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
         {
             "@type": "Property",
@@ -152,11 +152,10 @@
             },
             "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "permitActiveHours",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Map",
                 "mapKey": {
                     "name": "permit",
@@ -240,20 +239,20 @@
             "name": "refOnStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:OnStreetParking;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:OnStreetParking;1"
         },
         {
             "@type": "Relationship",
             "name": "refOffStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"
         },
         {
             "@type": "Relationship",
             "name": "refParkingSpot",
             "minMultiplicity": 0,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"
         }
     ]
 }

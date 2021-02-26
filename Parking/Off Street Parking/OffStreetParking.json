@@ -1,71 +1,71 @@
 {
     "@id": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1",
     "@type": "Interface",
-    "displayName": "OffStreetParking",  
-    "@context" : "dtmi:dtdl:context;2",
-    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "displayName": "OffStreetParking",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
-        { 
+        {
             "@type": "Property",
             "name": "accessModified",
             "schema": "dateTime",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "aggregateRating",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "contactPoint",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "highestFloor",
             "schema": "integer",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "images",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "lowestFloor",
             "schema": "integer",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "openingHours",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "priceCurrency",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "priceRatePerMinute",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "provider",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "facilities",
             "schema": {
@@ -570,17 +570,17 @@
             },
             "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "category",
-            "schema" : "string",
-            "writable": true	
+            "schema": "string",
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "extCategory",
-            "schema" : "string",
-            "writable": true	
+            "schema": "string",
+            "writable": true
         },
         {
             "@type": "Telemetry",
@@ -622,11 +622,10 @@
             "name": "vehicleExitCount",
             "schema": "integer"
         },
-        { 
+        {
             "@type": "Telemetry",
             "name": "status",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -670,7 +669,6 @@
                         "displayName": "ClosedAbnormal",
                         "enumValue": "closedAbnormal"
                     }
-                    
                 ]
             }
         },
@@ -753,13 +751,13 @@
             "@type": "Relationship",
             "name": "refParkingGroup",
             "minMultiplicity": 0,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"
         },
         {
             "@type": "Relationship",
             "name": "refParkingSpot",
             "minMultiplicity": 0,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1"
         }
     ]
 }

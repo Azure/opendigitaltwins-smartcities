@@ -2,18 +2,14 @@
     "@id": "dtmi:digitaltwins:ngsi_ld:city:RoadSegment;1",
     "@type": "Interface",
     "displayName": "RoadSegment",
-    "contents":[
-       
-        { 
+    "contents": [
+        {
             "@type": "Relationship",
             "name": "refRoad",
-            "target": "dtmi:digitaltwins:ngsi_ld:city:Road;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:Road;1"
         }
-
     ],
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
-
-    
 }

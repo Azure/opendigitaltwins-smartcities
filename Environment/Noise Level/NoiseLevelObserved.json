@@ -1,69 +1,78 @@
 {
-    
     "@id": "dtmi:digitaltwins:ngsi_ld:city:NoiseLevelObserved;1",
-    "@type": "Interface",   
+    "@type": "Interface",
     "extends": "dtmi:digitaltwins:ngsi_ld:city:EnvironmentBaseModel;1",
     "displayName": "NoiseLevelObserved",
-    "description":"The Noise level observed at a certain spot",
-    "contents":[
+    "description": "The Noise level observed at a certain spot",
+    "contents": [
         {
-            "@type" : "Property",
+            "@type": "Property",
             "name": "dateObservedFrom",
             "schema": "dateTime",
             "writable": true
         },
         {
-            "@type" : "Property",
+            "@type": "Property",
             "name": "dateObservedTo",
             "schema": "dateTime",
             "writable": true
         },
         {
-            "@type" : "Property",
+            "@type": "Property",
             "name": "sonometerClass",
             "schema": "integer",
             "writable": true
         },
         {
-            "@type" : ["Telemetry","SoundPressure"],
+            "@type": [
+                "Telemetry",
+                "SoundPressure"
+            ],
             "name": "LAS",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressure"],
+            "@type": [
+                "Telemetry",
+                "SoundPressure"
+            ],
             "name": "LAeq",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressure"],
+            "@type": [
+                "Telemetry",
+                "SoundPressure"
+            ],
             "name": "LAeq_d",
             "schema": "double",
             "unit": "decibel"
         },
         {
-            "@type" : ["Telemetry","SoundPressure"],
+            "@type": [
+                "Telemetry",
+                "SoundPressure"
+            ],
             "name": "LAmax",
             "schema": "double",
             "unit": "decibel"
         },
-        { 
+        {
             "@type": "Relationship",
             "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"
         },
-        { 
+        {
             "@type": "Relationship",
             "name": "refWeatherObserverd",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"
         }
-
-
     ],
-    "@context" : "dtmi:dtdl:context;2"
+    "@context": "dtmi:dtdl:context;2"
 }

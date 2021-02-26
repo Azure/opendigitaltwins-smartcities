@@ -1,51 +1,50 @@
 {
     "@id": "dtmi:digitaltwins:ngsi_ld:city:ParkingSpot;1",
     "@type": "Interface",
-    "displayName": "ParkingSpot",  
-    "@context" : "dtmi:dtdl:context;2",
-    "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "displayName": "ParkingSpot",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
     "contents": [
-        { 
+        {
             "@type": "Property",
             "name": "dateObserved",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "width",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "length",
             "schema": "double",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "timeInstant",
             "schema": "dateTime",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "image",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "color",
             "schema": "string",
-            "writable": true	
+            "writable": true
         },
-        { 
+        {
             "@type": "Property",
             "name": "category",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -59,16 +58,14 @@
                         "displayName": "OnStreet",
                         "enumValue": "onStreet"
                     }
-                    
                 ]
             },
             "writable": true
         },
-        { 
+        {
             "@type": "Telemetry",
             "name": "status",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -92,7 +89,6 @@
                         "displayName": "Unkown",
                         "enumValue": "unkown"
                     }
-                    
                 ]
             }
         },
@@ -106,7 +102,7 @@
             "name": "refParkingGroup",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingGroup;1"
         },
         {
             "@type": "Relationship",
@@ -120,16 +116,14 @@
             "name": "refOffStreetParking",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"	
-            
+            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"
         },
         {
             "@type": "Relationship",
             "name": "refdevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:Device;1"	
-            
+            "target": "dtmi:digitaltwins:ngsi_ld:city:Device;1"
         }
     ]
 }
