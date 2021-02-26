@@ -1,14 +1,12 @@
 {
-    "@id": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1",
+    "@id": "dtmi:digitaltwins:ngsild:city:AirQualityLevel;1",
     "@type": "Interface",
     "displayName": "AirQualityLevel",
-    "contents":[
+    "contents": [
         {
-
             "@type": "Property",
             "name": "level",
-            "schema": 
-            {
+            "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
@@ -45,13 +43,8 @@
                 ]
             }
         }
-            
-       
     ],
-    "@context" : [
+    "@context": [
         "dtmi:dtdl:context;2"
     ]
 }
-
-
-

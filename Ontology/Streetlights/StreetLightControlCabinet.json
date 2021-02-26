@@ -2,9 +2,8 @@
   "@id": "dtmi:digitaltwins:ngsi_ld:city:StreetlightControlCabinet;1",
   "@type": "Interface",
   "displayName": "StreetlightControlCabinet",
-  "extends" : "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+  "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
-  
     {
       "@type": "Property",
       "name": "serialNumber",
@@ -98,7 +97,6 @@
       "name": "annotations",
       "description": "A field reserved for annotations (incidences, remarks, etc.)",
       "schema": "string"
-    
     },
     {
       "@type": "Relationship",
@@ -346,9 +344,6 @@
       "writable": true,
       "schema": "double"
     }
-
   ],
   "@context": "dtmi:dtdl:context;2"
-
-
 }

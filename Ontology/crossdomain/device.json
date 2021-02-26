@@ -1,11 +1,11 @@
 {
-    "@id": "dtmi:digitaltwins:ngsi_ld:city:device;1",
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Device;1",
     "@type": "Interface",
     "displayName": "Device",
     "contents":[
         { 
             "@type": "Property",
-            "name": "dateProvider",
+            "name": "dataProvider",
             "schema": "string",
             "writable": true	
         },    
