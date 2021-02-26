@@ -125,7 +125,8 @@ Explain how to prepare the sample once the user clones or downloads the reposito
 # Contributing 
 This project welcomes contributions and suggestions. We've focused on an initial set of models and we welcome you to contribute to extend the initial set of use cases, as well as improve the exsisting models. 
 
-For improvements, please fork this repository, make your changes and send a pull request
+For improvements, please fork this repository, make your changes and send a pull request. 
+
 Pull requests will be evaluated based on the applicability for smart cities scenarios, quality of the proposed interface models, adherence to the modeling conventions used in the repo.
 
 For issues or suggestions, file an issue. 
