@@ -60,7 +60,7 @@
         {
             "@type": "Component",
             "name": "address",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:address;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:Address;1"
         },
         {
             "@type": "Component",
