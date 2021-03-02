@@ -214,84 +214,84 @@
         {
             "@type": "Component",
             "name": "airQualityLevel",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "CO2_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "CO_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "PM10_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "PM25_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "NO_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "SO2_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "C6H6level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "NI_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "AS_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "CD_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "NO2_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "O3_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "PB_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Component",
             "name": "SH2_level",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:airQualityLevel;1"
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:AirQualityLevel;1"
         },
         {
             "@type": "Relationship",
             "name": "refDevice",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:device;1"
+            "target": "dtmi:digitaltwins:ngsi_ld:city:Device;1"
         },
         {
             "@type": "Relationship",

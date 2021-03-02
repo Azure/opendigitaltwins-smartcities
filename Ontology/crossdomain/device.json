@@ -36,7 +36,7 @@
         {
             "@type": "Component",
             "name": "category",
-            "schema": "dtmi:digitaltwins:ngsi_ld:city:deviceCategory;1",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:DeviceCategory;1",
             "displayName": "Category"
         },
         { 
@@ -51,7 +51,7 @@
             "name": "refDeviceModel",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:deviceModel;1"	
+            "target": "dtmi:digitaltwins:ngsi_ld:city:DeviceModel;1"	
         }
     ],
     "@context" : [
