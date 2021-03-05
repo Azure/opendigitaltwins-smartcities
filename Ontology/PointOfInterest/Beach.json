@@ -1,0 +1,102 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Beach;1",
+    "@type": "Interface",
+    "displayName": "Beach",
+    "description": "Global description: This entity contains a harmonised geographic description of a beach.",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/Beach/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+            {
+                "@type": "Property",
+                "name" : "beachType",
+                "displayName": "Beach type",
+                "description": "Type of beach according to different criteria. Enum:'whiteSand, urban, isolated, calmWaters, blueFlag, Q-Quality, strongWaves, windy, blackSand'. Or any other value needed by an application.",
+                "comment" : "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@type": "Property",
+                "name": "occupationRate",
+                "displayName": "Occupation rate",
+                "description": "Typical occupation rate of this beach. Enum:'low, medium, high'",
+                "schema": {
+                    "@type": "Enum",
+                    "valueSchema": "string",
+                    "enumValues": [
+                        {
+                            "name": "low",
+                            "displayName": "Low",
+                            "enumValue": "low"
+                        },
+                        {
+                            "name": "medium",
+                            "displayName": "Medium",
+                            "enumValue": "medium"
+                        },
+                        {
+                            "name": "high",
+                            "displayName" : "High",
+                            "enumValue": "high"
+                        }
+                    ]
+                },
+                "writable": true
+            },
+            {
+                "@type": "Property",
+                "name": "facilities",
+                "displayName": "Facilities",
+                "description": "Describes different facilities offered by this beach. Enum:'promenade, showers, cleaningServices, lifeGuard, sunshadeRental, sunLoungerRental, waterCraftRental, toilets, touristOffice, litterBins, telephone,surfPracticeArea, accessforDisabled'",
+                "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@type": "Property",
+                "name": "accessType",
+                "displayName": "Access type",
+                "description": "Enum:'privateVehicle, boat, onFoot, publicTransport'. Describes how to get to this beach.",
+                "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@type": "Property",
+                "name": "areaServed",
+                "displayName": "Area served",
+                "description": "The geographic area where a service or offered item is provided",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@type": ["Property", "Length"],
+                "name": "length",
+                "displayName": "Length",
+                "description": "Length of this beach",
+                "schema": "double",
+                "unit": "metre",
+                "writable": true
+            },
+            {
+                "@type": ["Property", "Length"],
+                "name": "width",
+                "displayName": "Width",
+                "description": "Width of this beach",
+                "schema": "double",
+                "unit": "metre",
+                "writable": true
+            },
+            {
+                "@type": "Property",
+                "name": "refSeeAlso",
+                "displayName": "See also",
+                "description": "List of comma separated URLs to one or more related entities.",
+                "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+                "schema": "string",
+                "writable": true
+            }
+        ],
+        "@context": "dtmi:dtdl:context;2"
+    }
+    

@@ -1,0 +1,86 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Store;1",
+    "@type": "Interface",
+    "displayName": "Store",
+    "description": "Global description: This entity Type models stores/shops in the city.",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/Store/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "category",
+            "displayName": "Category",
+            "description": "Category of the store. Enum:'AutoPartsStore,BikeStore,BookStore,ClothingStore,ComputerStore,ConvenienceStore,DepartmentStore,ElectronicsStore,Florist,FurnitureStore,GardenStore,GroceryStore,HardwareStore,HobbyShop,HomeGoodsStore,JewelryStore,LiquorStore,MensClothingStore,MobilePhoneStore,MovieRentalStore,MusicStore,OfficeEquipmentStore,OutletStore,PawnShop,PetStore,ShoeStore,SportingGoodsStore,TireShop,ToyStore,WholesaleStore'",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "currenciesAccepted",
+            "displayName": "Currencies accepted",
+            "description": "Currencies accepted in this store. It uses ISO 4217 currency format (e.g. USD, EUR)",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "email",
+            "displayName": "Email",
+            "description": "The email address of this store.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "logo",
+            "displayName": "Logo",
+            "description": "An associated logo for this store.",
+            "comment": "URL to the logo",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "openingHoursSpecification",
+            "displayName": "Opening hours",
+            "description": "A structured value providing information about the opening hours of a place or a certain service inside a place.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:OpeningHourSpecification;1"
+        },
+        {
+            "@type": "Property",
+            "name": "paymentAccepted",
+            "displayName": "Payment accepted",
+            "description": "Payment method accepted in this store.",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "telephone",
+            "displayName": "Telephone",
+            "description": "The telephone number of this store.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "url",
+            "displayName": "Website URL",
+            "description": "Website with information about the store.",
+            "schema": "string",
+            "writable": true
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}

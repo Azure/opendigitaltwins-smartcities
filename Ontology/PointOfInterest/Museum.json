@@ -1,0 +1,103 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Museum;1",
+    "@type": "Interface",
+    "displayName": "Museum",
+    "description": "Global description: A museum",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/Museum/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "artPeriod",
+            "displayName": "Art period",
+            "description": "Allowed values:-Those defined by Wikipedia.- Any other extended value needed by an application and not described by the above resource.",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "buildingType",
+            "displayName": "Building type",
+            "description": "Type of building that hosts the museum. Enum:'prehistoricPlace, acropolis, alcazaba,aqueduct, alcazar, amphitheatre, arch, polularArchitecture,basilica, road, chapel, cartuja, nobleHouse, residence,castle, castro, catacombs, cathedral, cloister, convent,prehistoricCave, dolmen, officeBuilding, houseBuilding,industrialBuilding, militaryBuilding, hermitage, fortress,sculpturalGroups, church, garden, fishMarket, masia,masiaFortificada, minaret, monastery, monolith, walls,necropolis, menhir, mansion, ...'",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used. Attention. Not all enum values are listed in the description",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contactPoint",
+            "displayName": "Contact point",
+            "description": "Contact point for the museum.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "facilities",
+            "displayName": "Facilities",
+            "description": "Describes different facilities offered by this museum. Enum:'elevator, cafeteria, shop, auditory,conferenceRoom, audioguide, cloakRoom, forDisabled, forBabies,guidedTour, restaurant, ramp, reservation'. or any other value needed by an application.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "featuredArtist",
+            "displayName": "Featured artist",
+            "description": "Main featured artist(s) at this museum.",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used. Attention. Not all enum values are listed in the description",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "historicalPeriod",
+            "displayName": "Historical period",
+            "description": "An ISO8601 time interval. For example 1920/1940. The second element of the interval can be left empty to denote 'till now'. A comma separated list of years, for instance 1620,1625,1718. - A century, represented by a year pattern, for instance 19xx would correspond to the twentieth century. And 196x would correspond to the sixties decade.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "museumType",
+            "displayName": "Museum type",
+            "description": "Type of museum according to the exhibited content. Enum:'appliedArts, scienceAndTechnology, fineArts,music, history, sacredArt, archaeology, specials,decorativeArts, literature, medicineAndPharmacy, maritime,transports, military, wax, popularArtsAndTraditions,numismatic, unesco, ceramics, sumptuaryArts, naturalScience,prehistoric, ethnology, railway, mining, textile, sculpture,multiDisciplinar, painting, paleonthology, modernArt,thematic, architecture, museumHouse, cathedralMuseum,...'",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used. Attention. Not all enum values are listed in the description",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "openingHoursSpecification",
+            "displayName": "Opening hours",
+            "description": "A structured value providing information about the opening hours of a place or a certain service inside a place.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:OpeningHourSpecification;1"
+        },
+        {
+            "@type": "Property",
+            "name": "refSeeAlso",
+            "displayName": "See also",
+            "description": "List of comma separated URLs to one or more related entities.",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name" : "touristArea",
+            "displayName": "Tourist area",
+            "description": "Tourist area at which this museum is located. Precise semantics might depend on the application or target country or region. For instance Costa del Sol.",
+            "schema": "string",
+            "writable": true
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}

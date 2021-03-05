@@ -1,0 +1,110 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:OpeningHourSpecification;1",
+    "@type": "Interface",
+    "displayName": "Opening hours specification",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "mondayOpening",
+            "displayName": "Opening hours on Monday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "tuesdayOpening",
+            "displayName": "Opening hours on Tuesday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "wednesdayOpening",
+            "displayName": "Opening hours on Wednesday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "thursdayOpening",
+            "displayName": "Opening hours on Thursday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "fridayOpening",
+            "displayName": "Opening hours on Friday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "saturdayOpening",
+            "displayName": "Opening hours on Saturday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "sundayOpening",
+            "displayName": "Opening hours on Sunday",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "writable": true
+        }
+    ],
+    "schemas": [
+        {
+            "@id" : "dtmi:digitaltwins:ngsi_ld:city:openinghoursForDay;1",
+            "@type": "Object",
+            "fields": [
+                {
+                    "name" : "opens",
+                    "schema": "time"
+                },
+                {
+                    "name" : "closes",
+                    "schema": "time"
+                },
+                {
+                    "name": "dayOfWeek",
+                    "schema": {
+                        "@type": "Enum",
+                        "valueSchema": "string",
+                        "enumValues": [
+                            {
+                                "name": "Monday",
+                                "enumValue": "Monday"
+                            },
+                            {
+                                "name": "Tuesday",
+                                "enumValue": "Tuesday"
+                            },
+                            {
+                                "name": "Wednesday",
+                                "enumValue": "Wednesday"
+                            },
+                            {
+                                "name": "Thursday",
+                                "enumValue": "Thursday"
+                            },
+                            {
+                                "name": "Friday",
+                                "enumValue": "Friday"
+                            },
+                            {
+                                "name": "Saturday",
+                                "enumValue": "Saturday"
+                            },
+                            {
+                                "name": "Sunday",
+                                "enumValue": "Sunday"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}
