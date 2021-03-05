@@ -8,7 +8,7 @@
         {
             "@type": "Property",
             "name": "dateObserved",
-            "schema": "double",
+            "schema": "dateTime",
             "writable": true
         },
         {
@@ -22,7 +22,7 @@
             "name": "refPointOfInterest",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:pointOfInterest;1"
+            "target": "dtmi:digitaltwins:ngsi_ld:city:PointOfInterest;1"
         }
     ]
 }
