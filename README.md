@@ -175,6 +175,7 @@ provided by the bot. You will only need to do this once across all repos using o
 - [Azure Digital Twins Tech Deep Dive](https://www.youtube.com/watch?v=5Ku55g1GQG8&feature=youtu.be).
 - [Digital Twins Definition Language specification](https://github.com/Azure/opendigitaltwins-dtdl).
 - [DTDL Ontologies](https://docs.microsoft.com/en-us/azure/digital-twins/concepts-ontologies).
+- [FIWARE Data Models](https://github.com/smart-data-models).
 - [ADT Explorer](https://github.com/Azure-Samples/digital-twins-explorer).
 
 
