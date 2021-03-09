@@ -1,0 +1,165 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:BoatAuthorized;1",
+    "@type": "Interface",
+    "displayName": "Boat Authorized",
+    "description": "The data model is intended to provide information on the boats authorized to operate within the port according to the ISO 8666 standard for Boat Category. This repository is created by type of category of boat (pleasure craft, trade, passengers, ...). For each type of category, a list of optional subtypes of category can be associated.",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatAuthorized/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "boatType",
+            "displayName": "Boat type",
+            "description": "A unique value of the list. Enum:'cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'",
+            "comment": "Required property",
+            "schema": {
+                "@type": "Enum",
+                "displayName": "Boat type",
+                "description": "A unique value of the list. Enum:'cargo, fishing, historic, passenger, specialist, Tanker, war, yachting'",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "cargo",
+                        "displayName": "Cargo",
+                        "enumValue": "cargo"
+                    },
+                    {
+                        "name": "fishing",
+                        "displayName": "Fishing",
+                        "enumValue": "fishing"
+                    },
+                    {
+                        "name": "historic",
+                        "displayName": "Historic",
+                        "enumValue": "historic"
+                    },
+                    {
+                        "name": "passenger",
+                        "displayName": "Passenger",
+                        "enumValue": "passenger"
+                    },
+                    {
+                        "name": "specialist",
+                        "displayName": "Specialist",
+                        "enumValue": "specialist"
+                    },
+                    {
+                        "name": "tanker",
+                        "displayName": "Tanker",
+                        "enumValue": "Tanker"
+                    },
+                    {
+                        "name": "war",
+                        "displayName": "War",
+                        "enumValue": "war"
+                    },
+                    {
+                        "name": "yachting",
+                        "displayName": "Yachting",
+                        "enumValue": "yachting"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "boatSubType",
+            "displayName": "Boat subtype",
+            "description": "Sub Type for a boatType. A combination of the elements 'aircraftCarrier, amphibiousAssaultShip, anchorHandlingVessel, artisanVessel, bac, barge, bargeCarrier, bulkCarrier, buoyTenderBoat, butaneCarrier, cableLayer, canoe, caravel, cargoCarrier, carrack, catamaran, chemicalCarrier, clipper, coastalFerry, cog, containerCarrier, corvette, craneBarge, crudeCarrier, cruise, cruiser, destroyer, dhow, divingVessel, djong, dredger, drifter, drillRig, factoryShip, ferry, fireBoat, fisheriesResearchVessel,...'",
+            "comment": "Required property. Since DTDLv2 doesn't support arrays for Properties, a single string will be used. Attention. Not all enum values are listed in the description",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name" : "dateLastReported",
+            "displayName": "Last reported date",
+            "description": "Last time data were gathered",
+            "comment": "Required property",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refSeaPort",
+            "description": "Port that belongs to",
+            "displayName": "belongs to",
+            "comment": "Required relationship",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:SeaportFacilities;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "description": "Point of Interest that the element has relation to",
+            "displayName": "related to",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:PointOfInterest;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "maxDraft",
+            "description": "Maximum draft allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes . For instance, MTR represents Meter",
+            "schema": "double",
+            "displayName": "Maximum draft allowed",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxLength",
+            "displayName": "Maximum length allowed",
+            "description": "Maximum length allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes. For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "minLength",
+            "displayName": "Minimum Length",
+            "description": "Minimum length allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes. For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxWidth",
+            "displayName": "Maximum width allowed",
+            "description": "Maximum width allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes . For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Mass"],
+            "name" : "maxTonnage",
+            "displayName": "Maximum Tonnage",
+            "description": "Maximum tonnage authorized to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes . For instance, TNE represents Tonne Metric",
+            "schema": "double",
+            "unit": "tonne",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "openingHoursSpecification",
+            "displayName": "Opening hours",
+            "description": "A structured value providing information about the opening hours of a place or a certain service inside a place.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:OpeningHourSpecification;1"
+        }
+    ],
+    "@context": [
+        "dtmi:dtdl:context;2"
+    ]
+}

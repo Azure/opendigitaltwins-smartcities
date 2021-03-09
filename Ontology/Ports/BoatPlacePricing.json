@@ -1,0 +1,211 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:BoatPlacePricing;1",
+    "@type": "Interface",
+    "displayName": "Boat Place pricing",
+    "description": "Global description: Work in progress for boat place pricing. Bases on sample at https://github.com/smart-data-models/dataModel.Ports/blob/master/BoatPlacesPricing/examples/example.json",
+    "comment": "No official specification available yet",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "dateLastReported",
+            "displayName": "Date last reported",
+            "description": "The date and time of this report in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval",
+            "comment": "Required property",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refSeaPort",
+            "description": "Port that belongs to",
+            "displayName": "belongs to",
+            "comment": "Required relationship",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:SeaportFacilities;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "description": "Point of Interest that the element has relation to",
+            "displayName": "related to",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:PointOfInterest;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "spotCategoryRange",
+            "displayName": "Spot category range",
+            "description": "List from the lowest to the highest categories: A combination of the items listed. Enum:'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T1, T2, U, V, W, X, Y, Z, Z01, Z02, Z03, Z04, Z05, Z06, Z07, Z08, Z08, Z09, Z10, Z11, Z12, Z13, Z14, Z15, Z16, Z17'",
+            "comment": "Required property. Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "maxDraft",
+            "description": "Maximum draft allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes . For instance, MTR represents Meter",
+            "schema": "double",
+            "displayName": "Maximum draft allowed",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxLength",
+            "displayName": "Maximum length allowed",
+            "description": "Maximum length allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes. For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "minLength",
+            "displayName": "Minimum Length",
+            "description": "Minimum length allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes. For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxWidth",
+            "displayName": "Maximum width allowed",
+            "description": "Maximum width allowed to access the harbor. The unit code (text) is given using the UN/CEFACT Common Codes . For instance, MTR represents Meter",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "validFrom",
+            "displayName": "Valid from",
+            "comment": "Required property",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "validThrough",
+            "displayName": "Valid through",
+            "comment": "Required property",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "period",
+            "displayName": "Period",
+            "description": "Property. Model:'https://schema.org/DateTime'. Type of period defined the date From and Through: A free text or a unique value of the different combination allowed 'season / offSeason' - 'summer / winter' - 'low / medium / high'. enum:'high, low, medium, offSeason, season, summer, winter'",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "passage",
+            "displayName": "Passage",
+            "description": "Ticket price of the place for passing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "day",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "week",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "month",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "resident",
+            "displayName": "Resident",
+            "description": "Ticket price of the place for resident boats for this category / period. A structured value with 2 subproperties where each items is a string in the format `key` : `price` in Euro €",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "month",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "annual",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "wintering",
+            "displayName": "Wintering",
+            "description": "Ticket price of the place for wintering boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "day",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "week",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "month",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "fairing",
+            "displayName": "Fairing",
+            "description": "Ticket price of the place for fairing boats for this category / period. A structured value with 3 subproperties where each items is a string in the format `key` : `price` in Euro €",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "day",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "week",
+                        "schema": "double"
+                    },
+                    {
+                        "name": "month",
+                        "schema": "double"
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "@context": [
+        "dtmi:dtdl:context;2"
+    ]
+}
