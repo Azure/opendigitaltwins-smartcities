@@ -33,11 +33,10 @@
             "writable": true
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "contactPoint",
             "displayName": "Contact point",
-            "schema": "string",
-            "writable": true
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:ContactPoint;1"
         },
         {
             "@type": "Property",
