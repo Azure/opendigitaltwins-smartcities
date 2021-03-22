@@ -1,0 +1,45 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:PointOfInterest;1",
+    "@type": "Interface",
+    "displayName": "Point of Interest",
+    "description": "Global description: This entity contains a harmonised geographic description of a Point of Interest",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "category",
+            "displayName": "Category",
+            "description": "Category of this point of interest. Allowed values: Those defined by the Factual taxonomy together with the extended categories described by the specification. For instance the value 113 corresponds to beaches, and the value 311 corresponds to museums.",
+            "comment": "Required property. Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contactPoint",
+            "displayName": "Contact point",
+            "description": "Contact point for the point of interest, e.g. Museum",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "refSeeAlso",
+            "displayName": "See also",
+            "description": "List of comma separated URLs to one or more related entities.",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}

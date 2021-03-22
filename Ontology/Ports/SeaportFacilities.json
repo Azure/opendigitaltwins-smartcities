@@ -1,0 +1,280 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:SeaportFacilities;1",
+    "@type": "Interface",
+    "displayName": "Seaport Facilities",
+    "description": "Global description: The Data Model is intended to provide information about ports that can accommodate pleasure craft, commerce or passenger transport. It permit to represent the parameters of each port, its location, its mooring capacities and the free or paid services associated with it provided directly by the port or by professionals working on or near the port.",
+    "comment": "Original source: https://github.com/smart-data-models/dataModel.Ports/blob/master/SeaportFacilities/doc/spec.md",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "authorizedPropulsion",
+            "displayName": "Authorized propulsion",
+            "description": "A Type of propulsions authorized to enter in the harbor. A combination of motor, sail, electric, oar, nuclear, lng, lpg, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "boatSupplyingServices",
+            "displayName": "Boat supplying services",
+            "description": "Description of the complementary supplying services for the boat offered by professionals working on or near the harbor. A combination of guarding, fuelStation, fuelTankerTruck , drinkingWaterTankerTruck, provisioning, dryFairing, waterFairing, repair, expertise, gangways, liftingCranes, towing, wasteWaterPumping, boatConveying, boatTransfer, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contactPoint",
+            "displayName": "Contact point",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contractingAuthority",
+            "displayName": "Contracting authority",
+            "description": "Name of the contracting authority",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contractingCompany",
+            "displayName": "Contracting company",
+            "description": "The Contracting Company responsible of the management of the port.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "currencyAccepted",
+            "displayName": "Currency accepted",
+            "description": " A combination of a list of active codes defined in the model Norme ISO 4217, Crypto Currencies , [Exchange Trading System](https://en.wikipedia.org/wiki/Local_exchange_trading_system",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "dateLastReported",
+            "displayName": "Date last reported",
+            "description": "The date and time of this report in ISO8601 UTC format. It can be represented by a specific time instant or by an ISO8601 interval",
+            "comment": "Required property",
+            "schema": "dateTime",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "electricTransport",
+            "displayName": "Electric transport",
+            "description": "List of the different types of electric transport proposed by the city. A combination of electricCar, electricBycicle, electricMotorBike, electricScooter",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "facilities",
+            "displayName": "Facilities",
+            "description": "Description of the proposed facilities on the harbor. A combination of : toilets, showers, laundry, telephone, dustbins, dumpsters, container, selectiveSortingWaste, electricTerminal, waterTerminal, indoorRoomReservation, wifi, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name" : "maxDraft",
+            "displayName": "Maximum Draft [MTR]",
+            "description": "A Maximum draft allowed to access the harbor",
+            "schema": "double",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxLength",
+            "displayName": "Maximum Length",
+            "description": "A Maximum length allowed to access the harbor",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "minLength",
+            "displayName": "Minimum Length",
+            "description": "A Minimum length allowed to access the harbor",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Length"],
+            "name" : "maxWidth",
+            "displayName": "Maximum Width",
+            "description": "A Maximum width allowed to access the harbor",
+            "schema": "double",
+            "unit": "metre",
+            "writable": true
+        },
+        {
+            "@type": ["Property", "Mass"],
+            "name" : "maxTonnage",
+            "displayName": "Maximum Tonnage",
+            "description": "Maximum tonnage authorized to access the harbor",
+            "schema": "double",
+            "unit": "tonne",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "nearbyServices",
+            "displayName": "Nearby services",
+            "description": "Description of the additional services on the geographical area on or near the harbor. A combination of :touristOffice, fittingsStores, travelAgency, exchangeOffice, medicalOffice, pharmacy, groceryStores, restaurants, presses, bar, shops, seaExcursions, cityTour, touristicExcursions, others",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "numberOfPlace",
+            "displayName": "Number of places",
+            "description": "Total number of place in the harbor.",
+            "schema": "integer",
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "openingHoursSpecification",
+            "displayName": "Opening hours",
+            "description": "A structured value providing information about the opening hours of a place or a certain service inside a place.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:OpeningHourSpecification;1"
+        },
+        {
+            "@type": "Property",
+            "name": "paymentAccepted",
+            "displayName": "Payment accepted",
+            "description": "Accepted payment. A combination of a list of active codes defined in the model : Cash, CreditCard, CryptoCurrency, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "portServicesProvided",
+            "displayName": "Port services provided",
+            "description": "Description of the services provided directly by the harbor. A combination of : harborOffice, weather, customsServices, porters, boatRingRental, mooringAssistance, handlingAssistance, publicWifi, privateWifi, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refBoatAuthorized",
+            "displayName": "authorizes",
+            "description": "Reference to a list of Entity.",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:BoatAuthorized;1",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refBoatPlaceAvailable",
+            "displayName": "has places available",
+            "description": "Reference to a list of Entity.",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:BoatPlacesAvailable;1",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refBoatPlacePricing",
+            "displayName": "priced by",
+            "description": "Reference to a list of Entity.",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:BoatPlacePricing;1",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refDevice",
+            "displayName": "has main device",
+            "description": "Reference to the Main Entity Device if used as second link",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:Device;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refPointOfInterest",
+            "description": "Point of Interest that the element has relation to",
+            "displayName": "related to",
+            "target": "dtmi:digitaltwins:ngsi_ld:city:PointOfInterest;1",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "rentalSaleServices",
+            "displayName": "Rental sale services",
+            "description": "ADescription of services provided by professional sales or rental agencies on the geographical area on or near the harbor. A combination of : boatRental, boatSale, jetSkiRental, jetSkiSale, carRental, luxuryCarRental, vanRental, bikeRental, scooterRental, Caddie, palletTransport, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "routeType",
+            "displayName": "Route type",
+            "description": "List of the different types of urban transport Mode (Metro, Bus, Tram, ...) from the urban transport Mode GFTS standard STOP. A combination of values composed only of the attribute 'description' tram(0), metro(1), train(2), bus(3), ferry(4), cableTram(5), cableCar(6), funicular(7), trolleybus(11), monorail(12)",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "transportServices",
+            "displayName": "Transport services",
+            "description": "Description of the services provided for dedicated transport and shuttle services. A combination of : arking, shuttlesToAirport, shuttlesToRailway, internalShuttles, taxis, heliport, other",
+            "comment": "Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "type",
+            "displayName": "Type",
+            "comment": "Required property",
+            "schema": "string",
+            "description" : "It has to be 'SeaPort'"
+        },
+        {
+            "@type": "Property",
+            "name": "typeOfPort",
+            "displayName": "Type of port",
+            "description": "A Type of harbor. A combination of : marina, merchandise, cruise, ferry, passengers, yachting, fishing, military, river, other",
+            "comment": "Required property. Since DTDLv2 doesn't support arrays for Properties, a single string will be used.",
+            "schema": "string",
+            "writable": true
+        }, 
+        {
+            "@type": "Property",
+            "name": "webSite",
+            "displayName": "Website",
+            "description": "Link to the official website of the harbor for more information.",
+            "schema": "string",
+            "writable": true
+        }
+    ],
+    "@context": [
+        "dtmi:dtdl:context;2"
+    ]
+}
