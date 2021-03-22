@@ -1,0 +1,63 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:device;1",
+    "@type": "Interface",
+    "displayName": "Device",
+    "contents":[
+        { 
+            "@type": "Property",
+            "name": "dateProvider",
+            "schema": "string",
+            "writable": true	
+        },    
+        { 
+            "@type": "Property",
+            "name": "dateModified",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateCreated",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "dateObserved",
+            "schema": "dateTime",
+            "writable": true	
+        },
+        { 
+            "@type": "Property",
+            "name": "source",
+            "schema": "string",
+            "writable": true	
+        },
+        {
+            "@type": "Component",
+            "name": "category",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:deviceCategory;1",
+            "displayName": "Category"
+        },
+        { 
+            "@type": "Property",
+            "name": "batteryLevel",
+            "schema": "string",
+            "description": "level of the battery",
+            "writable": true	
+        },
+        { 
+            "@type": "Relationship",
+            "name": "refDeviceModel",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:digitaltwins:ngsi_ld:city:deviceModel;1"	
+        }
+    ],
+    "@context" : [
+        "dtmi:dtdl:context;2"
+    ]
+}
+
+
+
