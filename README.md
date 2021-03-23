@@ -168,7 +168,7 @@ provided by the bot. You will only need to do this once across all repos using o
 -->
 
 # Credits 
-The NGSI-LD data models in this repository have been adapated to DTDL from the open source [Smart Models repository for Smart Cities](https://github.com/smart-data-models/SmartCities) developed by FIWARE Foundation and TM Forum. For more information on the Smart Data Models please visit [https://smartdatamodels.org](https://smartdatamodels.org/).
+The NGSI-LD data models in this repository have been adapted to DTDL from the open source [Smart Models repository for Smart Cities](https://github.com/smart-data-models/SmartCities) developed by FIWARE Foundation and TM Forum. For more information on the Smart Data Models please visit [https://smartdatamodels.org](https://smartdatamodels.org/).
 
 # Resources
 - Smart Cities Ontology for Digital Twins [Blog post]() and [IoT Show](https://www.youtube.com/watch?v=GrwI4GIp7nI&feature=youtu.be).
