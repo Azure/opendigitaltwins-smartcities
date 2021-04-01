@@ -2,6 +2,7 @@
   "@id": "dtmi:digitaltwins:ngsi_ld:city:Streetlight;1",
   "@type": "Interface",
   "displayName": "Streetlight",
+  "description": "A Street light. Adapted from https://github.com/smart-data-models/dataModel.Streetlighting/tree/master/Streetlight data model", 
   "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
   "contents": [
     {
