@@ -1,0 +1,373 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:Vehicle;1",
+    "@type": "Interface",
+    "displayName": "Vehicle",
+    "description": "Adapted from https://github.com/smart-data-models/dataModel.Transportation/Vehicle. This entity models a particular vehicle model, including all properties which are common to multiple vehicle instances belonging to such model.",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "vehicleType",
+            "description": "Type of vehicle from the point of view of its structural characteristics. This is different than the vehicle category",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "agriculturalVehicle",
+                        "displayName": "agriculturalVehicle",
+                        "enumValue": "agriculturalVehicle"
+                    },
+                    {
+                        "name": "anyVehicle",
+                        "displayName": "anyVehicle",
+                        "enumValue": "anyVehicle"
+                    },
+                    {
+                        "name": "articulatedVehicle",
+                        "displayName": "articulatedVehicle",
+                        "enumValue": "articulatedVehicle"
+                    },
+                    {
+                        "name": "bicycle",
+                        "displayName": "bicycle",
+                        "enumValue": "bicycle"
+                    },
+                    {
+                        "name": "binTrolley",
+                        "displayName": "binTrolley",
+                        "enumValue": "binTrolley"
+                    },
+                    {
+                        "name": "bus",
+                        "displayName": "bus",
+                        "enumValue": "bus"
+                    },
+                    {
+                        "name": "car",
+                        "displayName": "car",
+                        "enumValue": "car"
+                    },
+                    {
+                        "name": "caravan",
+                        "displayName": "caravan",
+                        "enumValue": "caravan"
+                    },
+                    {
+                        "name": "carOrLightVehicle",
+                        "displayName": "carOrLightVehicle",
+                        "enumValue": "carOrLightVehicle"
+                    },
+                    {
+                        "name": "carWithCaravan",
+                        "displayName": "carWithCaravan",
+                        "enumValue": "carWithCaravan"
+                    },
+                    {
+                        "name": "carWithTrailer",
+                        "displayName": "carWithTrailer",
+                        "enumValue": "carWithTrailer"
+                    },
+                    {
+                        "name": "cleaningTrolley",
+                        "displayName": "cleaningTrolley",
+                        "enumValue": "cleaningTrolley"
+                    },
+                    {
+                        "name": "constructionOrMaintenanceVehicle",
+                        "displayName": "constructionOrMaintenanceVehicle",
+                        "enumValue": "constructionOrMaintenanceVehicle"
+                    },
+                    {
+                        "name": "fourWheelDrive",
+                        "displayName": "fourWheelDrive",
+                        "enumValue": "fourWheelDrive"
+                    },
+                    {
+                        "name": "highSidedVehicle",
+                        "displayName": "highSidedVehicle",
+                        "enumValue": "highSidedVehicle"
+                    },
+                    {
+                        "name": "lorry",
+                        "displayName": "lorry",
+                        "enumValue": "lorry"
+                    },
+                    {
+                        "name": "minibus",
+                        "displayName": "minibus",
+                        "enumValue": "minibus"
+                    },
+                    {
+                        "name": "moped",
+                        "displayName": "moped",
+                        "enumValue": "moped"
+                    },
+                    {
+                        "name": "motorcycle",
+                        "displayName": "motorcycle",
+                        "enumValue": "motorcycle"
+                    },
+                    {
+                        "name": "motorcycleWithSideCar",
+                        "displayName": "motorcycleWithSideCar",
+                        "enumValue": "motorcycleWithSideCar"
+                    },
+                    {
+                        "name": "motorscooter",
+                        "displayName": "motorscooter",
+                        "enumValue": "motorscooter"
+                    },
+                    {
+                        "name": "sweepingMachine",
+                        "displayName": "sweepingMachine",
+                        "enumValue": "sweepingMachine"
+                    },
+                    {
+                        "name": "tanker",
+                        "displayName": "tanker",
+                        "enumValue": "tanker"
+                    },
+                    {
+                        "name": "threeWheeledVehicle",
+                        "displayName": "threeWheeledVehicle",
+                        "enumValue": "threeWheeledVehicle"
+                    },
+                    {
+                        "name": "trailer",
+                        "displayName": "trailer",
+                        "enumValue": "trailer"
+                    },
+                    {
+                        "name": "tram",
+                        "displayName": "tram",
+                        "enumValue": "tram"
+                    },
+                    {
+                        "name": "trolley",
+                        "displayName": "trolley",
+                        "enumValue": "trolley"
+                    },
+                    {
+                        "name": "twoWheeledVehicle",
+                        "displayName": "twoWheeledVehicle",
+                        "enumValue": "twoWheeledVehicle"
+                    },
+                    {
+                        "name": "van",
+                        "displayName": "van",
+                        "enumValue": "van"
+                    },
+                    {
+                        "name": "vehicleWithoutCatalyticConverter",
+                        "displayName": "vehicleWithoutCatalyticConverter",
+                        "enumValue": "vehicleWithoutCatalyticConverter"
+                    },
+                    {
+                        "name": "vehicleWithCaravan",
+                        "displayName": "vehicleWithCaravan",
+                        "enumValue": "vehicleWithCaravan"
+                    },
+                    {
+                        "name": "vehicleWithTrailer",
+                        "displayName": "vehicleWithTrailer",
+                        "enumValue": "vehicleWithTrailer"
+                    },
+                    {
+                        "name": "withEvenNumberedRegistrationPlates",
+                        "displayName": "withEvenNumberedRegistrationPlates",
+                        "enumValue": "withEvenNumberedRegistrationPlates"
+                    },
+                    {
+                        "name": "withOddNumberedRegistrationPlates",
+                        "displayName": "withOddNumberedRegistrationPlates",
+                        "enumValue": "withOddNumberedRegistrationPlates"
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": "other"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Component",
+            "name": "category",
+            "description": "Vehicle category(ies) from an external point of view. This is different than the vehicle type (car, lorry, etc.) represented by the `vehicleType` property. Model:'https://schema.org/Text'. Enum:'municipalServices, nonTracked, private, public, specialUsage, tracked'. Tracked vehicles are those vehicles which position is permanently tracked by a remote system. Or any other needed by an application They incorporate a GPS receiver together with a network connection to periodically update a reported position (location, speed, heading ...)",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:category;1"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "speed",
+            "description": "Denotes the magnitude of the horizontal component of the vehicle's current velocity and is specified in Kilometers per Hour",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "heading",
+            "description": "Denotes the direction of travel of the vehicle and is specified in decimal degrees,where 0 <= `heading` < 360, counting clockwise relative to the true north.",
+            "schema": "integer",
+            "minimum": "0",
+            "maximum": "360"
+        },
+        {
+            "@type": "Property",
+            "name": "cargoWeight",
+            "description": "Property. Current weight of the vehicle's cargo. Units:'Kilograms",
+            "schema": "integer",
+            "minimum": "0"
+        },
+        {
+            "@type": "Property",
+            "name": "vehicleIdentificationNumber",
+            "description": "The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles. Model:'https://schema.org/vehicleIdentificationNumber.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "vehiclePlateIdentifier",
+            "description": "Property.  An identifier or code displayed on a vehicle registration plate attached to the vehicle used for official identification purposes. The registration identifier is numeric or alphanumeric and is unique within the issuing authority's region. Normative References: DATEXII `vehicleRegistrationPlateIdentifier.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "fleetVehicleId",
+            "description": "The identifier of the vehicle in the context of the fleet of vehicles to which it belongs",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "dateVehicleFirstRegistered",
+            "description": "The date of the first registration of the vehicle with the respective public authorities. Model:'https://schema.org/dateVehicleFirstRegistered",
+            "schema": "date"
+        },
+        {
+            "@type": "Property",
+            "name": "dateFirstUsed",
+            "description": "Timestamp which denotes when the vehicle was first used.",
+            "schema": "date"
+        },
+        {
+            "@type": "Property",
+            "name": "purchaseDate",
+            "description": "The date the item e.g. vehicle was purchased by the current owner",
+            "schema": "dateTime"
+        },
+        {
+            "@type": "Property",
+            "name": "mileageFromOdometer",
+            "description": "The total distance travelled by the particular vehicle since its initial production, as read from its odometer. Model:'https://schema.org/mileageFromOdometer.",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "vehicleConfiguration",
+            "description": "A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'. Model:'https://schema.org/vehicleConfiguration.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "color",
+            "description": "Vehicle's color. Model:'https://schema.org/color.",
+            "schema": "string"
+        },
+        {
+            "@type": "Component",
+            "name": "feature",
+            "description": "Feature(s) incorporated by the vehicle. Enum:' abs, airbag, alarm, backCamera, disabledRamp, gps, internetConnection, overspeed, proximitySensor, wifi'. Or any other needed by the application. In order to represent multiple instances of a feature it can be used the following syntax: `<feature>,<occurences>`. For example, a car with 4 airbags will be represented by `airbag,4`.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:feature;1"
+        },
+        {
+            "@type": "Component",
+            "name": "serviceProvided",
+            "description": "Service(s) the vehicle is capable of providing or it is assigned to. Enum:'auxiliaryServices, cargoTransport, construction, fairground, garbageCollection, goodsSelling, maintenance, parksAndGardens, roadSignalling, specialTransport, streetCleaning, streetLighting, urbanTransit, wasteContainerCleaning'. Or any other value needed by an specific application.",
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:serviceProvided;1"
+        },
+        {
+            "@type": "Property",
+            "name": "vehicleSpecialUsage",
+            "description": "Indicates whether the vehicle is been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale. Model:'https://schema.org/vehicleSpecialUsage'. Enum:'ambulance, fireBrigade, military, police, schoolTransportation, taxi. ",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "ambulance",
+                        "displayName": "ambulance",
+                        "enumValue": "ambulance"
+                    },
+                    {
+                        "name": "fireBrigade",
+                        "displayName": "fireBrigade",
+                        "enumValue": "fireBrigade"
+                    },
+                    {
+                        "name": "military",
+                        "displayName": "military",
+                        "enumValue": "military"
+                    },
+                    {
+                        "name": "police",
+                        "displayName": "police",
+                        "enumValue": "police"
+                    },
+                    {
+                        "name": "schoolTransportation",
+                        "displayName": "schoolTransportation",
+                        "enumValue": "schoolTransportation"
+                    },
+                    {
+                        "name": "taxi",
+                        "displayName": "taxi",
+                        "enumValue": "taxi"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "name": "refVehicleModel",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "target": "dtmi:digitaltwins:ngsi_ld:city:VehicleModel;1"
+        },
+        {
+            "@type": "Property",
+            "name": "serviceStatus",
+            "description": "Vehicle status (from the point of view of the service provided, so it could not apply to private vehicles). Model:'https://schema.org/DateTime'. `parked` : Vehicle is parked and not providing any service at the moment. `onRoute` : Vehicle is performing a mission. A comma-separated modifier(s) can be added to indicate what mission is currently delivering the vehicle. For instance `onRoute,garbageCollection` can be used to denote that the vehicle is on route and in a garbage collection mission. `broken` : Vehicle is suffering a temporary breakdown. `outOfService` : Vehicle is on the road but not performing any mission, probably going to its parking area. Enum:'broken, onRoute, outOfService, parked",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "broken",
+                        "displayName": "broken",
+                        "enumValue": "broken"
+                    },
+                    {
+                        "name": "onRoute",
+                        "displayName": "onRoute",
+                        "enumValue": "onRoute"
+                    },
+                    {
+                        "name": "outOfService",
+                        "displayName": "outOfService",
+                        "enumValue": "outOfService"
+                    },
+                    {
+                        "name": "parked",
+                        "displayName": "parked",
+                        "enumValue": "parked"
+                    }
+                ]
+            },
+            "writable": true
+        }
+    ],
+    "@context": [
+        "dtmi:dtdl:context;2"
+    ]
+}

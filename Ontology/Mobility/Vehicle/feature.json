@@ -1,0 +1,85 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:feature;1",
+    "@type": "Interface",
+    "description": "Feature(s) incorporated by the vehicle. Enum:' abs, airbag, alarm, backCamera, disabledRamp, gps, internetConnection, overspeed, proximitySensor, wifi'. Or any other needed by the application. In order to represent multiple instances of a feature it can be used the following syntax: `<feature>,<occurences>`. For example, a car with 4 airbags will be represented by `airbag,4`.",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "servicesProvided",
+        "description": "Service(s) the vehicle is capable of providing or it is assigned to.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "feature1",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:featureTypes;1"
+            },
+            {
+              "name": "feature2",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:featureTypes;1"
+            },
+            {
+              "name": "feature3",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:featureTypes;1"
+            },
+            {
+              "name": "feature",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:featureTypes;1"
+            }
+          ]
+        }
+      }
+    ],
+
+    "schemas": [
+      {
+        "@id": "dtmi:digitaltwins:ngsi_ld:city:featureTypes;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "abs",
+            "enumValue": "abs"
+          },
+          {
+            "name": "airbag",
+            "enumValue": "airbag"
+          },
+          {
+            "name": "alarm",
+            "enumValue": "alarm"
+          },
+          {
+            "name": "backCamera",
+            "enumValue": "backCamera"
+          },
+          {
+            "name": "disabledRamp",
+            "enumValue": "disabledRamp"
+          },
+          {
+            "name": "gps",
+            "enumValue": "gps"
+          },
+          {
+            "name": "internetConnection",
+            "enumValue": "internetConnection"
+          },
+          {
+            "name": "overspeed",
+            "enumValue": "overspeed"
+          },
+          {
+            "name": "proximitySensor",
+            "enumValue": "proximitySensor"
+          },
+          {
+            "name": "wifi",
+            "enumValue": "wifi"
+          }
+        ]
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+

@@ -1,0 +1,99 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:serviceProvided;1",
+    "@type": "Interface",
+    "description": "Service(s) the vehicle is capable of providing or it is assigned to. Enum:'auxiliaryServices, cargoTransport, construction, fairground, garbageCollection, goodsSelling, maintenance, parksAndGardens, roadSignalling, specialTransport, streetCleaning, streetLighting, urbanTransit, wasteContainerCleaning'. Or any other value needed by an specific application.",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "servicesProvided",
+        "description": "Service(s) the vehicle is capable of providing or it is assigned to.",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "service1",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:ServiceTypes;1"
+            },
+            {
+              "name": "service2",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:ServiceTypes;1"
+            },
+            {
+              "name": "service3",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:ServiceTypes;1"
+            },
+            {
+              "name": "service4",
+              "schema": "dtmi:digitaltwins:ngsi_ld:city:ServiceTypes;1"
+            }
+          ]
+        }
+      }
+    ],
+    "schemas": [
+      {
+        "@id": "dtmi:digitaltwins:ngsi_ld:city:ServiceTypes;1",
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "auxiliaryServices",
+            "enumValue": "auxiliaryServices"
+          },
+          {
+            "name": "cargoTransport",
+            "enumValue": "cargoTransport"
+          },
+          {
+            "name": "construction",
+            "enumValue": "construction"
+          },
+          {
+            "name": "fairground",
+            "enumValue": "fairground"
+          },
+          {
+            "name": "garbageCollection",
+            "enumValue": "garbageCollection"
+          },
+          {
+            "name": "goodsSelling",
+            "enumValue": "goodsSelling"
+          },
+          {
+            "name": "maintenance",
+            "enumValue": "maintenance"
+          },
+          {
+            "name": "parksAndGardens",
+            "enumValue": "parksAndGardens"
+          },
+          {
+            "name": "roadSignalling",
+            "enumValue": "roadSignalling"
+          },
+          {
+            "name": "specialTransport",
+            "enumValue": "specialTransport"
+          },
+          {
+            "name": "streetCleaning",
+            "enumValue": "streetCleaning"
+          },
+          {
+            "name": "streetLighting",
+            "enumValue": "streetLighting"
+          },
+          {
+            "name": "urbanTransit",
+            "enumValue": "urbanTransit"
+          },
+          {
+            "name": "wasteContainerCleaning",
+            "enumValue": "wasteContainerCleaning"
+          }
+        ]
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }

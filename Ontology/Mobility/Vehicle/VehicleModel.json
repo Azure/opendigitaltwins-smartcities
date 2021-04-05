@@ -1,0 +1,296 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:VehicleModel;1",
+    "@type": "Interface",
+    "displayName": "VehicleModel",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": [
+
+        {
+            "@type": "Property",
+            "name": "vehicleType",
+            "description": "Type of vehicle from the point of view of its structural characteristics. This is different than the vehicle category",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "agriculturalVehicle",
+                        "displayName": "agriculturalVehicle",
+                        "enumValue": "agriculturalVehicle"
+                    },
+                    {
+                        "name": "bicycle",
+                        "displayName": "bicycle",
+                        "enumValue": "bicycle"
+                    },
+                    {
+                        "name": "binTrolley",
+                        "displayName": "binTrolley",
+                        "enumValue": "binTrolley"
+                    },
+                    {
+                        "name": "bus",
+                        "displayName": "bus",
+                        "enumValue": "bus"
+                    },
+                    {
+                        "name": "car",
+                        "displayName": "car",
+                        "enumValue": "car"
+                    },
+                    {
+                        "name": "caravan",
+                        "displayName": "caravan",
+                        "enumValue": "caravan"
+                    },
+                    {
+                        "name": "carWithCaravan",
+                        "displayName": "carWithCaravan",
+                        "enumValue": "carWithCaravan"
+                    },
+                    {
+                        "name": "carWithTrailer",
+                        "displayName": "carWithTrailer",
+                        "enumValue": "carWithTrailer"
+                    },
+                    {
+                        "name": "cleaningTrolley",
+                        "displayName": "cleaningTrolley",
+                        "enumValue": "cleaningTrolley"
+                    },
+                    {
+                        "name": "constructionOrMaintenanceVehicle",
+                        "displayName": "constructionOrMaintenanceVehicle",
+                        "enumValue": "constructionOrMaintenanceVehicle"
+                    },
+                    {
+                        "name": "lorry",
+                        "displayName": "lorry",
+                        "enumValue": "lorry"
+                    },
+                    {
+                        "name": "minibus",
+                        "displayName": "minibus",
+                        "enumValue": "minibus"
+                    },
+                    {
+                        "name": "moped",
+                        "displayName": "moped",
+                        "enumValue": "moped"
+                    },
+                    {
+                        "name": "motorcycle",
+                        "displayName": "motorcycle",
+                        "enumValue": "motorcycle"
+                    },
+                    {
+                        "name": "motorcycleWithSideCar",
+                        "displayName": "motorcycleWithSideCar",
+                        "enumValue": "motorcycleWithSideCar"
+                    },
+                    {
+                        "name": "motorscooter",
+                        "displayName": "motorscooter",
+                        "enumValue": "motorscooter"
+                    },
+                    {
+                        "name": "sweepingMachine",
+                        "displayName": "sweepingMachine",
+                        "enumValue": "sweepingMachine"
+                    },
+                    {
+                        "name": "tanker",
+                        "displayName": "tanker",
+                        "enumValue": "tanker"
+                    },
+                    {
+                        "name": "trailer",
+                        "displayName": "trailer",
+                        "enumValue": "trailer"
+                    },
+                    {
+                        "name": "tram",
+                        "displayName": "tram",
+                        "enumValue": "tram"
+                    },
+                    {
+                        "name": "trolley",
+                        "displayName": "trolley",
+                        "enumValue": "trolley"
+                    },
+                    {
+                        "name": "van",
+                        "displayName": "van",
+                        "enumValue": "van"
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": "other"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "brandName",
+            "description": "Vehicle's brand name. Model:'https://schema.org/brand'",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "modelName",
+            "description": "Vehicle's model name. Model:'https://schema.org/model'",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "manufacturerName",
+            "description": "Vehicle's manufacturer name.",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "vehicleModelDate",
+            "description": "The release date of a vehicle model (often used to differentiate versions of the same make and model). Model:'https://schema.org/vehicleModelDate'",
+            "schema": "dateTime"
+        },
+        {
+            "@type": "Property",
+            "name": "cargoVolume",
+            "description": "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume. Model:'https://schema.org/cargoVolume'. Units:'Liters'. If only a single value is provided (type Number) it will refer to the maximum volume.",
+            "schema": "integer",
+            "minimum": 0
+        },
+        {
+            "@type": "Property",
+            "name": "fuelType",
+            "description": "The type of fuel suitable for the engine or engines of the vehicle. Enum:'autogas, biodiesel, ethanol, cng, diesel, electric, gasoline, hybrid electric/diesel, hybrid electric/petrol, hydrogen, lpg, petrol, petrol(unleaded), petrol(leaded), other'",           "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "autogas",
+                        "displayName": "autogas",
+                        "enumValue": "autogas"
+                    },
+                    {
+                        "name": "biodiesel",
+                        "displayName": "biodiesel",
+                        "enumValue": "biodiesel"
+                    },
+                    {
+                        "name": "cng",
+                        "displayName": "cng",
+                        "enumValue": "cng"
+                    },
+                    {
+                        "name": "diesel",
+                        "displayName": "diesel",
+                        "enumValue": "diesel"
+                    },
+                    {
+                        "name": "electric",
+                        "displayName": "electric",
+                        "enumValue": "electric"
+                    },
+                    {
+                        "name": "ethanol",
+                        "displayName": "ethanol",
+                        "enumValue": "ethanol"
+                    },
+                    {
+                        "name": "gasoline",
+                        "displayName": "gasoline",
+                        "enumValue": "gasoline"
+                    },
+                    {
+                        "name": "hybrid_electric_diesel",
+                        "displayName": "hybrid_electric_diesel",
+                        "enumValue": "hybrid_electric_diesel"
+                    },
+                    {
+                        "name": "hybrid_electric_petrol",
+                        "displayName": "hybrid_electric_petrol",
+                        "enumValue": "hybrid_electric_petrol"
+                    },
+                    {
+                        "name": "hydrogen",
+                        "displayName": "hydrogen",
+                        "enumValue": "hydrogen"
+                    },
+                    {
+                        "name": "lpg",
+                        "displayName": "lpg",
+                        "enumValue": "lpg"
+                    },
+                    {
+                        "name": "petrol",
+                        "displayName": "petrol",
+                        "enumValue": "petrol"
+                    },
+                    {
+                        "name": "petrol(unleaded)",
+                        "displayName": "petrol(unleaded)",
+                        "enumValue": "petrol(unleaded)"
+                    },
+                    {
+                        "name": "petrol(leaded)",
+                        "displayName": "petrol(leaded)",
+                        "enumValue": "petrol(leaded)"
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": "other"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "fuelConsumption",
+            "description": "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km). Model:'https://schema.org/fuelConsumption'. Units:'liters per 100 kilometer",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "height",
+            "description": "Vehicle's height. Model:'https://schema.org/height",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "width",
+            "description": "Vehicle's width. Model:'https://schema.org/width'",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "depth",
+            "description": "Vehicle's depth. Model:'https://schema.org/depth'",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "weight",
+            "description": "Vehicle's weigth. Model:'https://schema.org/weigth'",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "vehicleEngine",
+            "description": "Information about the engine or engines of the vehicle. Model:'https://schema.org/vehicleEngine'",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "url",
+            "description": "URL which provides a description of this vehicle model. Model:'https://schema.org/URL'.",
+            "schema": "string"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }

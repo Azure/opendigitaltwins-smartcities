@@ -7,7 +7,7 @@
         {
             "@type": "Relationship",
             "name": "refRoadSegment",
-            "description": "Concerned road segment on which the observation has been made. Model:'https://schema.org/URL",
+            "description": "Concerned road segment on which the observation has been made.",
             "target": "dtmi:digitaltwins:ngsi_ld:city:RoadSegment;1"
         },
         {

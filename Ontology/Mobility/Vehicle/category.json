@@ -1,0 +1,67 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:category;1",
+    "@type": "Interface",
+    "description": "Vehicle category(ies) from an external point of view. This is different than the vehicle type (car, lorry, etc.) represented by the `vehicleType` property. Model:'https://schema.org/Text'. Enum:'municipalServices, nonTracked, private, public, specialUsage, tracked'. Tracked vehicles are those vehicles which position is permanently tracked by a remote system. Or any other needed by an application They incorporate a GPS receiver together with a network connection to periodically update a reported position (location, speed, heading ...)",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "servicesProvided",
+            "description": "Service(s) the vehicle is capable of providing or it is assigned to.",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "category1",
+                        "schema": "dtmi:digitaltwins:ngsi_ld:city:categoryTypes;1"
+                    },
+                    {
+                        "name": "category2",
+                        "schema": "dtmi:digitaltwins:ngsi_ld:city:categoryTypes;1"
+                    },
+                    {
+                        "name": "category3",
+                        "schema": "dtmi:digitaltwins:ngsi_ld:city:categoryTypes;1"
+                    },
+                    {
+                        "name": "category4",
+                        "schema": "dtmi:digitaltwins:ngsi_ld:city:categoryTypes;1"
+                    }
+                ]
+            }
+        }
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:digitaltwins:ngsi_ld:city:categoryTypes;1",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "municipalServices",
+                    "enumValue": "municipalServices"
+                },
+                {
+                    "name": "nonTracked",
+                    "enumValue": "nonTracked"
+                },
+                {
+                    "name": "private",
+                    "enumValue": "private"
+                },
+                {
+                    "name": "public",
+                    "enumValue": "public"
+                },
+                {
+                    "name": "specialUsage",
+                    "enumValue": "specialUsage"
+                },
+                {
+                    "name": "tracked",
+                    "enumValue": "tracked"
+                }
+            ]
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}
