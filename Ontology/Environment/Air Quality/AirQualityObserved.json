@@ -295,7 +295,7 @@
         },
         {
             "@type": "Relationship",
-            "name": "refWeatherObserverd",
+            "name": "refWeatherObserved",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
             "target": "dtmi:digitaltwins:ngsi_ld:city:WeatherObserved;1"
