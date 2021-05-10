@@ -1,0 +1,8 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:ParkingSite;1",
+    "@type": "Interface",
+    "displayName": "ParkingSite",
+    "@context": "dtmi:dtdl:context;2",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "contents": []
+}

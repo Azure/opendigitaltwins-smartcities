@@ -3,7 +3,7 @@
     "@type": "Interface",
     "displayName": "OnStreetParking",
     "@context": "dtmi:dtdl:context;2",
-    "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+    "extends": "dtmi:digitaltwins:ngsi_ld:city:ParkingSite;1",
     "contents": [
         {
             "@type": "Property",
