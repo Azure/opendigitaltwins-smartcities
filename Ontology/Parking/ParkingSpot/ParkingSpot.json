@@ -106,19 +106,11 @@
         },
         {
             "@type": "Relationship",
-            "name": "refOnStreetParking",
+            "name": "refParkingSite",
             "minMultiplicity": 0,
             "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:OnStreetParking;1"
-        },
-        {
-            "@type": "Relationship",
-            "name": "refOffStreetParking",
-            "minMultiplicity": 0,
-            "maxMultiplicity": 1,
-            "target": "dtmi:digitaltwins:ngsi_ld:city:OffStreetParking;1"
-        },
-        {
+            "target": "dtmi:digitaltwins:ngsi_ld:city:ParkingSite;1"
+        },        {
             "@type": "Relationship",
             "name": "refdevice",
             "minMultiplicity": 0,
