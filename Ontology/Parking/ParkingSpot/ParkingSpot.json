@@ -63,7 +63,7 @@
             "writable": true
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "status",
             "schema": {
                 "@type": "Enum",
