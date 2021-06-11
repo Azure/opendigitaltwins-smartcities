@@ -1,0 +1,231 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:digitaltwins:ngsi_ld:city:TrafficFlowObserved;1",
+  "@type": "Interface",
+  "extends": "dtmi:digitaltwins:ngsi_ld:city:NGSILDBaseModel;1",
+  "displayName": "TrafficFlowObserved",
+  "description": "An observation of traffic flow conditions at a certain place and time.",
+  "comment": "Adapted from https://github.com/smart-data-models/dataModel.Transportation",
+  "contents": 
+  [
+    {
+      "@type": "Property",
+      "name": "areaServed",
+      "schema": "string",
+      "description": "The geographic area where a service or offered item is provided",
+      "writable": true
+    },
+    {
+      "@type": ["Property","Distance"],
+      "name":"averageGapDistance",
+      "description": "Average gap distance between consecutive vehicles.",
+      "schema": "double",
+      "unit": "metre",
+      "writable": true
+    },
+    {
+      "@type": ["Property","TimeSpan"],
+      "name": "averageHeadwayTime",
+      "description": "Average headway time. Headway time is the time ellapsed between two consecutive vehicles.",
+      "schema": "double",
+      "unit": "second",
+      "writable": true
+    },
+    {
+      "@type": ["Property","Distance"],
+      "name":"averageVehicleLength",
+      "description": "Average length of the vehicles transiting during the observation period.",
+      "schema": "double",
+      "unit": "metre",
+      "writable": true
+    },
+    {
+      "@type": ["Property","Velocity"],
+      "name":"averageVehicleSpeed",
+      "description": " Average speed of the vehicles transiting during the observation period.",
+      "schema": "double",
+      "unit": "kilometrePerHour",
+      "writable": true
+    },{
+      "@type": "Property",
+      "name":"congested",
+      "description": "Flags whether there was a traffic congestion during the observation period in the referred lane.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "dateObservedFrom",
+      "schema": "dateTime",
+      "description": "Observation period start date and time.",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "dateObservedTo",
+      "schema": "dateTime",
+      "description": "Observation period end date and time.",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "intensity",
+      "description": "Total number of vehicles detected during this observation period",
+      "schema": "integer",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "laneDirection",
+      "description": "Usual direction of travel in the lane referred by this observation. This attribute is useful when the observation is not referencing any road segment, allowing to know the direction of travel of the traffic flow observed.",
+      "schema": 
+      {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": 
+        [
+          {
+            "name": "forward",
+            "enumValue": "forward"
+          },
+          {
+            "name": "backward",
+            "enumValue": "backward"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Relationship",
+      "name": "laneId",
+      "description": "Lane identifier. Lane identification is done using the conventions defined by RoadSegment entity which are based on [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Forward_%26_backward,_left_%26_right).",
+      "target": "dtmi:digitaltwins:ngsi_ld:city:RoadSegment;1"
+    },
+    {
+      "@type": "Property",
+      "name": "occupancy",
+      "description": "Fraction of the observation time where a vehicle has been occupying the observed lane",
+      "schema": "double",
+      "writable": true
+    },
+    {
+      "@type": "Relationship",
+      "name": "refRoadSegment",
+      "description": "Concerned road segment on which the observation has been made. Reference to an entity of type RoadSegment",
+      "target": "dtmi:digitaltwins:ngsi_ld:city:RoadSegment;1"
+    },
+    {
+      "@type": "Property",
+      "name": "reversedLane",
+      "description": "Flags whether traffic in the lane was reversed during the observation period.",
+      "schema": "boolean",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "vehicleSubType",
+      "description": "It allows to specify a sub type of vehicleType, eg if the vehicleType is set to Lorry the vehicleSubType may be OGV1 or OGV2 to convey more information about the exact type of vehicle.",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Property",
+      "name": "vehicleType",
+      "description": "Type of vehicle from the point of view of its structural characteristics.",
+      "schema": {
+        "@type": "Enum",
+        "valueSchema": "string",
+        "enumValues": [
+          {
+            "name": "argriculturalVehicle",
+            "enumValue": "argriculturalVehicle"
+          },
+          {
+            "name": "bicycle",
+            "enumValue": "bicycle"
+          },
+          {
+            "name": "bus",
+            "enumValue": "bus"
+          },
+          {
+            "name": "minibus",
+            "enumValue": "minibus"
+          },
+          {
+            "name": "car",
+            "enumValue": "car"
+          },
+          {
+            "name": "caravan",
+            "enumValue": "caravan"
+          },
+          {
+            "name": "tram",
+            "enumValue": "tram"
+          },
+          {
+            "name": "tanker",
+            "enumValue": "tanker"
+          },
+          {
+            "name": "carWithCaravan",
+            "enumValue": "carWithCaravan"
+          },
+          {
+            "name": "carWithTrailer",
+            "enumValue": "carWithTrailer"
+          },
+          {
+            "name": "lorry",
+            "enumValue": "lorry"
+          },
+          {
+            "name": "moped",
+            "enumValue": "moped"
+          },
+          {
+            "name": "motorcycle",
+            "enumValue": "motorcycle"
+          },
+          {
+            "name": "motorcycleWithSidecar",
+            "enumValue": "motorcycleWithSidecar"
+          },
+          {
+            "name": "motorscooter",
+            "enumValue": "motorscooter"
+          },
+          {
+            "name": "trailer",
+            "enumValue": "trailer"
+          },
+          {
+            "name": "van",
+            "enumValue": "van"
+          },
+          {
+            "name": "constructionOrMaintenanceVehicle",
+            "enumValue": "constructionOrMaintenanceVehicle"
+          },
+          {
+            "name": "trolley",
+            "enumValue": "trolley"
+          },
+          {
+            "name": "binTrolley",
+            "enumValue": "binTrolley"
+          },
+          {
+            "name": "sweepingMachine",
+            "enumValue": "sweepingMachine"
+          },
+          {
+            "name": "cleaningTrolley",
+            "enumValue": "cleaningTolley"
+          }
+        ]
+      }
+    }
+  ]
+}
