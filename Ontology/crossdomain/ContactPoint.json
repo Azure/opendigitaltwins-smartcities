@@ -1,0 +1,232 @@
+{
+    "@id": "dtmi:digitaltwins:ngsi_ld:city:ContactPoint;1",
+    "@type": "Interface",
+    "displayName": "Contact point",
+    "description": "A contact point—for example, a Customer Complaints department.",
+    "comment": "Model 'ContactPoint' from Schema.org. See https://schema.org/ContactPoint. For use as component in other interfaces",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "additionalType",
+            "displayName": "Additional type",
+            "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+            "comment": "Schema.org Type: URL",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "alternateName",
+            "displayName": "Alternate name",
+            "description": "An alias for the item.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "areaServed",
+            "displayName": "Area served",
+            "description": "The geographic area where a service or offered item is provided. Supersedes serviceArea.",
+            "comment": "Schema.org Type: AdministrativeArea or GeoShape or Place or Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "availableLanguage",
+            "displayName": "Available language",
+            "description": "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. See also inLanguage",
+            "comment": "Schema.org Type: Language or Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contactOption",
+            "displayName": "Contact Option",
+            "description": "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).",
+            "comment": "Schema.org Type: ContactPointOption (Enumeration)",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "hearingImpairedSupported",
+                        "displayName": "Hearing Impaired Supported",
+                        "enumValue": "HearingImpairedSupported"
+                    },
+                    {
+                        "name": "tollFree",
+                        "displayName": "Toll free",
+                        "enumValue": "TollFree"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "contactType",
+            "displayName": "Contact type",
+            "description": "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "description",
+            "displayName": "Description",
+            "description": "A description of the item.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "email",
+            "displayName": "Email",
+            "description": "Email address.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "faxNumber",
+            "displayName": "Fax number",
+            "description": "The fax number.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "hoursAvailable",
+            "displayName": "Hours available",
+            "description": "The hours during which this service or contact is available.",
+            "comment": "Schema.org Type: OpeningHoursSpecification. See dtmi:digitaltwins:schema_org:schemas:OpeningHoursSpecification;1",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "closes",
+                        "displayName": "Closes",
+                        "description": "The closing hour of the place or service on the given day(s) of the week.",
+                        "comment": "Schema.org Type: Time",
+                        "schema": "time"
+                    },
+                    {
+                        "name": "dayOfWeek",
+                        "displayName": "Day of week",
+                        "description": "The day of the week for which these opening hours are valid.",
+                        "comment": "Schema.org Type: DayOfWeek (Enumeration)",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "string",
+                            "enumValues": [
+                                {
+                                    "name": "monday",
+                                    "displayName": "Monday",
+                                    "enumValue": "Monday"
+                                },
+                                {
+                                    "name": "tuesday",
+                                    "displayName": "Tuesday",
+                                    "enumValue": "Tuesday"
+                                },
+                                {
+                                    "name": "wednesday",
+                                    "displayName": "Wednesday",
+                                    "enumValue": "Wednesday"
+                                },
+                                {
+                                    "name": "thursday",
+                                    "displayName": "Thursday",
+                                    "enumValue": "Thursday"
+                                },
+                                {
+                                    "name": "friday",
+                                    "displayName": "Friday",
+                                    "enumValue": "Friday"
+                                },
+                                {
+                                    "name": "saturday",
+                                    "displayName": "Saturday",
+                                    "enumValue": "Saturday"
+                                },
+                                {
+                                    "name": "sunday",
+                                    "displayName": "Sunday",
+                                    "enumValue": "Sunday"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "opens",
+                        "displayName": "Opens",
+                        "description": "The opening hour of the place or service on the given day(s) of the week.",
+                        "comment": "Schema.org Type: Time",
+                        "schema": "time"
+                    },
+                    {
+                        "name": "validFrom",
+                        "displayName": "Valid from",
+                        "description": "The date when the item becomes valid.",
+                        "comment": "Schema.org Type: Date or DateTime",
+                        "schema": "dateTime"
+                    },
+                    {
+                        "name": "validThrough",
+                        "displayName": "Valid through",
+                        "description": "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+                        "comment": "Schema.org Type: Date or DateTime",
+                        "schema": "dateTime"
+                    }
+                ]
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "name",
+            "displayName": "Name",
+            "description": "The name of the item.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "productSupported",
+            "displayName": "Product supported",
+            "description": "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\").",
+            "comment": "Schema.org Type: Product or Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "telephone",
+            "displayName": "Telephone",
+            "description": "The telephone number.",
+            "comment": "Schema.org Type: Text",
+            "schema": "string",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "url",
+            "displayName": "Url",
+            "description": "URL of the item.",
+            "comment": "Schema.org Type: URL",
+            "schema": "string",
+            "writable": true
+        }
+    ],
+    "@context": [
+        "dtmi:dtdl:context;2"
+    ]
+}

@@ -33,12 +33,11 @@
             "writable": true
         },
         {
-            "@type": "Property",
+            "@type": "Component",
             "name": "contactPoint",
             "displayName": "Contact point",
             "description": "Contact point for the museum.",
-            "schema": "string",
-            "writable": true
+            "schema": "dtmi:digitaltwins:ngsi_ld:city:ContactPoint;1"
         },
         {
             "@type": "Property",
