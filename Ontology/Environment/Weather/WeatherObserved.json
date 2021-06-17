@@ -50,7 +50,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Pressure"
             ],
             "name": "atmosphericPressure",
@@ -59,7 +59,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Temperature"
             ],
             "name": "dewpoint",
@@ -68,7 +68,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Temperature"
             ],
             "name": "FeelsLikeTemperature",
@@ -77,7 +77,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Temperature"
             ],
             "name": "temperature",
@@ -86,7 +86,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Illuminance"
             ],
             "name": "illuminance",
@@ -95,7 +95,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "VolumeFlowRate"
             ],
             "name": "precipitation",
@@ -104,14 +104,14 @@
         },
         {
             "@type": [
-                "Telemetry"
+                "Property"
             ],
             "name": "relativeHumidity",
             "schema": "double"
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Length"
             ],
             "name": "snowHeight",
@@ -120,7 +120,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Power"
             ],
             "name": "solarRadiation",
@@ -129,7 +129,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Length"
             ],
             "name": "streamGauge",
@@ -138,14 +138,14 @@
         },
         {
             "@type": [
-                "Telemetry"
+                "Property"
             ],
             "name": "uVIndexMax",
             "schema": "double"
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Length"
             ],
             "name": "visibility",
@@ -154,7 +154,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Angle"
             ],
             "name": "WindDirection",
@@ -163,7 +163,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Velocity"
             ],
             "name": "WindSpeed",

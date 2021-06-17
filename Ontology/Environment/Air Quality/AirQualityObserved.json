@@ -44,7 +44,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "CO2",
@@ -53,7 +53,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "CO",
@@ -62,7 +62,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "PM10",
@@ -71,7 +71,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "PM25",
@@ -80,7 +80,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NO",
@@ -89,7 +89,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "SO2",
@@ -98,7 +98,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "C6H6",
@@ -107,7 +107,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NI",
@@ -116,7 +116,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "AS",
@@ -125,7 +125,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "CD",
@@ -134,7 +134,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NO2",
@@ -143,7 +143,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "O3",
@@ -152,7 +152,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "PB",
@@ -161,7 +161,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "SH2",
@@ -170,7 +170,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "VolumeFlowRate"
             ],
             "name": "precipitation",
@@ -179,14 +179,14 @@
         },
         {
             "@type": [
-                "Telemetry"
+                "Property"
             ],
             "name": "relativeHumidity",
             "schema": "double"
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Temperature"
             ],
             "name": "temperature",
@@ -195,7 +195,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Angle"
             ],
             "name": "WindDirection",
@@ -204,7 +204,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Velocity"
             ],
             "name": "WindSpeed",
