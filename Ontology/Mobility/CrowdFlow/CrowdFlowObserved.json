@@ -73,7 +73,7 @@
             "writable": true
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "peopleCount",
             "schema": "integer"
         }

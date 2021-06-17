@@ -5,7 +5,7 @@
     "@context" : "dtmi:dtdl:context;2",
     "contents":[
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "availableSpotNumber",
             "schema": "integer"
         }
