@@ -3,7 +3,7 @@
     "@type": "Interface",
     "displayName": "Pole",
     "extends": "dtmi:digitaltwins:s4city:city:CityFurniture;1",
-    "description": "",
+    "description": "pole",
     "contents": [
         {
             "@type": "Relationship",

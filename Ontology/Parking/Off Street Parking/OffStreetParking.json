@@ -583,47 +583,47 @@
             "writable": true
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "firstAvailableFloor",
             "schema": "integer"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "measuresPeriod",
             "schema": "double"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "measuresPeriodUnit",
             "schema": "string"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "occupancy",
             "schema": "double"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "occupancyModified",
             "schema": "double"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "occupiedSpotNumber",
             "schema": "integer"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "vehicleEntranceCount",
             "schema": "integer"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "vehicleExitCount",
             "schema": "integer"
         },
         {
-            "@type": "Telemetry",
+            "@type": "Property",
             "name": "status",
             "schema": {
                 "@type": "Enum",
