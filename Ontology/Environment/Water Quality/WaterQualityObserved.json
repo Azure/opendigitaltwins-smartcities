@@ -7,7 +7,7 @@
     "contents": [
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "Chla",
@@ -16,7 +16,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "Cl",
@@ -25,7 +25,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NH3",
@@ -34,7 +34,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NH4",
@@ -43,7 +43,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "NO3",
@@ -52,7 +52,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "O2",
@@ -61,7 +61,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "PC",
@@ -70,7 +70,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "PE",
@@ -79,7 +79,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Current"
             ],
             "name": "conductance",
@@ -88,7 +88,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Current"
             ],
             "name": "conductivity",
@@ -97,7 +97,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Voltage"
             ],
             "name": "orp",
@@ -106,14 +106,14 @@
         },
         {
             "@type": [
-                "Telemetry"
+                "Property"
             ],
             "name": "pH",
             "schema": "double"
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "salinity",
@@ -122,7 +122,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "tds",
@@ -131,7 +131,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Density"
             ],
             "name": "tss",
@@ -140,7 +140,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Temperature"
             ],
             "name": "temperature",
@@ -149,7 +149,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "Distance"
             ],
             "name": "turbidity",

@@ -25,7 +25,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "SoundPressure"
             ],
             "name": "LAS",
@@ -34,7 +34,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "SoundPressure"
             ],
             "name": "LAeq",
@@ -43,7 +43,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "SoundPressure"
             ],
             "name": "LAeq_d",
@@ -52,7 +52,7 @@
         },
         {
             "@type": [
-                "Telemetry",
+                "Property",
                 "SoundPressure"
             ],
             "name": "LAmax",
